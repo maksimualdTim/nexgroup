@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: var(--font-manrope), sans-serif;
+}
+
+body {
+  @apply bg-customBlack text-white;
+}
+
+.main-title > .subtitle::before{
+  content: url(/icons/nombus.svg);
+  margin-right: 0.80rem;
+}
+.main-title > h1{
+  font-size: 3.25rem;
+  line-height: 3.125rem;
+}
+.header-btn > a {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

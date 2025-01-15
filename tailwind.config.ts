@@ -15,16 +15,16 @@ export default {
         accent: "#00EAFF"
       },
       spacing: {
-        fluid: 'clamp(2rem, 2vw + 0.25rem, 4rem);',
-        block: '6.25rem'
+        fluid: 'calc(var(--fluid-spacing) * (1px + (100vw - 1530px) / 1530))',
+        block: 'calc(80 * (1px + (100vw - 1530px) / 1530))'
       },
       fontSize: {
-        fluid: 'clamp(1rem, 1vw, 2rem)',
-        title: 'clamp(2.5rem, 2vw + 0.25rem, 5rem)',
-        subtitle: 'clamp(1rem, 1vw, 1.5rem)',
+        fluid: 'calc(var(--fluid-font-size) * (1px + (100vw - 1530px) / 1530))',
+        title: 'calc(40 * (1px + (100vw - 1530px) / 1530))',
+        subtitle: 'calc(16 * (1px + (100vw - 1530px) / 1530))',
       },
       lineHeight: {
-        title: 'clamp(2.5rem, 2vw + 0.25rem, 5rem)',
+        title: 'calc(40 * (1px + (100vw - 1530px) / 1530))',
       }
     },
   },

@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Services() {
     return (
         <div className="py-block px-fluid" id="services">
-            <div className="flex justify-between mb-20">
+            <div className="flex justify-between" style={{marginBottom: "calc(80 * (1px + (100vw - 1530px) / 1530))"}}>
                 <div>
                     <MainText 
                     text={[<p key={1}>Внедряем эффективные решения для автоматизации процессов, улучшения коммуникации, а также роста и развития вашего бизнеса.</p>]} 
@@ -24,7 +24,7 @@ export default function Services() {
                 </div>
             </div>
             <div>
-                <div className="flex justify-between mb-6">
+                <div className="flex justify-between" style={{marginBottom: "calc(24 * (1px + (100vw - 1530px) / 1530))"}}>
                     <div className="w-[66%]">
                         <ServiceCardLong
                         link="/"
@@ -81,7 +81,7 @@ export default function Services() {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-between items-center mt-16">
+            <div className="flex justify-between items-center" style={{marginTop: "calc(64 * (1px + (100vw - 1530px) / 1530))"}}>
                 <div>
                     <Button 
                     text="Обсудить проект"
@@ -94,8 +94,12 @@ export default function Services() {
                     <Image 
                     src={"/logos/nex.svg"}
                     alt="logo"
-                    width={69}
-                    height={19}
+                    width={0}
+                    height={0}
+                    style={{
+                        width: "calc(69 * (1px + (100vw - 1530px) / 1530))",
+                        height: "calc(19 * (1px + (100vw - 1530px) / 1530))"
+                    }}
                     />
                 </div>
             </div>

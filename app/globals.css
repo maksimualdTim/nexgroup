@@ -4,21 +4,26 @@
 
 :root {
   font-family: var(--font-manrope), sans-serif;
+  --fluid-font-size: 16;
+  --fluid-spacing: 30;
 }
 
 body {
   @apply bg-customBlack text-white;
 }
 
-.main-title > .subtitle::before{
+/* .main-title > .subtitle::before{
   content: url(/icons/nombus.svg);
-  margin-right: 0.80rem;
-}
+  width: calc(14 * (1px + (100vw - 1530px) / 1530));
+  height: calc(14 * (1px + (100vw - 1530px) / 1530));
+  margin-right: calc(13 * (1px + (100vw - 1530px) / 1530));
+  display: inline-block;
+} */
 .main-title > h1{
-  font-size: 3.25rem;
-  line-height: 3.125rem;
+  font-size: calc(52 * (1px + (100vw - 1530px) / 1530));
+  line-height: calc(50 * (1px + (100vw - 1530px) / 1530));
 }
 .header-btn > a {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: calc(16 * (1px + (100vw - 1530px) / 1530));
+  padding-bottom: calc(16 * (1px + (100vw - 1530px) / 1530));
 }

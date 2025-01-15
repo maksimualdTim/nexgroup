@@ -4,17 +4,22 @@ export default function MainText({order, text}: {order: number, text: JSX.Elemen
     const spans = []
     for (let i = 0; i < order; i++) {
         spans.push(
-            <span key={i} className="bg-accent rounded-full inline-block relative top-[-2]" style={{width: '0.5rem', height: '0.5rem', marginLeft:'3px', marginRight: '3px'}}></span>
+            <span key={i} className="bg-accent rounded-full inline-block relative" style={{
+                width: 'calc(8 * (1px + (100vw - 1530px) / 1530))', 
+                height: 'calc(8 * (1px + (100vw - 1530px) / 1530))', 
+                marginLeft:'calc(3 * (1px + (100vw - 1530px) / 1530))', 
+                marginRight: 'calc(3 * (1px + (100vw - 1530px) / 1530))',
+            }}></span>
         )
     }
     return (
-        <div className="advantages-text max-w-[30rem]">
+        <div className="advantages-text" style={{maxWidth: "calc(446 * (1px + (100vw - 1530px) / 1530))"}}>
             <div className="text-accent mb-fluid">
-                <span>/ </span>
+                <span className="text-fluid">/ </span>
                 {spans}
-                <span> /</span>
+                <span className="text-fluid"> /</span>
             </div>
-            <div className="opacity-70 leading-6">
+            <div className="opacity-70 text-fluid" style={{lineHeight: "calc(24 * (1px + (100vw - 1530px) / 1530))"}}>
                 {text}
             </div>
         </div>

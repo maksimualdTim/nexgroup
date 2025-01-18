@@ -1,0 +1,44 @@
+.input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #3D3D3D;
+    color: white;
+    background: transparent;
+    display: block;
+    width: 100%;
+    height: calc(26 * (1px + (100vw - 1530px) / 1530));
+    margin-top: calc(20 * (1px + (100vw - 1530px) / 1530));
+}
+
+.label {
+    color: #878787;
+    transition: .3s;
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    top: 0;
+    position: absolute;
+}
+.textarea {
+    background: transparent;
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #3D3D3D;
+    color: white;
+    resize: none;
+}
+.input-container {
+    vertical-align: top;
+    position: relative;
+    margin-bottom: calc(34 * (1px + (100vw - 1530px) / 1530));
+}
+
+.input-container:focus-within label {
+    font-size: calc(12 * (1px + (100vw - 1530px) / 1530));
+    top: calc(-10 * (1px + (100vw - 1530px) / 1530));
+    transition: .3s;
+    
+}

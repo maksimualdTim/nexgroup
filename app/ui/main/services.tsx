@@ -24,7 +24,7 @@ export default function Services() {
                 </div>
             </div>
             <div>
-                <div className="flex justify-between" style={{marginBottom: "calc(24 * (1px + (100vw - 1530px) / 1530))"}}>
+                <div className="flex justify-between" style={{marginBottom: "calc(24 * (1px + (100vw - 1530px) / 1530))", minHeight: "calc(436 * (1px + (100vw - 1530px) / 1530))"}}>
                     <div className="w-[66%]">
                         <ServiceCardLong
                         link="/"
@@ -52,7 +52,7 @@ export default function Services() {
                         />
                     </div>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex justify-between" style={{minHeight: "calc(436 * (1px + (100vw - 1530px) / 1530))"}}>
                     <div className="w-[33%]">
                         <ServiceCardShort
                         link="/"

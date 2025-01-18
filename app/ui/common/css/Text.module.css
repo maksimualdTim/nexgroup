@@ -1,0 +1,9 @@
+.egs {
+    width: calc(8 * (1px + (100vw - 1530px) / 1530));
+    height: calc(8 * (1px + (100vw - 1530px) / 1530));
+    margin-left: calc(3 * (1px + (100vw - 1530px) / 1530));
+    margin-right: calc(3 * (1px + (100vw - 1530px) / 1530));
+}
+.advantages-text {
+    max-width: calc(446 * (1px + (100vw - 1530px) / 1530));
+}

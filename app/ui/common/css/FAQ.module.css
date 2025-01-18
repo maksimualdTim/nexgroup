@@ -1,0 +1,10 @@
+.answer {
+    margin-bottom: calc(12 * (1px + (100vw - 1530px) / 1530));
+}
+.answer::after {
+    display: block;
+    content: "";
+    height: 1px;
+    background: #FFFFFF2E;
+    margin-top: calc(18 * (1px + (100vw - 1530px) / 1530));
+}

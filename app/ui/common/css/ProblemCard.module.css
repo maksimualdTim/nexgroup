@@ -1,0 +1,12 @@
+.problem-right {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.009) 0%, rgba(255, 255, 255, 0.06) 100%);
+    backdrop-filter: blur(150px);
+}
+.problem-left {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.009) 100%);
+    backdrop-filter: blur(150px);
+}
+.problem-center {
+    background: #181818A6;
+    backdrop-filter: blur(100px);
+}

@@ -1,0 +1,6 @@
+.icon {
+    display: inline-block;
+    width: calc(14 * (1px + (100vw - 1530px) / 1530));
+    height: calc(14 * (1px + (100vw - 1530px) / 1530));
+    margin-right: calc(13 * (1px + (100vw - 1530px) / 1530));
+}

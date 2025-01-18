@@ -1,0 +1,9 @@
+.consultation {
+    background: linear-gradient(90deg, #171717 0%, #1E1E1E 100%);
+    padding-top: calc(66 * (1px + (100vw - 1530px) / 1530));
+    padding-left: calc(63 * (1px + (100vw - 1530px) / 1530));
+    padding-bottom: calc(52 * (1px + (100vw - 1530px) / 1530));
+    padding-right: calc(33 * (1px + (100vw - 1530px) / 1530));
+    border-radius: calc(20 * (1px + (100vw - 1530px) / 1530));
+    margin-top: calc(134 * (1px + (100vw - 1530px) / 1530));
+}

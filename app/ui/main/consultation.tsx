@@ -43,14 +43,17 @@ export default function Consultation() {
                 }}></Image>
             </div>
         <div className="flex flex-col justify-between items-end relative">
-            <div>
+            <div className="relative" style={{
+                top: "calc(-23 * (1px + (100vw - 1530px) / 1530))"
+            }}>
                 <Image src={"/logos/nex-logo.svg"} alt="logo" width={81} height={47} style={{
                     width: "calc(81 * (1px + (100vw - 1530px) / 1530))",
                     height: "calc(47 * (1px + (100vw - 1530px) / 1530))"
                 }}/>
             </div>
             <div className="flex items-center" style={{
-                marginRight: "calc(-29 * (1px + (100vw - 1530px) / 1530))"
+                marginRight: "calc(-29 * (1px + (100vw - 1530px) / 1530))",
+                marginBottom: "calc(-29 * (1px + (100vw - 1530px) / 1530))"
             }}>
                 <Image src={"/icons/lavr-left.svg"} alt="lavr" width={87} height={116} style={{
                     width: "calc(87 * (1px + (100vw - 1530px) / 1530))",

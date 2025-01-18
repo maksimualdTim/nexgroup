@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "../common/button";
 import Title from "../common/title";
+import styles from "../common/css/HeaderBtn.module.css";
 
 export default function Main() {
   return (
@@ -136,7 +137,7 @@ export default function Main() {
                 Заказать звонок
               </Link>
             </div>
-            <div className="header-btn">
+            <div className={`header-btn ${styles.headerBtn}`}>
               <Button
                 link="/"
                 text="Оставить заявку"

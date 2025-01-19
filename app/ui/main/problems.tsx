@@ -134,6 +134,7 @@ export default function Problems() {
           </div>
         </div>
         <div
+        className="relative z-10"
           style={{ marginTop: "calc(79 * (1px + (100vw - 1530px) / 1530))" }}
         >
           <Button isFull={true} text="Консультация" withArrow={true} link="/" />

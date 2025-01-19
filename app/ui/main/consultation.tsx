@@ -3,6 +3,7 @@ import Button from "../common/button";
 import styles from "../common/css/Consultation.module.css";
 import TelegramButton from "../common/telegramButton";
 import Title from "../common/title";
+import Lavr from "../common/lavr";
 
 export default function Consultation() {
   return (
@@ -28,7 +29,7 @@ export default function Consultation() {
                 text="Начать автоматизацию"
               />
             </div>
-            <div>
+            <div className="relative z-10">
               <TelegramButton link="https://t.me/nexgroup_support" text="Написать в телеграм" />
             </div>
           </div>
@@ -51,20 +52,7 @@ export default function Consultation() {
                     height: "calc(47 * (1px + (100vw - 1530px) / 1530))"
                 }}/>
             </div>
-            <div className="flex items-center" style={{
-                marginRight: "calc(-29 * (1px + (100vw - 1530px) / 1530))",
-                marginBottom: "calc(-29 * (1px + (100vw - 1530px) / 1530))"
-            }}>
-                <Image src={"/icons/lavr-left.svg"} alt="lavr" width={87} height={116} style={{
-                    width: "calc(87 * (1px + (100vw - 1530px) / 1530))",
-                    height: "calc(116 * (1px + (100vw - 1530px) / 1530))"
-                }}></Image>
-                <span className="text-center inline-block" style={{maxWidth: "calc(201 * (1px + (100vw - 1530px) / 1530))"}}>Сертифицированный интегратор в Узбекистане</span>
-                <Image src={"/icons/lavr-right.svg"} alt="lavr" width={87} height={116} style={{
-                    width: "calc(87 * (1px + (100vw - 1530px) / 1530))",
-                    height: "calc(116 * (1px + (100vw - 1530px) / 1530))"
-                }}></Image>
-            </div>
+            <Lavr></Lavr>
         </div>
       </div>
     </div>

@@ -6,14 +6,12 @@
     background: transparent;
     display: block;
     width: 100%;
-    height: calc(26 * (1px + (100vw - 1530px) / 1530));
-    margin-top: calc(20 * (1px + (100vw - 1530px) / 1530));
+    height: calc(46 * (1px + (100vw - 1530px) / 1530));
 }
 
 .label {
     color: #878787;
     transition: .3s;
-    position: relative;
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
@@ -29,6 +27,7 @@
     border-bottom: 1px solid #3D3D3D;
     color: white;
     resize: none;
+    padding-top: calc(10 * (1px + (100vw - 1530px) / 1530));
 }
 .input-container {
     vertical-align: top;
@@ -36,9 +35,9 @@
     margin-bottom: calc(34 * (1px + (100vw - 1530px) / 1530));
 }
 
-.input-container:focus-within label {
+.input-container:focus-within label,
+.input-container.active label {
     font-size: calc(12 * (1px + (100vw - 1530px) / 1530));
     top: calc(-10 * (1px + (100vw - 1530px) / 1530));
-    transition: .3s;
-    
+    transition: .3s;   
 }

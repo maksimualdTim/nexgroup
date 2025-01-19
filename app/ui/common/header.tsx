@@ -1,0 +1,235 @@
+"use client";
+
+import styles from "../common/css/Header.module.css";
+import Link from "next/link";
+import Image from "next/image";
+import Button from "../common/button";
+import Lavr from "./lavr";
+import ServiceHeaderCard from "./ServiceHeaderCard";
+import { useState } from "react";
+
+export default function Header() {
+  const [active, setActive] = useState(false);
+
+  return (
+    <header
+      className={`relative ${active ? styles.active : ""}`}
+      style={{ paddingTop: "calc(25 * (1px + (100vw - 1530px) / 1530))" }}
+    >
+      <div className="flex items-center justify-between px-fluid z-50 relative">
+        <div className="inline-block">
+          <Link href={"/"} className="flex items-center">
+            <div>
+              <Image
+                src={"/logos/nex-full.svg"}
+                alt="logo"
+                width={0}
+                height={0}
+                style={{
+                  width: "calc(179 * (1px + (100vw - 1530px) / 1530))",
+                  height: "calc(47 * (1px + (100vw - 1530px) / 1530))",
+                }}
+              />
+            </div>
+          </Link>
+        </div>
+        <div
+          className="text-fluid font-semibold"
+          style={{
+            paddingLeft: "calc(80 * (1px + (100vw - 1530px) / 1530))",
+            lineHeight: "calc(32 * (1px + (100vw - 1530px) / 1530))",
+          }}
+        >
+          <Link
+            className="allServices"
+            href={"#"}
+            onClick={(e) => {
+              e.preventDefault();
+              const isActive = !active;
+              setActive(isActive);
+              if(isActive) {
+                const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+                document.body.style.overflow = "hidden";
+                document.body.style.paddingRight = `${scrollBarWidth}px`
+              } else {
+                document.body.style.overflow = "";
+                document.body.style.paddingRight = "";                
+              }
+            }}
+            style={{
+              marginRight: "calc(48 * (1px + (100vw - 1530px) / 1530))",
+            }}
+          >
+            Все услуги
+          </Link>
+          <Link
+            href={"/"}
+            style={{
+              marginRight: "calc(48 * (1px + (100vw - 1530px) / 1530))",
+            }}
+          >
+            Лицензии
+          </Link>
+          <Link
+            href={"/"}
+            style={{
+              marginRight: "calc(48 * (1px + (100vw - 1530px) / 1530))",
+            }}
+          >
+            О компании
+          </Link>
+          <Link href={"/"}>Контакты</Link>
+        </div>
+        <div
+          className="flex items-center"
+          style={{
+            marginRight: "calc(-60 * (1px + (100vw - 1530px) / 1530))",
+          }}
+        >
+          <div
+            style={{
+              backdropFilter: "blur(50px)",
+              background: "rgba(255, 255, 255, 0.15)",
+              marginRight: "calc(4 * (1px + (100vw - 1530px) / 1530))",
+              borderRadius: "calc(10 * (1px + (100vw - 1530px) / 1530))",
+            }}
+          >
+            <Link
+              href={"/"}
+              className="w-full h-full inline-block font-semibold opacity-85 text-fluid"
+              style={{
+                fontSize: "calc(14 * (1px + (100vw - 1530px) / 1530))",
+                padding: "calc(10 * (1px + (100vw - 1530px) / 1530))",
+              }}
+            >
+              RU
+            </Link>
+          </div>
+          <div
+            style={{
+              border: "1px solid rgba(164, 164, 164, 0.29)",
+              borderRadius: "calc(10 * (1px + (100vw - 1530px) / 1530))",
+            }}
+          >
+            <Link
+              href={"/"}
+              className="w-full h-full inline-block text-fluid font-semibold opacity-85"
+              style={{
+                fontSize: "calc(14 * (1px + (100vw - 1530px) / 1530))",
+                padding: "calc(10 * (1px + (100vw - 1530px) / 1530))",
+              }}
+            >
+              UZ
+            </Link>
+          </div>
+        </div>
+        <div className="flex items-center">
+          <div
+            className="text-right flex flex-col"
+            style={{
+              marginRight: "calc(32 * (1px + (100vw - 1530px) / 1530))",
+            }}
+          >
+            <Link
+              href={"tel:+998 90 333-77-39"}
+              className="text-fluid font-semibold"
+              style={{
+                lineHeight: "calc(16 * (1px + (100vw - 1530px) / 1530))",
+              }}
+            >
+              +998 90 333-77-39
+            </Link>
+            <Link
+              href={"tel:+998 90 333-77-39"}
+              className="opacity-50 underline"
+              style={{
+                lineHeight: "calc(16 * (1px + (100vw - 1530px) / 1530))",
+                fontSize: "calc(13 * (1px + (100vw - 1530px) / 1530))",
+              }}
+            >
+              Заказать звонок
+            </Link>
+          </div>
+          <div className={`header-btn ${styles.headerBtn}`}>
+            <Button
+              link="/"
+              text="Оставить заявку"
+              isFull={true}
+              withArrow={false}
+            />
+          </div>
+        </div>
+      </div>
+      <div className={`absolute w-full services ${styles.servicesBlock}`}>
+        <div className="flex justify-between items-center px-fluid">
+          <div
+            className="border-l"
+            style={{
+              paddingLeft: "calc(18 * (1px + (100vw - 1530px) / 1530))",
+            }}
+          >
+            <div
+              className="font-semibold"
+              style={{
+                fontSize: "calc(20 * (1px + (100vw - 1530px) / 1530))",
+                lineHeight: "calc(20 * (1px + (100vw - 1530px) / 1530))",
+                marginBottom: "calc(10 * (1px + (100vw - 1530px) / 1530))",
+              }}
+            >
+              Предлагаемые услуги
+            </div>
+            <div className="opacity-30">Внедрение и разработка</div>
+          </div>
+          <div
+            className="relative"
+            style={{
+              top: "calc(-15 * (1px + (100vw - 1530px) / 1530))",
+            }}
+          >
+            <Lavr></Lavr>
+          </div>
+        </div>
+        <div
+          className="px-fluid flex justify-between"
+          style={{
+            marginTop: "calc(48 * (1px + (100vw - 1530px) / 1530))",
+          }}
+        >
+          <ServiceHeaderCard
+            link="/"
+            text="Система для увеличения продаж"
+            title="Внедрение amoCRM"
+            iconHeight={18}
+            iconWidth={91}
+            logo="/logos/amo-main.svg"
+          ></ServiceHeaderCard>
+          <ServiceHeaderCard
+            link="/"
+            text="Все возможности управления торговлей"
+            title="Внедрение системы МойСклад"
+            iconHeight={19}
+            iconWidth={129}
+            isSklad={true}
+            logo="/logos/sklad-menu.svg"
+          ></ServiceHeaderCard>
+          <ServiceHeaderCard
+            link="/"
+            text="Корпоративная телефония для бизнеса"
+            title="Внедрение IP-телефонии"
+            iconHeight={18}
+            iconWidth={91}
+            logo="/logos/utel-main.svg"
+          ></ServiceHeaderCard>
+          <ServiceHeaderCard
+            link="/"
+            text="Полный цикл разработки и запуска сайта"
+            title="Разработка веб-сайтов"
+            iconHeight={18}
+            iconWidth={91}
+            logo="/logos/web.svg"
+          ></ServiceHeaderCard>
+        </div>
+      </div>
+    </header>
+  );
+}

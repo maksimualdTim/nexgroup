@@ -1,44 +1,58 @@
+'use client';
+
 import Image from "next/image";
 import styles from "../common/css/Button.module.css";
 import formStyles from "../common/css/Input.module.css";
 import Link from "next/link";
+import { useState } from "react";
+
 
 export default function FooterForm() {
+  const [phone, setPhone] = useState("");
+  const [name, setName] = useState("");
+  const [comment, setComment] = useState("");
+
   return (
     <form action="">
-      <div className={formStyles["input-container"]}>
+      <div className={`${formStyles["input-container"]} ${name.length == 0 ? "": formStyles.active}`}>
         <label className={`text-fluid ${formStyles.label}`} htmlFor="name">
           Ваше имя*
         </label>
         <input
           id="name"
           type="text"
+          value={name}
+          onInput={(e) => setName(e.currentTarget.value.trim())}
           required={true}
           className={`text-fluid ${formStyles.input}`}
         />
       </div>
-      <div className={formStyles["input-container"]}>
+      <div className={`${formStyles["input-container"]} ${phone.length == 0 ? "": formStyles.active}`}>
         <label className={`text-fluid ${formStyles.label}`} htmlFor="phone">
           Номер телефона*
         </label>
         <input
           id="phone"
           name="phone"
+          value={phone}
+          onInput={(e) => setPhone(e.currentTarget.value.trim())}
           type="text"
           required={true}
           className={`text-fluid ${formStyles.input}`}
         />
       </div>
-      <div className={formStyles["input-container"]}>
+      <div className={`${formStyles["input-container"]} ${comment.length == 0 ? "": formStyles.active}`}>
         <label className={`text-fluid ${formStyles.label}`} htmlFor="comment">
           Комментарий
         </label>
         <textarea
           name="comment"
+          value={comment}
+          onInput={(e) => setComment(e.currentTarget.value.trim())}
           id="comment"
           className={`text-fluid ${formStyles.textarea}`}
           style={{
-            height: "calc(76 * (1px + (100vw - 1530px) / 1530))",
+            height: "calc(96 * (1px + (100vw - 1530px) / 1530))",
           }}
         ></textarea>
       </div>

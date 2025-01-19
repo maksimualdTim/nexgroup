@@ -41,7 +41,7 @@ export default function Header() {
           }}
         >
           <Link
-            className="allServices"
+            className={styles.allServicesLink}
             href={"#"}
             onClick={(e) => {
               e.preventDefault();

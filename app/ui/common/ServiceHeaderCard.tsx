@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "../common/css/ServiceHeaderCard.module.css";
 import Image from "next/image";
 
-export default function ({link, iconWidth, iconHeight, text, title, logo, isSklad = false}: {link: string, iconWidth: number, iconHeight: number, text: string, title: string, logo: string, isSklad?: boolean}) {
+export default function ServiceHeaderCard({link, iconWidth, iconHeight, text, title, logo, isSklad = false}: {link: string, iconWidth: number, iconHeight: number, text: string, title: string, logo: string, isSklad?: boolean}) {
     return (
         <Link href={link} className={styles.card}>
             <div className="flex justify-between items-center">

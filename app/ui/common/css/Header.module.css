@@ -30,7 +30,7 @@
         height 0.4s ease,
         padding-top 0.2s ease;
 }
-:global(a.allServices)::before {
+.allServicesLink::before {
     content: "";
     opacity: 0;
     width: calc(10 * (1px + (100vw - 1530px) / 1530));
@@ -42,7 +42,7 @@
     margin-right: calc(8 * (1px + (100vw - 1530px) / 1530));
 }
 
-.active :global(a.allServices)::before {
+.active .allServicesLink::before {
     opacity: 1;
     transition: .3s;
 }

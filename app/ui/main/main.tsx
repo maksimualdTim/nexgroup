@@ -17,7 +17,7 @@ export default function Main() {
       <div className="px-fluid">
         <div className="flex justify-between items-end" style={{
           // paddingBottom: "calc(40 * (1px + (100vw - 1530px) / 1530))",
-          marginTop: "calc(320 * (1px + (100vw - 1530px) / 1530))"
+          marginTop: "calc(390 * (1px + (100vw - 1530px) / 1530))"
         }}>
           <div className="main-title">
             <Title

@@ -24,7 +24,7 @@
     padding-top: calc(161 * (1px + (100vw - 1530px) / 1530));
     padding-bottom: calc(50 * (1px + (100vw - 1530px) / 1530));
     box-shadow: 0px 4px 100px 500px #000C0DB2;
-    height: 534px;
+    height: calc(534 * (1px + (100vw - 1530px) / 1530));
     transition: 
         padding-bottom 0.2s ease, 
         height 0.4s ease,

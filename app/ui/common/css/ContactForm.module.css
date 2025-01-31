@@ -32,7 +32,12 @@
     height: calc(32 * (1px + (100vw - 1530px) / 1530));
     width: calc(32 * (1px + (100vw - 1530px) / 1530));
 }
-
+.socialsWrapper > a {
+    margin-right: calc(10 * (1px + (100vw - 1530px) / 1530));
+}
+.socialsWrapper > a:last-child {
+    margin-right: 0;
+}
 
 @media (max-width: 767px) {
     .text {

@@ -4,3 +4,27 @@
     height: calc(14 * (1px + (100vw - 1530px) / 1530));
     margin-right: calc(13 * (1px + (100vw - 1530px) / 1530));
 }
+.subtitle {
+    margin-bottom: calc(24 * (1px + (100vw - 1530px) / 1530));
+}
+
+@media (max-width: 767px) {
+    .subtitle {
+        font-size: calc(16 * (1px + (100vw - 430px) / 430));
+        line-height: calc(20 * (1px + (100vw - 430px) / 430));
+        margin-bottom: calc(24 * (1px + (100vw - 430px) / 430));
+    }
+    .title {
+        font-size: calc(30 * (1px + (100vw - 430px) / 430));
+        line-height: calc(40 * (1px + (100vw - 430px) / 430));
+    }
+    .wrapper {
+        max-width: calc(356 * (1px + (100vw - 430px) / 430));
+    }
+    .icon {
+        display: inline-block;
+        width: calc(14 * (1px + (100vw - 430px) / 430));
+        height: calc(14 * (1px + (100vw - 430px) / 430));
+        margin-right: calc(13 * (1px + (100vw - 430px) / 430));
+    }
+}

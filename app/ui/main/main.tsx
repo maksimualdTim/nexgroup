@@ -4,21 +4,14 @@ import Button from "../common/button";
 import Title from "../common/title";
 import Header from "../common/header";
 
+import styles from "../common/css/MainBlock.module.css";
+
 export default function Main() {
   return (
-    <div
-      className="bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: "url('/main.png')",
-        paddingBottom: "calc(85 * (1px + (100vw - 1530px) / 1530))",
-      }}
-    >
+    <div className={`bg-cover bg-center bg-no-repeat ${styles.mainContainer}`}>
       <Header></Header>
-      <div className="px-fluid">
-        <div className="flex justify-between items-end" style={{
-          // paddingBottom: "calc(40 * (1px + (100vw - 1530px) / 1530))",
-          marginTop: "calc(390 * (1px + (100vw - 1530px) / 1530))"
-        }}>
+      <div className="px-fluid mobile-container">
+        <div className={styles.mainBlock}>
           <div className="main-title">
             <Title
               title="Помогаем бизнесу стать сильнее"
@@ -27,12 +20,7 @@ export default function Main() {
               isMain={true}
               icon="/icons/nombus.svg"
             />
-            <div
-              className="flex items-center"
-              style={{
-                marginTop: "calc(46 * (1px + (100vw - 1530px) / 1530))",
-              }}
-            >
+            <div className={styles.buttonsContainer}>
               <div
                 style={{
                   marginRight: "calc(11 * (1px + (100vw - 1530px) / 1530))",
@@ -55,7 +43,7 @@ export default function Main() {
               </div>
             </div>
           </div>
-          <div className="flex items-end flex-col">
+          <div className="flex items-end flex-col hidden md:flex">
             <div className="flex items-center">
               <div
                 className="text-fluid opacity-50 text-right font-semibold"
@@ -100,7 +88,8 @@ export default function Main() {
                   color: "transparent",
                   WebkitBackgroundClip: "text",
                   backgroundClip: "text",
-                  backgroundImage: "linear-gradient(90deg, #FFFFFF 35%, rgba(25, 25, 25, 0) 100%)"
+                  backgroundImage:
+                    "linear-gradient(90deg, #FFFFFF 35%, rgba(25, 25, 25, 0) 100%)",
                 }}
               >
                 10+
@@ -135,7 +124,7 @@ export default function Main() {
         </div>
       </div>
       <div
-        className="flex justify-between opacity-50 px-fluid"
+        className="hidden justify-between opacity-50 px-fluid md:flex"
         style={{
           marginTop: "calc(116 * (1px + (100vw - 1530px) / 1530))",
         }}

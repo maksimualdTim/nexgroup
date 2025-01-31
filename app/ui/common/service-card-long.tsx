@@ -27,18 +27,30 @@ export default function ServiceCardLong({
   return (
     <Link
       href={link}
-      className={`w-full h-full bg-cover bg-center bg-no-repeat inline-block flex flex-col justify-between ${styles.card}`}
+      className={`w-full h-full bg-cover bg-center bg-no-repeat inline-block flex flex-col-reverse md:flex-col justify-between ${styles.card}`}
       style={{
         backgroundImage: `url('${image}')`,
       }}
     >
       <div className="flex justify-between items-center">
-        <div
-          className={`inline-block ${styles.period}`}
-        >
+        <div className={`hidden md:inline-block ${styles.period}`}>
           {period}
         </div>
-        <div>
+        <div className={`${styles.container} block md:hidden`}>
+          <div
+            className="font-semibold text-fluid opacity-50"
+            style={{ lineHeight: "calc(20 * (1px + (100vw - 1530px) / 1530))" }}
+          >
+            0{order}
+          </div>
+          <h4 className={`font-semibold ${styles.short_card_title}`}>
+            {title}
+          </h4>
+          <div className={`opacity-50 font-semibold text-fluid ${styles.text}`}>
+            {text}
+          </div>
+        </div>
+        <div className={styles.logo}>
           <Image
             src={logo}
             alt="logo"
@@ -51,42 +63,33 @@ export default function ServiceCardLong({
           />
         </div>
       </div>
-      <div className="flex justify-between items-end">
-        <div
-          style={{ maxWidth: "calc(488 * (1px + (100vw - 1530px) / 1530))" }}
-        >
+      <div className="flex justify-between items-start md:items-end">
+        <div className={`inline-block md:hidden ${styles.period}`}>
+          {period}
+        </div>
+        <div className={`${styles.containerLong} hidden md:block`}>
           <div
             className="font-semibold text-fluid opacity-50"
             style={{ lineHeight: "calc(20 * (1px + (100vw - 1530px) / 1530))" }}
           >
             0{order}
           </div>
-          <h4
-            className={`font-semibold ${styles.long_card_title}`}
-          >
-            {title}
-          </h4>
+          <h4 className={`font-semibold ${styles.long_card_title}`}>{title}</h4>
           <div
-            className="opacity-50 font-semibold text-fluid"
+            className={`opacity-50 font-semibold text-fluid ${styles.text}`}
             style={{ lineHeight: "calc(24 * (1px + (100vw - 1530px) / 1530))" }}
           >
             {text}
           </div>
         </div>
-        <div
-          className="bg-white rounded-full"
-          style={{ padding: "calc(48 * (1px + (100vw - 1530px) / 1530))" }}
-        >
+        <div className={`bg-white rounded-full ${styles.btn}`}>
           <div>
             <Image
               src={"/icons/arrow-right.svg"}
               alt="arrow"
               width={0}
               height={0}
-              style={{
-                width: "calc(13 * (1px + (100vw - 1530px) / 1530))",
-                height: "calc(13 * (1px + (100vw - 1530px) / 1530))",
-              }}
+              className={styles.arrow}
             />
           </div>
         </div>

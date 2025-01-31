@@ -1,0 +1,62 @@
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+.link {
+    margin-top: calc(50 * (1px + (100vw - 1530px) / 1530));
+    font-size: calc(15 * (1px + (100vw - 1530px) / 1530));
+}
+.cardsWrapper {
+    margin-top: calc(166 * (1px + (100vw - 1530px) / 1530));
+}
+.linkIcon {
+    width: calc(10 * (1px + (100vw - 1530px) / 1530));
+    height: calc(10 * (1px + (100vw - 1530px) / 1530));
+    margin-left: calc(5 * (1px + (100vw - 1530px) / 1530));
+}
+.bg {
+    top: calc(-180 * (1px + (100vw - 1530px) / 1530));
+    width: calc(1130 * (1px + (100vw - 1530px) / 1530));
+    height: calc(1130 * (1px + (100vw - 1530px) / 1530));
+}
+.btn {
+    margin-top: calc(79 * (1px + (100vw - 1530px) / 1530));
+}
+.center {
+    margin-top: calc(14 * (1px + (100vw - 1530px) / 1530));
+    margin-bottom: calc(22 * (1px + (100vw - 1530px) / 1530));
+}
+@media (max-width: 767px) {
+    .btn {
+        margin-top: calc(36 * (1px + (100vw - 430px) / 430));
+    }
+    .top > div:last-child {
+        margin-bottom: calc(13 * (1px + (100vw - 430px) / 430));
+        margin-top: calc(13 * (1px + (100vw - 430px) / 430));
+    }
+    .link {
+        font-size: calc(15 * (1px + (100vw - 430px) / 430));
+        margin-top: calc(42 * (1px + (100vw - 430px) / 430));
+    }
+    .linkIcon {
+        width: calc(10 * (1px + (100vw - 430px) / 430));
+        height: calc(10 * (1px + (100vw - 430px) / 430));
+        margin-left: calc(5 * (1px + (100vw - 430px) / 430));
+    }
+    .center {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .bg {
+        top: 24%;
+        width: 100%;
+        height: auto;
+    }
+    .cardsWrapper {
+        margin-top: calc(154 * (1px + (100vw - 430px) / 430));
+    }
+    .wrapper {
+        padding-bottom: calc(200 * (1px + (100vw - 430px) / 430));
+        overflow: hidden;
+    }
+}

@@ -18,7 +18,7 @@ export default {
       },
       spacing: {
         fluid: 'calc(var(--fluid-spacing) * (1px + (100vw - 1530px) / 1530))',
-        block: 'calc(80 * (1px + (100vw - 1530px) / 1530))'
+        block: 'calc(80 * (1px + (100vw - 1530px) / 1530))',
       },
       fontSize: {
         fluid: 'calc(var(--fluid-font-size) * (1px + (100vw - 1530px) / 1530))',

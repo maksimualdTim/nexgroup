@@ -8,3 +8,40 @@
     background: #FFFFFF2E;
     margin-top: calc(18 * (1px + (100vw - 1530px) / 1530));
 }
+
+.btn {
+    font-size: calc(18 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(40 * (1px + (100vw - 1530px) / 1530));
+}
+
+.icon {
+    width: calc(20 * (1px + (100vw - 1530px) / 1530));
+    height: calc(20 * (1px + (100vw - 1530px) / 1530));
+}
+.text {
+    font-size: calc(16 * (1px + (100vw - 1530px) / 1530));
+    margin-top: calc(10 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(20 * (1px + (100vw - 1530px) / 1530));
+}
+
+@media (max-width: 767px) {
+    .icon {
+        width: calc(20 * (1px + (100vw - 430px) / 430));
+        height: calc(20 * (1px + (100vw - 430px) / 430))
+    }
+    .btn {
+        font-size: calc(17 * (1px + (100vw - 430px) / 430));
+        line-height: calc(30 * (1px + (100vw - 430px) / 430));
+    }
+    .text {
+        font-size: calc(16 * (1px + (100vw - 430px) / 430));
+        margin-top: calc(10 * (1px + (100vw - 430px) / 430));
+        line-height: calc(20 * (1px + (100vw - 430px) / 430));
+    }
+    .answer::after {
+        margin-top: calc(18 * (1px + (100vw - 430px) / 430));
+    }
+    .answer {
+        margin-bottom: calc(12 * (1px + (100vw - 430px) / 430));
+    }
+}

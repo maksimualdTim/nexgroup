@@ -12,6 +12,10 @@ body {
   @apply bg-customBlack text-white;
 }
 
+header {
+  padding-top: calc(25 * (1px + (100vw - 1530px) / 1530));
+}
+
 .main-title > h1{
   font-size: calc(52 * (1px + (100vw - 1530px) / 1530));
   line-height: calc(50 * (1px + (100vw - 1530px) / 1530));
@@ -19,4 +23,43 @@ body {
 .header-btn > a {
   padding-top: calc(16 * (1px + (100vw - 1530px) / 1530));
   padding-bottom: calc(16 * (1px + (100vw - 1530px) / 1530));
+}
+
+
+@media (max-width: 767px) {
+  header {
+    padding-top: calc(28 * (1px + (100vw - 430px) / 430));
+  }
+  .px-fluid {
+      padding: 0;
+  }
+  .mobile-container {
+    padding-left: calc(25 * (1px + (100vw - 430px) / 430));
+    padding-right: calc(25 * (1px + (100vw - 430px) / 430));
+  }
+  .mobile-container-card {
+    padding-left: calc(17 * (1px + (100vw - 430px) / 430));
+    padding-right: calc(17 * (1px + (100vw - 430px) / 430));
+  }
+  .main-title > h1{
+    font-weight: 600;
+    font-size: calc(36 * (1px + (100vw - 430px) / 430));
+    line-height: calc(42 * (1px + (100vw - 430px) / 430));
+  }
+  .main-title > .subtitle {
+    font-size: calc(16 * (1px + (100vw - 430px) / 430));
+    line-height: calc(20 * (1px + (100vw - 430px) / 430));
+    margin-bottom: calc(28 * (1px + (100vw - 430px) / 430)) !important;
+  }
+  .main-title > .subtitle > img {
+    width: calc(14 * (1px + (100vw - 430px) / 430));
+    height: calc(14 * (1px + (100vw - 430px) / 430));
+    margin-right: calc(13 * (1px + (100vw - 430px) / 430));
+  }
+  .text-fluid {
+    font-size: calc(16 * (1px + (100vw - 430px) / 430));
+  }
+  .mb-fluid {
+    margin-bottom: calc(30 * (1px + (100vw - 430px) / 430));
+  }
 }

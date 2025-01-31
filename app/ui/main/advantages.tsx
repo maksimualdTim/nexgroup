@@ -1,18 +1,24 @@
+"use client";
 import Title from "../common/title";
 import MainText from "../common/mainText";
 import AdvantagesCard from "../common/advantages-card";
 import Button from "../common/button";
+import s from "../common/css/AdvantagesBlock.module.css";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 export default function Advantages() {
   return (
-    <div className="flex justify-between items-start py-block" id="advantages">
+    <div
+      className={`block justify-between items-start py-block md:flex mobile-container-card ${s.wrapper}`}
+      id="advantages"
+    >
       <div
-        className="text-fluid sticky"
-        style={{
-          top: "calc(85 * (1px + (100vw - 1530px) / 1530))",
-          paddingLeft: "calc(32 * (1px + (100vw - 1530px) / 1530))",
-          paddingBottom: "calc(5 * (1px + (100vw - 1530px) / 1530))"
-        }}
+        className={`text-fluid md:sticky ${s.sticky}`}
       >
         <div
           style={{ marginBottom: "calc(70 * (1px + (100vw - 1530px) / 1530))" }}
@@ -48,7 +54,7 @@ export default function Advantages() {
             ]}
           />
         </div>
-        <div>
+        <div className="hidden md:block">
           <Button
             link="/"
             isFull={false}
@@ -58,18 +64,7 @@ export default function Advantages() {
         </div>
       </div>
       <div
-        className="advantages-cards border-[1px] border-[#323232] w-[55%] relative"
-        style={{
-          borderRadius: "calc(30 * (1px + (100vw - 1530px) / 1530))",
-          paddingBottom: "calc(25 * (1px + (100vw - 1530px) / 1530))",
-          paddingTop: "calc(25 * (1px + (100vw - 1530px) / 1530))",
-          paddingLeft: "calc(23 * (1px + (100vw - 1530px) / 1530))",
-          paddingRight: "calc(32 * (1px + (100vw - 1530px) / 1530))",
-          borderRight: "0",
-          borderTopRightRadius: "0",
-          borderBottomRightRadius: "0",
-          top: "calc(20 * (1px + (100vw - 1530px) / 1530))"
-        }}
+        className={`advantages-cards hidden md:block border-[1px] border-[#323232] md:w-[55%] relative ${s.cards}`}
       >
         <div
           style={{ marginBottom: "calc(16 * (1px + (100vw - 1530px) / 1530))" }}
@@ -109,6 +104,60 @@ export default function Advantages() {
             text="Мы предоставляем техническую помощь и консультации на всех этапах внедрения и эксплуатации, гарантируя стабильную работу вашего бизнеса."
           />
         </div>
+      </div>
+      <div
+        className={`advantages-cards block md:hidden border-[1px] border-[#323232] md:w-[55%] relative ${s.cards}`}
+      >
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          spaceBetween={30}
+          slidesPerView={1}
+          autoplay={{ delay: 3000 }}
+          pagination={{ clickable: true }}
+          
+          loop={true}
+        >
+          <SwiperSlide>
+            <div>
+              <AdvantagesCard
+                iconPath="/icons/system.svg"
+                title="Снижаем риски и минимизируем ошибки"
+                subtitle="Только лучшие системы и сервисы"
+                text="Благодаря четким процессам и современным технологиям, мы помогаем вам избежать потерь из-за человеческого фактора и управленческих просчетов."
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div>
+              <AdvantagesCard
+                iconPath="/icons/eye.svg"
+                title="Контроль и прозрачность на каждом уровне"
+                subtitle="Управление бизнес-процессами"
+                text="Наши решения обеспечивают полный контроль над всеми процессами вашей компании,от взаимодействия с клиентами до внутренних операций."
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div>
+              <AdvantagesCard
+                iconPath="/icons/chart.svg"
+                title="Максимизация доходов вашего бизнеса"
+                subtitle="Цифровая трансформация"
+                text="Настраиваем внутренние процессы и коммуникации таким образом, чтобы ваш бизнес мог расти и зарабатывать больше без дополнительных затрат."
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div>
+              <AdvantagesCard
+                iconPath="/icons/head.svg"
+                title="Гарантированная техническая поддержка"
+                subtitle="Решаем любые проблемы"
+                text="Мы предоставляем техническую помощь и консультации на всех этапах внедрения и эксплуатации, гарантируя стабильную работу вашего бизнеса."
+              />
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   );

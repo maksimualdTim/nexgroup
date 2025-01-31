@@ -13,8 +13,7 @@ export default function Header() {
 
   return (
     <header
-      className={`relative ${active ? styles.active : ""}`}
-      style={{ paddingTop: "calc(25 * (1px + (100vw - 1530px) / 1530))" }}
+      className={`relative ${active ? styles.active : ""} mobile-container`}
     >
       <div className="flex items-center justify-between px-fluid z-50 relative">
         <div className="inline-block">
@@ -29,6 +28,18 @@ export default function Header() {
                   width: "calc(179 * (1px + (100vw - 1530px) / 1530))",
                   height: "calc(47 * (1px + (100vw - 1530px) / 1530))",
                 }}
+                className="hidden md:block"
+              />
+              <Image
+                className="block md:hidden"
+                src={"/logos/logo-mobile.svg"}
+                alt="logo"
+                width={96}
+                height={55}
+                style={{
+                  width: "calc(96 * (1px + (100vw - 430px) / 430))",
+                  height: "calc(55 * (1px + (100vw - 430px) / 430))",
+                }}
               />
             </div>
           </Link>
@@ -41,19 +52,20 @@ export default function Header() {
           }}
         >
           <Link
-            className={styles.allServicesLink}
+            className={`${styles.allServicesLink} hidden md:inline-block`}
             href={"#"}
             onClick={(e) => {
               e.preventDefault();
               const isActive = !active;
               setActive(isActive);
-              if(isActive) {
-                const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+              if (isActive) {
+                const scrollBarWidth =
+                  window.innerWidth - document.documentElement.clientWidth;
                 document.body.style.overflow = "hidden";
-                document.body.style.paddingRight = `${scrollBarWidth}px`
+                document.body.style.paddingRight = `${scrollBarWidth}px`;
               } else {
                 document.body.style.overflow = "";
-                document.body.style.paddingRight = "";                
+                document.body.style.paddingRight = "";
               }
             }}
             style={{
@@ -63,6 +75,7 @@ export default function Header() {
             Все услуги
           </Link>
           <Link
+            className="hidden md:inline-block"
             href={"/"}
             style={{
               marginRight: "calc(48 * (1px + (100vw - 1530px) / 1530))",
@@ -71,6 +84,7 @@ export default function Header() {
             Лицензии
           </Link>
           <Link
+          className="hidden md:inline-block"
             href={"/"}
             style={{
               marginRight: "calc(48 * (1px + (100vw - 1530px) / 1530))",
@@ -78,52 +92,22 @@ export default function Header() {
           >
             О компании
           </Link>
-          <Link href={"/"}>Контакты</Link>
+          <Link href={"/"} className="hidden md:inline-block">Контакты</Link>
         </div>
         <div
-          className="flex items-center"
-          style={{
-            marginRight: "calc(-60 * (1px + (100vw - 1530px) / 1530))",
-          }}
+          className={`flex items-center ${styles.mobileBtnContainer}`}
         >
-          <div
-            style={{
-              backdropFilter: "blur(50px)",
-              background: "rgba(255, 255, 255, 0.15)",
-              marginRight: "calc(4 * (1px + (100vw - 1530px) / 1530))",
-              borderRadius: "calc(10 * (1px + (100vw - 1530px) / 1530))",
-            }}
-          >
-            <Link
-              href={"/"}
-              className="w-full h-full inline-block font-semibold opacity-85 text-fluid"
-              style={{
-                fontSize: "calc(14 * (1px + (100vw - 1530px) / 1530))",
-                padding: "calc(10 * (1px + (100vw - 1530px) / 1530))",
-              }}
-            >
-              RU
-            </Link>
-          </div>
-          <div
-            style={{
-              border: "1px solid rgba(164, 164, 164, 0.29)",
-              borderRadius: "calc(10 * (1px + (100vw - 1530px) / 1530))",
-            }}
-          >
-            <Link
-              href={"/"}
-              className="w-full h-full inline-block text-fluid font-semibold opacity-85"
-              style={{
-                fontSize: "calc(14 * (1px + (100vw - 1530px) / 1530))",
-                padding: "calc(10 * (1px + (100vw - 1530px) / 1530))",
-              }}
-            >
-              UZ
-            </Link>
+          <Link href={"/"} className={`${styles.lang} ${styles.active}`}>
+            RU
+          </Link>
+          <Link href={"/"} className={styles.lang}>
+            UZ
+          </Link>
+          <div className={styles.menuBtn}>
+            <div className={styles.menuBtnLines}></div>
           </div>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center hidden md:flex">
           <div
             className="text-right flex flex-col"
             style={{
@@ -186,7 +170,7 @@ export default function Header() {
               top: "calc(-15 * (1px + (100vw - 1530px) / 1530))",
             }}
           >
-            <Lavr></Lavr>
+            <Lavr transparent={true}></Lavr>
           </div>
         </div>
         <div

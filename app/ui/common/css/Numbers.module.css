@@ -50,3 +50,85 @@
     right: calc(62 * (1px + (100vw - 1530px) / 1530));
     bottom: 0;
 }
+
+.servicesText {
+    margin-top: calc(41 * (1px + (100vw - 1530px) / 1530));
+    font-size: calc(15 * (1px + (100vw - 1530px) / 1530));
+}
+
+.icon {
+    width: calc(10 * (1px + (100vw - 1530px) / 1530));
+    height: calc(10 * (1px + (100vw - 1530px) / 1530));
+    margin-left: calc(5 * (1px + (100vw - 1530px) / 1530));
+}
+
+@media (max-width: 767px) {
+    .servicesText {
+        margin-top: calc(73 * (1px + (100vw - 430px) / 430));
+        font-size: calc(17 * (1px + (100vw - 430px) / 430));
+        line-height: calc(19 * (1px + (100vw - 430px) / 430));
+    }
+    .icon {
+        width: calc(10 * (1px + (100vw - 430px) / 430));
+        height: calc(10 * (1px + (100vw - 430px) / 430));
+        margin-left: calc(7 * (1px + (100vw - 430px) / 430));
+    }
+    .projectsNumber {
+        font-size: calc(210 * (1px + (100vw - 430px) / 430));
+        line-height: calc(250 * (1px + (100vw - 430px) / 430));
+    }
+    .wrapper {
+        background: linear-gradient(180deg, #000000 0%, #0E0E0E 100%);
+        padding-top: calc(130 * (1px + (100vw - 430px) / 430));
+    }
+    .period {
+        border-radius: calc(100 * (1px + (100vw - 430px) / 430));
+        padding-top: calc(14 * (1px + (100vw - 430px) / 430));
+        padding-bottom: calc(14 * (1px + (100vw - 430px) / 430));
+        padding-right: calc(27 * (1px + (100vw - 430px) / 430));
+        padding-left: calc(27 * (1px + (100vw - 430px) / 430));
+        font-size: calc(16 * (1px + (100vw - 430px) / 430));
+        line-height: calc(22 * (1px + (100vw - 430px) / 430));
+        font-weight: 600;
+    }
+    .projectsNumberMini {
+        font-size: calc(50 * (1px + (100vw - 430px) / 430));
+        line-height: calc(92 * (1px + (100vw - 430px) / 430));
+    }
+    .mobileTop {
+        padding-bottom: calc(43 * (1px + (100vw - 430px) / 430));
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(90deg, #060606 0%, #424242 61.11%, #0E0E0E 100%);
+    }
+    .vint {
+        opacity: .2;
+        width: calc(910 * (1px + (100vw - 430px) / 430));
+        height: calc(726 * (1px + (100vw - 430px) / 430));
+        top: 0;
+        left: calc(-264 * (1px + (100vw - 430px) / 430));
+    }
+
+    .vint > img {
+        width: calc(910 * (1px + (100vw - 430px) / 430));
+        height: calc(726 * (1px + (100vw - 430px) / 430));
+    }
+    .subtitle > .advantages-text > div:first-child {
+        margin-bottom: calc(60 * (1px + (100vw - 430px) / 430));
+    }
+    .mobileLeft {
+        border-image-source: linear-gradient(0deg, #0E0E0E 0%, #424242 100%);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-image-slice: 1;
+        padding-right: calc(19 * (1px + (100vw - 430px) / 430));
+    }
+    .mobileRight {
+        padding-left: calc(19 * (1px + (100vw - 430px) / 430));
+    }
+    .periodMin {
+        font-size: calc(13 * (1px + (100vw - 430px) / 430));
+        font-weight: 600;
+    }
+}

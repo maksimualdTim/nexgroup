@@ -8,7 +8,7 @@ export default function ServiceHeaderCard({link, iconWidth, iconHeight, text, ti
             <div className="flex justify-between items-center">
                 <Image src={logo} alt="amo" width={0} height={0} style={{
                     width: `calc(${iconWidth} * (1px + (100vw - 1530px) / 1530))`,
-                    height: `calc(${iconHeight} * (1px + (100vw - 1530px) / 1530));`
+                    height: `calc(${iconHeight} * (1px + (100vw - 1530px) / 1530))`
                 }} className={`${!isSklad && "opacity-50"}`}></Image>
                 <Image className={styles.icon} src={"/icons/arrow-diag.svg"} alt="arrow" width={20} height={20}></Image>
             </div>

@@ -1,3 +1,6 @@
+.footer {
+    padding-bottom: calc(28 * (1px + (100vw - 1530px) / 1530));
+}
 .title {
     font-weight: 600;
     font-size: calc(19 * (1px + (100vw - 1530px) / 1530));
@@ -17,4 +20,129 @@
     height: calc(20 * (1px + (100vw - 1530px) / 1530));
     position: relative;
     top: calc(-2 * (1px + (100vw - 1530px) / 1530));;
+}
+
+.text {
+    line-height: calc(20 * (1px + (100vw - 1530px) / 1530));
+    max-width: calc(230 * (1px + (100vw - 1530px) / 1530));
+    margin-top: calc(33 * (1px + (100vw - 1530px) / 1530));
+}
+.linkList > li {
+    margin-bottom: calc(30 * (1px + (100vw - 1530px) / 1530));
+}
+.linkList > li:last-child {
+    margin-bottom: 0;
+}
+.flexContainer {
+    padding-right: calc(108 * (1px + (100vw - 1530px) / 1530));
+}
+.infoBig {
+    font-size: calc(20 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(9 * (1px + (100vw - 1530px) / 1530));
+    font-weight: 500;
+}
+.infoBigWrapper {
+    margin-bottom: calc(23 * (1px + (100vw - 1530px) / 1530));
+}
+.icon {
+    width: calc(32 * (1px + (100vw - 1530px) / 1530));
+    height: calc(32 * (1px + (100vw - 1530px) / 1530));
+    margin-right: calc(10 * (1px + (100vw - 1530px) / 1530));
+}
+.logo {
+    width: calc(179 * (1px + (100vw - 1530px) / 1530));
+    height: calc(47 * (1px + (100vw - 1530px) / 1530));
+}
+.copyright {
+    font-size: calc(14 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(19 * (1px + (100vw - 1530px) / 1530));
+}
+.copyrightWrapper {
+    margin-top: calc(76 * (1px + (100vw - 1530px) / 1530));
+}
+.socialWrapper {
+    margin-bottom: calc(22 * (1px + (100vw - 1530px) / 1530));
+}
+.socialLi {
+    margin-bottom: calc(41 * (1px + (100vw - 1530px) / 1530));
+}
+.site {
+    font-size: calc(14 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(19 * (1px + (100vw - 1530px) / 1530));
+}
+@media (max-width: 767px) {
+    .footer {
+        padding-bottom: calc(28 * (1px + (100vw - 430px) / 430));
+    }
+    .text {
+        line-height: calc(23 * (1px + (100vw - 430px) / 430));
+        font-size: calc(17 * (1px + (100vw - 430px) / 430));
+        margin-top: calc(34 * (1px + (100vw - 430px) / 430));
+        max-width: calc(247 * (1px + (100vw - 430px) / 430));
+    }
+    .title {
+        font-weight: 600;
+        font-size: calc(20 * (1px + (100vw - 430px) / 430));
+        line-height: calc(9 * (1px + (100vw - 430px) / 430));
+        margin-bottom: calc(55 * (1px + (100vw - 430px) / 430));
+    }
+    .link {
+        font-size: calc(16 * (1px + (100vw - 430px) / 430));
+        line-height: calc(9 * (1px + (100vw - 430px) / 430));
+    }
+    .linkList > li {
+        margin-bottom: calc(30 * (1px + (100vw - 430px) / 430));
+    }
+    .flexContainer {
+        padding-right: 0;
+        margin-top: calc(73 * (1px + (100vw - 430px) / 430));
+        justify-content: space-between;
+    }
+    .infoBig {
+        font-size: calc(23 * (1px + (100vw - 430px) / 430));
+        line-height: calc(9 * (1px + (100vw - 430px) / 430));
+        font-weight: 500;
+    }
+    .infoBigWrapper {
+        margin-bottom: calc(25 * (1px + (100vw - 430px) / 430));
+    }
+    .icon {
+        width: calc(32 * (1px + (100vw - 430px) / 430));
+        height: calc(32 * (1px + (100vw - 430px) / 430));
+        margin-right: calc(10 * (1px + (100vw - 430px) / 430));
+    }
+    .logo {
+        width: calc(179 * (1px + (100vw - 430px) / 430));
+        height: calc(47 * (1px + (100vw - 430px) / 430));
+    }
+    .copyright {
+        font-size: calc(14 * (1px + (100vw - 430px) / 430));
+        line-height: calc(19 * (1px + (100vw - 430px) / 430));
+        margin-top: calc(24 * (1px + (100vw - 430px) / 430));
+        margin-bottom: calc(10 * (1px + (100vw - 430px) / 430));
+    }
+    .copyrightWrapper {
+        margin-top: calc(92 * (1px + (100vw - 430px) / 430));
+    }
+    .socialWrapper {
+        margin-bottom: calc(30 * (1px + (100vw - 430px) / 430));
+    }
+    .socialLi {
+        margin-bottom: calc(41 * (1px + (100vw - 430px) / 430));
+    }
+    .lastColumn {
+        margin-top: calc(93 * (1px + (100vw - 430px) / 430));
+    }
+    .site {
+        font-size: calc(14 * (1px + (100vw - 430px) / 430));
+        line-height: calc(19 * (1px + (100vw - 430px) / 430));
+    }
+    .formTitle {
+        line-height: calc(40 * (1px + (100vw - 430px) / 430));
+        font-size: calc(24 * (1px + (100vw - 430px) / 430));
+        margin-top: calc(20 * (1px + (100vw - 430px) / 430));
+    }
+    .formWrapper {
+        margin-top: calc(119 * (1px + (100vw - 430px) / 430));
+    }
 }

@@ -4,18 +4,19 @@ import ServiceCardLong from "../common/service-card-long";
 import ServiceCardShort from "../common/service-card-short";
 import Button from "../common/button";
 import Image from "next/image";
+import s from "../common/css/ServicesBlock.module.css";
 
 export default function Services() {
     return (
-        <div className="py-block px-fluid" id="services">
-            <div className="flex justify-between" style={{marginBottom: "calc(80 * (1px + (100vw - 1530px) / 1530))"}}>
-                <div>
+        <div className="py-block px-fluid mobile-container-card" id="services">
+            <div className={`flex justify-between ${s.top}`} style={{marginBottom: "calc(80 * (1px + (100vw - 1530px) / 1530))"}}>
+                <div className={s.topContainer}>
                     <MainText 
                     text={[<p key={1}>Внедряем эффективные решения для автоматизации процессов, улучшения коммуникации, а также роста и развития вашего бизнеса.</p>]} 
                     order={2}
                     />
                 </div>
-                <div className="text-right">
+                <div className="text-left md:text-right">
                     <Title 
                     title="Предлагаемые услуги по"
                     title2="разработке и автоматизации"
@@ -24,8 +25,8 @@ export default function Services() {
                 </div>
             </div>
             <div>
-                <div className="flex justify-between" style={{marginBottom: "calc(24 * (1px + (100vw - 1530px) / 1530))", minHeight: "calc(436 * (1px + (100vw - 1530px) / 1530))"}}>
-                    <div className="w-[66%]">
+                <div className={`flex justify-between flex-col md:flex-row ${s.rowFirst}`}>
+                    <div className="w-[100%] md:w-[66%]">
                         <ServiceCardLong
                         link="/"
                         title="Внедрение CRM-системы"
@@ -38,7 +39,7 @@ export default function Services() {
                         image="/amo.png"
                         />
                     </div>
-                    <div className="w-[33%]">
+                    <div className="w-[100%] md:w-[33%]">
                     <ServiceCardShort
                         link="/"
                         title="Внедрение системы МойСклад"
@@ -52,8 +53,8 @@ export default function Services() {
                         />
                     </div>
                 </div>
-                <div className="flex justify-between" style={{minHeight: "calc(436 * (1px + (100vw - 1530px) / 1530))"}}>
-                    <div className="w-[33%]">
+                <div className={`flex justify-between flex-col md:flex-row ${s.rowSecond}`} style={{minHeight: "calc(436 * (1px + (100vw - 1530px) / 1530))"}}>
+                    <div className="w-[100%] md:w-[33%]">
                         <ServiceCardShort
                         link="/"
                         title="Внедрение IP-телефонии"
@@ -66,7 +67,7 @@ export default function Services() {
                         image="/utel.png"
                         />
                     </div>
-                    <div className="w-[66%]">
+                    <div className="w-[100%] md:w-[66%]">
                         <ServiceCardLong
                         link="/"
                         title="Разработка веб-сайтов"
@@ -81,7 +82,7 @@ export default function Services() {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-between items-center" style={{marginTop: "calc(64 * (1px + (100vw - 1530px) / 1530))"}}>
+            <div className="block md:flex justify-between items-center" style={{marginTop: "calc(64 * (1px + (100vw - 1530px) / 1530))"}}>
                 <div>
                     <Button 
                     text="Обсудить проект"
@@ -90,16 +91,13 @@ export default function Services() {
                     isFull={true}
                     />
                 </div>
-                <div>
+                <div className={s.logoWrapper}>
                     <Image 
                     src={"/logos/nex.svg"}
                     alt="logo"
                     width={0}
                     height={0}
-                    style={{
-                        width: "calc(69 * (1px + (100vw - 1530px) / 1530))",
-                        height: "calc(19 * (1px + (100vw - 1530px) / 1530))"
-                    }}
+                    className={s.logo}
                     />
                 </div>
             </div>

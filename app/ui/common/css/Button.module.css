@@ -12,3 +12,45 @@
     height: calc(11 * (1px + (100vw - 1530px) / 1530));
     margin-left: calc(11 * (1px + (100vw - 1530px) / 1530));
 }
+.telegramIcon {
+    width: calc(26 * (1px + (100vw - 1530px) / 1530));
+    height: calc(26 * (1px + (100vw - 1530px) / 1530));
+    margin-right: calc(10 * (1px + (100vw - 1530px) / 1530));
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(25 * (1px + (100vw - 1530px) / 1530));
+}
+.telegramButton {
+    padding-left: calc(65 * (1px + (100vw - 1530px) / 1530));
+    border-color: #404040;
+}
+
+@media (max-width: 767px) {
+    .button {
+        font-size: calc(17 * (1px + (100vw - 430px) / 430));
+        line-height: calc(9 * (1px + (100vw - 430px) / 430));
+        padding-top: calc(33 * (1px + (100vw - 430px) / 430));
+        padding-bottom: calc(33 * (1px + (100vw - 430px) / 430));
+        padding-right: calc(40 * (1px + (100vw - 430px) / 430));
+        padding-left: calc(40 * (1px + (100vw - 430px) / 430));
+        border-radius: calc(100 * (1px + (100vw - 430px) / 430));
+    }
+    .icon {
+        width: calc(11 * (1px + (100vw - 430px) / 430));
+        height: calc(11 * (1px + (100vw - 430px) / 430));
+        margin-left: calc(11 * (1px + (100vw - 430px) / 430));
+    }
+
+    .telegramIcon {
+        width: calc(26 * (1px + (100vw - 430px) / 430));
+        height: calc(26 * (1px + (100vw - 430px) / 430));
+        margin-right: calc(10 * (1px + (100vw - 430px) / 430));
+        top: 50%;
+        transform: translateY(-50%);
+        left: calc(25 * (1px + (100vw - 430px) / 430));
+    }
+    .telegramButton {
+        padding-left: calc(65 * (1px + (100vw - 430px) / 430));
+        border-color: #404040;
+    }
+}

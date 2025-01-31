@@ -7,13 +7,13 @@ import Link from "next/link";
 import { useState } from "react";
 
 
-export default function FooterForm() {
+export default function FooterForm({text = "Отправить"} : {text?: string}) {
   const [phone, setPhone] = useState("");
   const [name, setName] = useState("");
   const [comment, setComment] = useState("");
 
   return (
-    <form action="">
+    <form action="" className={formStyles.form}>
       <div className={`${formStyles["input-container"]} ${name.length == 0 ? "": formStyles.active}`}>
         <label className={`text-fluid ${formStyles.label}`} htmlFor="name">
           Ваше имя*
@@ -51,9 +51,6 @@ export default function FooterForm() {
           onInput={(e) => setComment(e.currentTarget.value.trim())}
           id="comment"
           className={`text-fluid ${formStyles.textarea}`}
-          style={{
-            height: "calc(96 * (1px + (100vw - 1530px) / 1530))",
-          }}
         ></textarea>
       </div>
       <button
@@ -63,7 +60,7 @@ export default function FooterForm() {
             marginBottom: "calc(70 * (1px + (100vw - 1530px) / 1530))"
         }}
       >
-        Отправить{" "}
+        {text}{" "}
         <Image
           src={"/icons/arrow-right-btn.svg"}
           alt="arrow"
@@ -73,11 +70,7 @@ export default function FooterForm() {
         />
       </button>
       <div
-        className="text-[#666666] font-semibold"
-        style={{
-          fontSize: "calc(14 * (1px + (100vw - 1530px) / 1530))",
-          lineHeight: "calc(17 * (1px + (100vw - 1530px) / 1530))",
-        }}
+        className={`text-[#666666] font-semibold ${formStyles.google}`}
       >
         Наш сайт защищен с помощью reCAPTCHA и соответствует 
         <Link target="_blank" href={"https://policies.google.com/privacy"}>Политике конфиденциальности</Link> и <Link target="_blank" href={"https://policies.google.com/terms;%20target="}>Условиям

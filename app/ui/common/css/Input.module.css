@@ -28,6 +28,7 @@
     color: white;
     resize: none;
     padding-top: calc(10 * (1px + (100vw - 1530px) / 1530));
+    height: calc(96 * (1px + (100vw - 1530px) / 1530));
 }
 .input-container {
     vertical-align: top;
@@ -40,4 +41,42 @@
     font-size: calc(12 * (1px + (100vw - 1530px) / 1530));
     top: calc(-10 * (1px + (100vw - 1530px) / 1530));
     transition: .3s;   
+}
+.google {
+    font-size: calc(14 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(17 * (1px + (100vw - 1530px) / 1530));
+}
+@media (max-width: 767px) {
+    .google {
+        font-size: calc(14 * (1px + (100vw - 430px) / 430));
+        line-height: calc(17 * (1px + (100vw - 430px) / 430));
+        max-width: calc(300 * (1px + (100vw - 430px) / 430));
+        margin-top: calc(38 * (1px + (100vw - 430px) / 430));
+        margin-bottom: calc(104 * (1px + (100vw - 430px) / 430));
+    }
+    .label {
+        z-index: 0;
+    }
+    .input-container {
+        margin-bottom: calc(34 * (1px + (100vw - 430px) / 430));
+    }
+    .input {
+        height: calc(46 * (1px + (100vw - 430px) / 430));
+        position: relative;
+    }
+
+    .input-container:focus-within label,
+    .input-container.active label {
+        font-size: calc(12 * (1px + (100vw - 430px) / 430));
+        top: calc(-10 * (1px + (100vw - 430px) / 430));
+    }
+
+    .textarea {
+        padding-top: calc(10 * (1px + (100vw - 430px) / 430));
+        height: calc(96 * (1px + (100vw - 430px) / 430));
+        position: relative;
+    }
+    .form {
+        margin-top: calc(65 * (1px + (100vw - 430px) / 430));
+    }
 }

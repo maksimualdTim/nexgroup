@@ -31,10 +31,9 @@ export default function Title({
   }
 
   return (
-    <>
+    <div className={styles.wrapper}>
       <div
-        className="subtitle text-fluid font-semibold"
-        style={{ marginBottom: "calc(24 * (1px + (100vw - 1530px) / 1530))" }}
+        className={`subtitle text-fluid font-semibold ${styles.subtitle}`}
       >
         {iconLeft && image}
         <span
@@ -46,14 +45,14 @@ export default function Title({
         {!iconLeft && image}
       </div>
       {isMain ? (
-        <h1 className="title leading-title font-bold text-title">
-          {title} <span className="block opacity-50">{title2}</span>
+        <h1 className={`title leading-title font-bold text-title ${styles.title}`}>
+          {title} <span className="inline opacity-50 md:block">{title2}</span>
         </h1>
       ) : (
-        <h3 className="title leading-title font-bold text-title">
-          {title} <span className="block opacity-50">{title2}</span>
+        <h3 className={`title leading-title font-bold text-title ${styles.title}`}>
+          {title} <span className="inline opacity-50 md:block">{title2}</span>
         </h3>
       )}
-    </>
+    </div>
   );
 }

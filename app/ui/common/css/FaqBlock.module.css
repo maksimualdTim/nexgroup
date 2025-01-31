@@ -1,0 +1,15 @@
+.qWrapper {
+    margin-top: calc(62 * (1px + (100vw - 1530px) / 1530));
+}
+.qTitle {
+    margin-bottom: calc(6 * (1px + (100vw - 1530px) / 1530));
+}
+
+@media (max-width: 767px) {
+    .qWrapper {
+        margin-top: calc(71 * (1px + (100vw - 430px) / 430));
+    }
+    .qTitle {
+        margin-bottom: calc(17 * (1px + (100vw - 430px) / 430));
+    }
+}

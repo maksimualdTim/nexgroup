@@ -2,14 +2,21 @@ import Link from "next/link";
 import Title from "../common/title";
 import styles from "../common/css/Footer.module.css";
 import Image from "next/image";
+import FooterForm from "../common/footer-form";
 
 export default function Footer() {
   return (
     <div
-    className="px-fluid"
-      style={{ paddingBottom: "calc(28 * (1px + (100vw - 1530px) / 1530))" }}
+      className={`px-fluid mobile-container ${styles.footer}`}
     >
-      <div className="flex justify-between">
+      <div className={`block md:hidden ${styles.formWrapper}`}>
+        <div>
+          <div className="text-accent">Форма для связи</div>
+          <div className={`${styles.formTitle} font-semibold`}>Обсудим ваш проект?</div>
+        </div>
+        <FooterForm text="Оставить заявку"></FooterForm>
+      </div>      
+      <div className="block md:flex justify-between">
         <div>
           <div className={styles.subtitle}>
             <Title
@@ -19,28 +26,20 @@ export default function Footer() {
               icon="/icons/light.svg"
             />
           </div>
-          <div
-            className="font-semibold opacity-50 text-fluid"
-            style={{
-              lineHeight: "calc(20 * (1px + (100vw - 1530px) / 1530))",
-              maxWidth: "calc(230 * (1px + (100vw - 1530px) / 1530))",
-              marginTop: "calc(33 * (1px + (100vw - 1530px) / 1530))",
-            }}
-          >
+          <div className={`font-semibold opacity-50 text-fluid ${styles.text}`}>
             Сильный бизнес начинается с правильных IT-решений
           </div>
         </div>
         <div
-          className="flex relative"
+          className={`flex relative flex-wrap ${styles.flexContainer}`}
           style={{
             columnGap: "calc(91 * (1px + (100vw - 1530px) / 1530))",
             top: "calc(40 * (1px + (100vw - 1530px) / 1530))",
-            paddingRight: "calc(108 * (1px + (100vw - 1530px) / 1530))"
           }}
         >
           <div className="column">
             <div className={styles.title}>Навигация</div>
-            <ul>
+            <ul className={styles.linkList}>
               <li
                 style={{
                   marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
@@ -129,64 +128,33 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="column">
+          <div className={`column ${styles.lastColumn}`}>
             <div className={styles.title}>Контакты</div>
             <ul>
-              <li
-                style={{
-                  marginBottom: "calc(41 * (1px + (100vw - 1530px) / 1530))",
-                }}
-              >
-                <div
-                  className={styles.link}
-                  style={{
-                    marginBottom: "calc(23 * (1px + (100vw - 1530px) / 1530))",
-                  }}
-                >
+              <li className={styles.socialLi}>
+                <div className={`${styles.link} ${styles.infoBigWrapper}`}>
                   Номер телефона
                 </div>
                 <Link
-                  style={{
-                    fontSize: "calc(20 * (1px + (100vw - 1530px) / 1530))",
-                    lineHeight: "calc(9 * (1px + (100vw - 1530px) / 1530))",
-                    fontWeight: 500,
-                  }}
+                  className={styles.infoBig}
                   href={"tel:+998 (90) 333-77-39"}
                 >
                   +998 (90) 333-77-39
                 </Link>
               </li>
-              <li
-                style={{
-                  marginBottom: "calc(41 * (1px + (100vw - 1530px) / 1530))",
-                }}
-              >
-                <div
-                  className={styles.link}
-                  style={{
-                    marginBottom: "calc(23 * (1px + (100vw - 1530px) / 1530))",
-                  }}
-                >
+              <li className={styles.socialLi}>
+                <div className={`${styles.link} ${styles.infoBigWrapper}`}>
                   Электронная почта
                 </div>
                 <Link
                   href={"mailto:info@nexgroup.uz"}
-                  style={{
-                    fontSize: "calc(20 * (1px + (100vw - 1530px) / 1530))",
-                    lineHeight: "calc(9 * (1px + (100vw - 1530px) / 1530))",
-                    fontWeight: 500,
-                  }}
+                  className={styles.infoBig}
                 >
                   info@nexgroup.uz
                 </Link>
               </li>
               <li>
-                <div
-                  className={styles.link}
-                  style={{
-                    marginBottom: "calc(22 * (1px + (100vw - 1530px) / 1530))",
-                  }}
-                >
+                <div className={`${styles.link} ${styles.socialWrapper}`}>
                   Социальные сети
                 </div>
                 <Link target="_blank" href={"https://t.me/nexgroup_support"}>
@@ -195,12 +163,7 @@ export default function Footer() {
                     width={32}
                     height={32}
                     alt="telegram"
-                    className="inline-block"
-                    style={{
-                      width: "calc(32 * (1px + (100vw - 1530px) / 1530))",
-                      height: "calc(32 * (1px + (100vw - 1530px) / 1530))",
-                      marginRight: "calc(10 * (1px + (100vw - 1530px) / 1530))",
-                    }}
+                    className={`inline-block ${styles.icon}`}
                   />
                 </Link>
                 <Link
@@ -212,11 +175,7 @@ export default function Footer() {
                     width={32}
                     height={32}
                     alt="instagram"
-                    className="inline-block"
-                    style={{
-                      width: "calc(32 * (1px + (100vw - 1530px) / 1530))",
-                      height: "calc(32 * (1px + (100vw - 1530px) / 1530))",
-                    }}
+                    className={`inline-block ${styles.icon}`}
                   />
                 </Link>
               </li>
@@ -225,8 +184,7 @@ export default function Footer() {
         </div>
       </div>
       <div
-        className="flex justify-between items-end"
-        style={{ marginTop: "calc(76 * (1px + (100vw - 1530px) / 1530))" }}
+        className={`block md:flex justify-between items-end ${styles.copyrightWrapper}`}
       >
         <div>
           <div
@@ -241,30 +199,17 @@ export default function Footer() {
                   alt="logo"
                   width={0}
                   height={0}
-                  style={{
-                    width: "calc(179 * (1px + (100vw - 1530px) / 1530))",
-                    height: "calc(47 * (1px + (100vw - 1530px) / 1530))",
-                  }}
+                  className={styles.logo}
                 />
               </div>
             </Link>
           </div>
-          <div
-            className="text-[#7C7C7C] font-medium"
-            style={{
-              fontSize: "calc(14 * (1px + (100vw - 1530px) / 1530))",
-              lineHeight: "calc(19 * (1px + (100vw - 1530px) / 1530))",
-            }}
-          >
+          <div className={`text-[#7C7C7C] font-medium ${styles.copyright}`}>
             © NEX GROUP 2025. Все права защищены.
           </div>
         </div>
         <div
-          className="text-[#4A4A4A] font-medium"
-          style={{
-            fontSize: "calc(14 * (1px + (100vw - 1530px) / 1530))",
-            lineHeight: "calc(19 * (1px + (100vw - 1530px) / 1530))",
-          }}
+          className={`text-[#4A4A4A] font-medium ${styles.site}`}
         >
           www.nexgroup.uz
         </div>

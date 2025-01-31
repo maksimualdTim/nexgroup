@@ -28,8 +28,7 @@ export default function MainText({
         <span className="text-fluid"> /</span>
       </div>
       <div
-        className="opacity-70 text-fluid"
-        style={{ lineHeight: "calc(24 * (1px + (100vw - 1530px) / 1530))" }}
+        className={`opacity-70 text-fluid ${styles.text}`}
       >
         {text}
       </div>

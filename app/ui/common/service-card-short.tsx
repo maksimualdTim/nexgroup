@@ -27,16 +27,14 @@ export default function ServiceCardShort({
   return (
     <Link
       href={link}
-      className={`w-full h-full bg-cover bg-center bg-no-repeat inline-block flex flex-col justify-between ${styles.card}`}
+      className={`w-full h-full bg-cover bg-center bg-no-repeat inline-block flex flex-col-reverse md:flex-col justify-between ${styles.card}`}
       style={{
         backgroundImage: `url('${image}'), linear-gradient(180deg, #1E1E1E 0%, #373737 100%)`,
       }}
     >
       <div className="flex justify-between">
         <div
-          style={{
-            maxWidth: "calc(302 * (1px + (100vw - 1530px) / 1530))",
-          }}
+        className={styles.container}
         >
           <div
             className="font-semibold text-fluid opacity-50"
@@ -50,13 +48,12 @@ export default function ServiceCardShort({
             {title}
           </h4>
           <div
-            className="opacity-50 font-semibold text-fluid"
-            style={{ lineHeight: "calc(24 * (1px + (100vw - 1530px) / 1530))" }}
+            className={`opacity-50 font-semibold text-fluid ${styles.text}`}
           >
             {text}
           </div>
         </div>
-        <div>
+        <div className={styles.logo}>
           <Image
             src={logo}
             alt="logo"
@@ -69,15 +66,14 @@ export default function ServiceCardShort({
           />
         </div>
       </div>
-      <div className="flex justify-between items-end">
+      <div className="flex justify-between items-start md:items-end">
         <div
           className={`inline-block ${styles.period}`}
         >
           {period}
         </div>
         <div
-          className="border rounded-full"
-          style={{ padding: "calc(48 * (1px + (100vw - 1530px) / 1530))" }}
+          className={`border rounded-full ${styles.btn}`}
         >
           <div>
             <Image
@@ -85,10 +81,7 @@ export default function ServiceCardShort({
               alt="arrow"
               width={0}
               height={0}
-              style={{
-                width: "calc(13 * (1px + (100vw - 1530px) / 1530))",
-                height: "calc(13 * (1px + (100vw - 1530px) / 1530))",
-              }}
+              className={styles.arrow}
             />
           </div>
         </div>

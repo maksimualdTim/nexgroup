@@ -1,3 +1,6 @@
+.text {
+    line-height: calc(24 * (1px + (100vw - 1530px) / 1530));
+}
 .egs {
     width: calc(8 * (1px + (100vw - 1530px) / 1530));
     height: calc(8 * (1px + (100vw - 1530px) / 1530));
@@ -6,4 +9,21 @@
 }
 .advantages-text {
     max-width: calc(446 * (1px + (100vw - 1530px) / 1530));
+}
+
+@media (max-width: 767px) {
+    .text {
+        line-height: calc(22 * (1px + (100vw - 430px) / 430));
+        margin-top: calc(30 * (1px + (100vw - 430px) / 430));
+    }
+    .egs {
+        width: calc(9 * (1px + (100vw - 430px) / 430));
+        height: calc(9 * (1px + (100vw - 430px) / 430));
+        margin-left: calc(3 * (1px + (100vw - 430px) / 430));
+        margin-right: calc(3 * (1px + (100vw - 430px) / 430));
+    }
+    .advantages-text {
+        max-width: 100%;
+        margin-top: calc(42 * (1px + (100vw - 430px) / 430));
+    }
 }

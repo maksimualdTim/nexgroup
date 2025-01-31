@@ -1,0 +1,46 @@
+.mainContainer {
+    padding-bottom: calc(85 * (1px + (100vw - 1530px) / 1530));
+}
+.mainBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: calc(390 * (1px + (100vw - 1530px) / 1530));
+    z-index: 10;
+    position: relative;
+}
+
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+    margin-top: calc(46 * (1px + (100vw - 1530px) / 1530));
+}
+.video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;    
+    opacity: .3;
+}
+@media (max-width: 767px) {
+    .mainBlock {
+        margin-top: calc(287 * (1px + (100vw - 430px) / 430));
+    }
+    .buttonsContainer {
+        display: block;
+        margin-top: calc(52 * (1px + (100vw - 430px) / 430));
+    }
+    .buttonsContainer > div:last-child {
+        margin-top: calc(17 * (1px + (100vw - 430px) / 430));
+    }
+    .mainContainer {
+        padding-bottom: calc(55 * (1px + (100vw - 430px) / 430));
+    }
+    .video {
+        height: 100%;
+    }
+}

@@ -6,7 +6,7 @@ import Image from "next/image";
 import Button from "../common/button";
 import Lavr from "./lavr";
 import ServiceHeaderCard from "./ServiceHeaderCard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TelegramButton from "./telegramButton";
 
 export default function Header() {
@@ -14,9 +14,11 @@ export default function Header() {
   const [activeMobileBtn, setActiveMobileBtn] = useState(false);
   const [activeSubitem, setActiveSubitem] = useState(false);
 
-  if(!activeMobileBtn && !active) {
-    document.body.style.overflow = "";
-  }
+  useEffect(() => {
+    if(!activeMobileBtn && !active) {
+      document.body.style.overflow = "";
+    }
+  })
   
   return (
     <div className="relative">

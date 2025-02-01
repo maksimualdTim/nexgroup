@@ -14,6 +14,9 @@ export default function Header() {
   const [activeMobileBtn, setActiveMobileBtn] = useState(false);
   const [activeSubitem, setActiveSubitem] = useState(false);
 
+  document.body.style.overflow = "";
+  document.body.style.paddingRight = "";
+  
   return (
     <div className="relative">
       <header className={`relative ${active ? styles.active : ""} ${activeMobileBtn ? styles.mobileActive : ""}`}>
@@ -88,7 +91,7 @@ export default function Header() {
               </Link>
               <Link
                 className="hidden md:inline-block"
-                href={"/"}
+                href={"/about"}
                 style={{
                   marginRight: "calc(48 * (1px + (100vw - 1530px) / 1530))",
                 }}
@@ -238,7 +241,7 @@ export default function Header() {
                 </Link>
               </li>
               <li className={styles.mobileMenuItem}>
-                <Link className={styles.mobileMenuLink} href={"/"}>
+                <Link className={styles.mobileMenuLink} href={"/about"}>
                   О компании
                 </Link>
               </li>

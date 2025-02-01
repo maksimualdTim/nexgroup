@@ -247,6 +247,7 @@
         height: 100vh;
         backdrop-filter: blur(50px);
         background: #000000D4;
+        z-index: 100;
     }
     .mobileMenu.mobileMenuActive {
         padding-top: calc(146 * (1px + (100vw - 430px) / 430));

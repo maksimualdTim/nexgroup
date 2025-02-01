@@ -72,7 +72,7 @@ export default function Footer() {
                   marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
                 }}
               >
-                <Link href={"/"} className={styles.link}>
+                <Link href={"/about"} className={styles.link}>
                   О компании
                 </Link>
               </li>

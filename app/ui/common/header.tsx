@@ -14,8 +14,9 @@ export default function Header() {
   const [activeMobileBtn, setActiveMobileBtn] = useState(false);
   const [activeSubitem, setActiveSubitem] = useState(false);
 
-  document.body.style.overflow = "";
-  document.body.style.paddingRight = "";
+  if(!activeMobileBtn && !active) {
+    document.body.style.overflow = "";
+  }
   
   return (
     <div className="relative">

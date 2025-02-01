@@ -41,9 +41,8 @@ export default function Home() {
   ];
   return (
     <>
-      <div
+      <div className="relative"
         style={{
-          position: "relative",
           background:
             "linear-gradient(180deg, rgba(0, 0, 0, 0) 53.66%, #000000 100%);",
         }}

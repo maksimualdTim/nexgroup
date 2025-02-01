@@ -8,7 +8,7 @@
 .servicesBlock {
     background: linear-gradient(180deg, rgba(37, 37, 37, 0.83) 0%, rgba(30, 30, 30, 0.6557) 100%);
     backdrop-filter: blur(50px);
-    z-index: 10;
+    z-index: 15;
     transition: 
         padding-bottom 0.4s ease, 
         height 0.2s ease,
@@ -76,6 +76,7 @@
     background: #FFFFFF33;
     border-radius: calc(10 * (1px + (100vw - 430px) / 430));
     display: none;
+    transition: .3s;
 }
 .menuBtnLines,
 .menuBtnLines::after {
@@ -85,7 +86,8 @@
     border-radius: calc(100 * (1px + (100vw - 430px) / 430));
     margin: 0 auto;
     position: relative;
-    top: calc(-3 * (1px + (100vw - 430px) / 430));;
+    top: calc(-3 * (1px + (100vw - 430px) / 430));
+    transition: .3s;
 }
 .menuBtnLines::after {
     content: "";
@@ -109,5 +111,177 @@
     }
     .menuBtn {
         display: flex;
+    }
+
+    .activeMobileBtn {
+        background: #FFFFFF;
+        backdrop-filter: blur(50px);
+        transition: .3s;
+    }
+
+    .activeMobileBtn > .menuBtnLines,
+    .activeMobileBtn > .menuBtnLines::after {
+        background-color: #000;
+        transition: .3s;
+        top: 0;
+    }
+    .activeMobileBtn > .menuBtnLines {
+        transform: rotate(45deg);
+    }
+    .activeMobileBtn > .menuBtnLines::after {
+        transform: rotate(90deg);
+        top: 0;
+    }
+    .mobileMenu {
+        background: #000000D4;
+        backdrop-filter: blur(50px);
+        left: 0;
+        z-index: 15;
+        padding-top: 0;
+        transition: height 0.4s ease, padding-top 0.3s ease 0.2s;
+        height: 0vh;
+        overflow-y: hidden;
+        top: calc(-28 * (1px + (100vw - 430px) / 430));
+    }
+    .mobileMenuSubtitle {
+        color: #fff;
+        opacity: .4;
+        line-height: calc(17 * (1px + (100vw - 430px) / 430));
+        margin-bottom: calc(36 * (1px + (100vw - 430px) / 430));
+    }
+    .mobileMenuItem {
+        margin-bottom: calc(40 * (1px + (100vw - 430px) / 430));
+    }
+    .mobileMenuItem:last-child {
+        margin-bottom: 0;
+    }
+    .mobileMenuLink {
+        font-weight: 600;
+        font-size: calc(23 * (1px + (100vw - 430px) / 430));
+        line-height: calc(17 * (1px + (100vw - 430px) / 430));
+    }
+    .menuMobileBtnsWrapper {
+        margin-top: calc(67 * (1px + (100vw - 430px) / 430));
+        position: relative;
+    }
+    .menuMobileBtnsWrapper > div:first-child{
+        margin-bottom: calc(16 * (1px + (100vw - 430px) / 430));
+    }
+    .mobileMenuContacts {
+        margin-top: calc(66 * (1px + (100vw - 430px) / 430));
+        padding-bottom: calc(55 * (1px + (100vw - 430px) / 430));
+    }
+    .mobileMenuContacts  >div:first-child{
+        margin-bottom: calc(40 * (1px + (100vw - 430px) / 430));
+    }
+    .mobileMenuContactsSubtitle {
+        font-weight: 500;
+        font-size: calc(16 * (1px + (100vw - 430px) / 430));
+        line-height: calc(9 * (1px + (100vw - 430px) / 430));
+        margin-bottom: calc(22 * (1px + (100vw - 430px) / 430));
+    }
+    .mobileMenuContactsInfo {
+        font-weight: 500;
+        font-size: calc(20 * (1px + (100vw - 430px) / 430));
+        line-height: calc(9 * (1px + (100vw - 430px) / 430));
+    }
+    .mobileMenuItemSubitems {
+        position: relative;
+    }
+    .mobileMenuItemSubitems::after {
+       content: url("/icons/polygon.svg");
+       width: calc(11 * (1px + (100vw - 430px) / 430));
+       height: calc(9 * (1px + (100vw - 430px) / 430));
+       position: absolute;
+       left: 130px;
+       top: -4px;
+    }
+    .mobileMenuItemSubitems.activeSubitem::after {
+        rotate: 180deg;
+        top: 15px;
+    }
+    
+    .accordion {
+        width: 100%;
+        border: none;
+        transition: 0.3s;
+        outline: none;
+        text-align: left;
+    }
+    .mobileCubeContainer {
+        right: -100%;
+        top: 10%;
+        z-index: 0;
+        transition-duration: .2s;
+    }
+    .cube {
+        width: calc(245 * (1px + (100vw - 430px) / 430));
+        height: calc(749 * (1px + (100vw - 430px) / 430));
+    }
+    .panel {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, margin-top 0.3s ease, padding-top 0.2s ease, padding-bottom 0.2s ease;
+        backdrop-filter: blur(150px);
+        background: rgba(30, 30, 30, 0.66);
+        border-radius: calc(20 * (1px + (100vw - 430px) / 430));
+        padding-left: calc(29 * (1px + (100vw - 430px) / 430));
+        padding-right: calc(29 * (1px + (100vw - 430px) / 430));
+        padding-bottom: 0;
+        padding-top: 0;
+        border: none;
+        margin-top: 0;
+    }
+    .activeSubitem > .panel {
+        max-height: calc(666 * (1px + (100vw - 430px) / 430));
+        padding-left: calc(29 * (1px + (100vw - 430px) / 430));
+        padding-right: calc(29 * (1px + (100vw - 430px) / 430));
+        padding-bottom: calc(40 * (1px + (100vw - 430px) / 430));
+        padding-top: calc(40 * (1px + (100vw - 430px) / 430));
+        border: 1px solid #FFFFFF12;
+        margin-top: calc(51 * (1px + (100vw - 430px) / 430));
+    }
+    .mobileActive {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 100vh;
+        backdrop-filter: blur(50px);
+        background: #000000D4;
+    }
+    .mobileMenu.mobileMenuActive {
+        padding-top: calc(146 * (1px + (100vw - 430px) / 430));
+        transition: height 0.3s ease 0.1s, padding-top 0.3s ease;
+        overflow-y: visible;
+        height: 100vh;
+    }
+    .panelLink {
+        display: block;
+        padding-bottom: calc(31 * (1px + (100vw - 430px) / 430));
+        border-bottom: 1px solid rgba(255, 255, 255, 0.26);
+        margin-bottom: calc(31 * (1px + (100vw - 430px) / 430));
+    }
+    .panelLink:last-child {
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+    .panelInfo {
+        margin-top: calc(30 * (1px + (100vw - 430px) / 430));
+    }
+    .panelTitle {
+        font-weight: 600;
+        font-size: calc(17 * (1px + (100vw - 430px) / 430));
+        line-height: calc(20 * (1px + (100vw - 430px) / 430));
+    }
+    .panelText {
+        margin-top: calc(7 * (1px + (100vw - 430px) / 430));
+        font-weight: 600;
+        opacity: .5;
+        font-size: calc(15 * (1px + (100vw - 430px) / 430));
+        line-height: calc(20 * (1px + (100vw - 430px) / 430));
+    }
+    .mobileMenuActive > .mobileCubeContainer {
+        right: 0;
+        transition-delay: .25s;
+        transition-duration: .4s;
     }
 }

@@ -35,7 +35,7 @@ export default function Steps() {
             <div className={s.cardText}>
               <MainText
                 text={[
-                  <p>
+                  <p key={1}>
                     Анализируем бизнес-процессы, обсуждаем цели и выстраиваем
                     стратегию их оптимизации с учетом ваших планов.
                   </p>,
@@ -58,7 +58,7 @@ export default function Steps() {
             <div className={s.cardText}>
               <MainText
                 text={[
-                  <p>
+                  <p key={1}>
                     После реализации проекта мы продолжаем поддерживать вас,
                     оптимизируя решения для долгосрочной эффективности.
                   </p>,
@@ -78,7 +78,7 @@ export default function Steps() {
             <div className={s.cardText}>
               <MainText
                 text={[
-                  <p>
+                  <p key={1}>
                     Разрабатываем и внедряем решения, включая веб-разработку и
                     автоматизацию, с контролем качества на всех этапах.
                   </p>,
@@ -104,7 +104,7 @@ export default function Steps() {
           <div className={s.cardText}>
             <MainText
               text={[
-                <p>
+                <p key={1}>
                     Анализируем бизнес-процессы, обсуждаем цели и выстраиваем
                     стратегию их оптимизации с учетом ваших планов.
                 </p>,
@@ -121,7 +121,7 @@ export default function Steps() {
           <div className={s.cardText}>
             <MainText
               text={[
-                <p>
+                <p key={1}>
                   Разрабатываем и внедряем решения, включая веб-разработку и
                   автоматизацию, с контролем качества на всех этапах.
                 </p>,
@@ -138,7 +138,7 @@ export default function Steps() {
           <div className={s.cardText}>
             <MainText
               text={[
-                <p>
+                <p key={1}>
                     После реализации проекта мы продолжаем поддерживать вас,
                     оптимизируя решения для долгосрочной эффективности.
                 </p>,

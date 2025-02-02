@@ -5,7 +5,7 @@ import TelegramButton from "../common/telegramButton";
 import Title from "../common/title";
 import Lavr from "../common/lavr";
 
-export default function Consultation() {
+export default function Consultation({bg = "/3D-Black.png", mobileBg="/3D-Black-mobile.png"}: {bg?: string, mobileBg?: string}) {
   return (
     <div className={styles.consultation}>
       <div className="flex justify-between relative hidden md:flex">
@@ -50,7 +50,7 @@ export default function Consultation() {
           }}
         >
           <Image
-            src={"/3D-Black.png"}
+            src={bg}
             width={885}
             height={379}
             alt="3dpng"
@@ -141,7 +141,7 @@ export default function Consultation() {
           }}
         >
           <Image
-            src={"/3D-Black-mobile.png"}
+            src={mobileBg}
             width={395}
             height={522}
             alt="3dpng"

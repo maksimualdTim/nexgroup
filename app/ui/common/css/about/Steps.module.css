@@ -1,0 +1,116 @@
+.wrapper {
+    padding-top: calc(44 * (1px + (100vw - 1530px) / 1530));
+}
+.text {
+    margin-top: calc(38 * (1px + (100vw - 1530px) / 1530));
+}
+.graphic {
+    margin-top: calc(83 * (1px + (100vw - 1530px) / 1530));
+    background: url("/mountins.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo {
+    width: calc(116 * (1px + (100vw - 1530px) / 1530));
+    height: calc(67 * (1px + (100vw - 1530px) / 1530));;
+}
+.row {
+    display: flex;
+}
+.row:first-child {
+    border-bottom: 1px solid #353535;
+}
+.card {
+    padding-top: calc(10 * (1px + (100vw - 1530px) / 1530));
+    padding-bottom: calc(51 * (1px + (100vw - 1530px) / 1530));
+    padding-right: calc(46 * (1px + (100vw - 1530px) / 1530));
+    padding-left: calc(46 * (1px + (100vw - 1530px) / 1530));
+    width: 33%;
+    border-right: 1px solid #353535;
+    min-height: calc(262 * (1px + (100vw - 1530px) / 1530));
+}
+.card:nth-child(2) {
+    padding-top: calc(41 * (1px + (100vw - 1530px) / 1530));
+}
+.cardText {
+    max-width: calc(351 * (1px + (100vw - 1530px) / 1530));
+    margin-top: calc(36 * (1px + (100vw - 1530px) / 1530));
+}
+.cardTitle {
+    font-size: calc(26 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(22 * (1px + (100vw - 1530px) / 1530));
+    font-weight: 500;
+}
+.cardText > div > div > p {
+    font-size: calc(15 * (1px + (100vw - 1530px) / 1530));
+}
+.cardTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order {
+    font-size: calc(19 * (1px + (100vw - 1530px) / 1530));
+    font-weight: 500;
+    line-height: calc(22 * (1px + (100vw - 1530px) / 1530));
+    text-align: center;
+    opacity: .6;
+    padding: calc(15 * (1px + (100vw - 1530px) / 1530));
+    background: #FFFFFF1A;
+    border-radius: 50%;
+    width: calc(53 * (1px + (100vw - 1530px) / 1530));
+    height: calc(53 * (1px + (100vw - 1530px) / 1530));
+}
+.graphicMobile {
+    display: none;
+}
+@media (max-width: 767px) {
+    .text {
+        margin-top: calc(36 * (1px + (100vw - 430px) / 430));
+    }
+    .graphic {
+        display: none;
+    }
+    .graphicMobile {
+        margin-top: calc(47 * (1px + (100vw - 430px) / 430));
+        display: block;
+        position: relative;
+        background: url("/mountins.png");
+        background-repeat: no-repeat;
+        background-size: 150%;
+        background-position: 28% 50%;
+    }
+    .card {
+        padding-top: 0;
+        padding-bottom: calc(48 * (1px + (100vw - 430px) / 430));
+        padding-right: 0;
+        padding-left: 0;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #FFFFFF33;
+        margin-top: calc(48 * (1px + (100vw - 430px) / 430));
+    }
+    .card:last-child {
+        border-bottom: none;
+    }
+    .cardText > div > div > p {
+        font-size: calc(15 * (1px + (100vw - 430px) / 430));
+    }
+    .cardText {
+        max-width: 100%;
+        margin-top: calc(36 * (1px + (100vw - 430px) / 430));
+    }
+    .cardTitle {
+        font-size: calc(26 * (1px + (100vw - 430px) / 430));
+        line-height: calc(22 * (1px + (100vw - 430px) / 430));
+        font-weight: 500;
+    }
+    .order {
+        font-size: calc(19 * (1px + (100vw - 430px) / 430));
+        line-height: calc(22 * (1px + (100vw - 430px) / 430));
+        padding: calc(15 * (1px + (100vw - 430px) / 430));
+        width: calc(53 * (1px + (100vw - 430px) / 430));
+        height: calc(53 * (1px + (100vw - 430px) / 430));
+    }
+}

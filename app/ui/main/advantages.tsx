@@ -56,7 +56,7 @@ export default function Advantages() {
         </div>
         <div className="hidden md:block">
           <Button
-            link="/"
+            link="/about"
             isFull={false}
             text="Подробнее о NEX"
             withArrow={false}

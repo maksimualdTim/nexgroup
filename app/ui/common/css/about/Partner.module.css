@@ -1,0 +1,134 @@
+.wrapper {
+    padding-top: calc(100 * (1px + (100vw - 1530px) / 1530));
+    overflow-x: hidden;
+}
+.columns {
+    margin-top: calc(72 * (1px + (100vw - 1530px) / 1530));
+    display: flex;
+    justify-content: space-between;
+}
+.columnTitle {
+    font-weight: 700;
+    font-size: calc(17 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(22 * (1px + (100vw - 1530px) / 1530));
+    margin-bottom: calc(18 * (1px + (100vw - 1530px) / 1530));
+}
+.columnText {
+    font-weight: 600;
+    font-size: calc(16 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(22 * (1px + (100vw - 1530px) / 1530));
+    margin-bottom: calc(18 * (1px + (100vw - 1530px) / 1530));
+    opacity: .7;
+}
+.column {
+    max-width: calc(446 * (1px + (100vw - 1530px) / 1530));
+}
+.column:last-child {
+    padding-right: calc(30 * (1px + (100vw - 1530px) / 1530));
+}
+.graphic {
+    margin-top: calc(127 * (1px + (100vw - 1530px) / 1530));
+    background: url("/graphic.png");
+    position: relative;
+    min-height: calc(737 * (1px + (100vw - 1530px) / 1530));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cards {
+    display: flex;
+    padding-top: calc(42* (1px + (100vw - 1530px) / 1530));
+    position: relative;
+    left: calc(445* (1px + (100vw - 1530px) / 1530));
+    align-items: flex-start;
+    padding-bottom: calc(133* (1px + (100vw - 1530px) / 1530));
+}
+.cards > div {
+    margin-right: calc(40* (1px + (100vw - 1530px) / 1530));
+}
+.cards > div:nth-child(1),
+.cards > div:nth-child(3) {
+    margin-top: calc(230* (1px + (100vw - 1530px) / 1530));
+}
+.cards > div:last-child {
+    margin-right: 0;
+}
+.graphicText {
+    font-size: calc(17* (1px + (100vw - 1530px) / 1530));
+    line-height: calc(9* (1px + (100vw - 1530px) / 1530));
+    font-weight: 600;
+    backdrop-filter: blur(50px);
+    border: 1px solid #404040;
+    background: #FFFFFF03;
+    padding-bottom: calc(33 * (1px + (100vw - 1530px) / 1530));
+    padding-top: calc(33 * (1px + (100vw - 1530px) / 1530));
+    padding-left: calc(40 * (1px + (100vw - 1530px) / 1530));
+    padding-right: calc(40 * (1px + (100vw - 1530px) / 1530));
+    border-radius: calc(100* (1px + (100vw - 1530px) / 1530));
+    left: calc(30* (1px + (100vw - 1530px) / 1530));
+    top: 0;
+}
+.graphicText:last-child {
+    bottom: calc(235* (1px + (100vw - 1530px) / 1530));
+    top: auto;
+}
+.graphicText:nth-child(3) {
+    top: calc(202* (1px + (100vw - 1530px) / 1530));
+}
+.graphicText:nth-child(2) {
+    top: calc(30* (1px + (100vw - 1530px) / 1530));
+}
+
+@media (max-width: 767px) {
+    .aboutTitle > div > h3{
+        font-size: calc(27* (1px + (100vw - 430px) / 430));
+    }
+    .columns {
+        flex-direction: column;
+        margin-top: calc(61 * (1px + (100vw - 430px) / 430));
+    }
+    .column {
+        max-width: 100%;
+        margin-bottom: calc(40 * (1px + (100vw - 430px) / 430));
+    }
+    .column:last-child {
+        margin-bottom: 0;
+    }
+    .columnTitle {
+        font-size: calc(17 * (1px + (100vw - 430px) / 430));
+        line-height: calc(22 * (1px + (100vw - 430px) / 430));
+        margin-bottom: calc(18 * (1px + (100vw - 430px) / 430));
+    }
+    .columnText {
+        font-size: calc(16 * (1px + (100vw - 430px) / 430));
+        line-height: calc(22 * (1px + (100vw - 430px) / 430));
+        margin-bottom: calc(18 * (1px + (100vw - 430px) / 430));
+    }
+    .wrapper {
+        padding-top: calc(60 * (1px + (100vw - 430px) / 430));
+    }
+    .graphicText {
+        display: none;
+    }
+    .cards {
+        flex-direction: column;
+        left: 0;
+        padding-top: 0;
+        align-items: normal;
+        padding-bottom: calc(70 * (1px + (100vw - 430px) / 430));
+    }
+    .graphic {
+        margin-top: calc(81 * (1px + (100vw - 430px) / 430));
+        background: url("/graphic-mobile.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    .cards > div {
+        margin-top: calc(16 * (1px + (100vw - 430px) / 430)) !important;
+        margin-right: 0 !important;
+    }
+    .cards > div:first-child {
+        margin-top: 0 !important;
+    }
+}

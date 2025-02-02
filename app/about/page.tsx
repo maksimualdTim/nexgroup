@@ -4,17 +4,21 @@ import Numbers from "@/app/ui/main/numbers";
 import Consultation from "@/app/ui/main/consultation";
 import Faq from "@/app/ui/main/faq";
 import Main from "../ui/about/about";
+import Partner from "../ui/about/partner";
+import Steps from "../ui/about/steps";
 
 
 export default function About() {
     return (
         <>
         <Main></Main>
+        <Partner></Partner>
+        <Steps></Steps>
         <div
           className="px-fluid mobile-container-card"
           style={{ marginBottom: "calc(160 * (1px + (100vw - 1530px) / 1530))" }}
         >
-          <Consultation></Consultation>
+          <Consultation bg="/consultation.png" mobileBg="/consultation-mobile.png"></Consultation>
         </div>
         <Numbers></Numbers>
         <Faq></Faq>

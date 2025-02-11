@@ -1,0 +1,147 @@
+.wrapper {
+    padding-top: calc(96 * (1px + (100vw - 1530px) / 1530));
+}
+.title {
+    margin-bottom: calc(58 * (1px + (100vw - 1530px) / 1530));
+}
+.text {
+    font-size: calc(15 * (1px + (100vw - 1530px) / 1530));
+    font-weight: 600;
+    line-height: calc(21 * (1px + (100vw - 1530px) / 1530));
+    text-align: right;
+    opacity: .4;
+    max-width: calc(216 * (1px + (100vw - 1530px) / 1530));
+    margin-right: calc(17 * (1px + (100vw - 1530px) / 1530));
+}
+.cloud {
+    width: calc(71 * (1px + (100vw - 1530px) / 1530));
+    height: calc(71 * (1px + (100vw - 1530px) / 1530));
+    border: 1px solid #00EAFF;
+    border-radius: 50%;
+    padding: calc(20 * (1px + (100vw - 1530px) / 1530));
+}
+.cards {
+    /* column-gap: calc(20 * (1px + (100vw - 1530px) / 1530)); */
+    justify-content: space-between;
+    row-gap: calc(20 * (1px + (100vw - 1530px) / 1530));
+}
+.card {
+    background: linear-gradient(180deg, #0A2426 0%, #151515 100%);
+    border: 1px solid #FFFFFF17;
+    border-radius: calc(30 * (1px + (100vw - 1530px) / 1530));
+}
+.cardContent {
+    max-width: calc(650 * (1px + (100vw - 1530px) / 1530));
+}
+.cardImage {
+    width: 100%;
+}
+.cardTitle {
+    font-weight: 600;
+    font-size: calc(23 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(32 * (1px + (100vw - 1530px) / 1530));
+}
+.cardSubtitle {
+    opacity: .3;
+    font-size: calc(14 * (1px + (100vw - 1530px) / 1530));
+    font-weight: 600;
+    margin-top: calc(3 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(22 * (1px + (100vw - 1530px) / 1530));
+}
+.cardText {
+    font-weight: 600;
+    line-height: calc(22 * (1px + (100vw - 1530px) / 1530));
+    font-size: calc(15 * (1px + (100vw - 1530px) / 1530));
+    margin-top: calc(19 * (1px + (100vw - 1530px) / 1530));
+    opacity: .7;
+}
+.cardLongTop > .cardContent {
+    padding-left: calc(46 * (1px + (100vw - 1530px) / 1530));
+    padding-bottom: calc(46 * (1px + (100vw - 1530px) / 1530));
+    margin-top: calc(30 * (1px + (100vw - 1530px) / 1530));
+}
+.cardShortTop {
+    background: linear-gradient(180deg, #151515 0%, #0A2426 100%);
+}
+.cardShortTop > .cardContent {
+    padding-left: calc(46 * (1px + (100vw - 1530px) / 1530));
+    padding-top: calc(46 * (1px + (100vw - 1530px) / 1530));
+    margin-bottom: calc(16 * (1px + (100vw - 1530px) / 1530));
+    max-width: calc(450 * (1px + (100vw - 1530px) / 1530));
+}
+.cardLongTop > div > .cardImage {
+    height: calc(301 * (1px + (100vw - 1530px) / 1530));
+}
+.cardLong {
+    max-width: 56.9%;
+}
+.cardShort {
+    max-width: 41.7%;
+}
+
+.cardShortBot {
+    background: linear-gradient(180deg, #0A2426 0%, #151515 100%);
+}
+.cardShortBot > .cardContent {
+    padding-left: calc(46 * (1px + (100vw - 1530px) / 1530));
+    padding-bottom: calc(46 * (1px + (100vw - 1530px) / 1530));
+    margin-top: calc(20 * (1px + (100vw - 1530px) / 1530));
+    max-width: calc(550 * (1px + (100vw - 1530px) / 1530));
+}
+.cardLongBot > .cardContent {
+    padding-left: calc(46 * (1px + (100vw - 1530px) / 1530));
+    padding-top: calc(46 * (1px + (100vw - 1530px) / 1530));
+    margin-bottom: calc(70 * (1px + (100vw - 1530px) / 1530));
+
+}
+@media (max-width: 767px) {
+    .wrapper {
+        padding-top: calc(70 * (1px + (100vw - 430px) / 430));
+    }
+    .mobileContent {
+        padding-top: calc(37 * (1px + (100vw - 430px) / 430));
+        padding-left: calc(19 * (1px + (100vw - 430px) / 430));
+        padding-right: calc(19 * (1px + (100vw - 430px) / 430));
+    }
+    .mobileCard {
+        background: linear-gradient(180deg, #0A2426 0%, #151515 100%);
+        border: 1px solid #FFFFFF17;
+        border-radius: calc(30 * (1px + (100vw - 430px) / 430));
+        margin-bottom: calc(26 * (1px + (100vw - 430px) / 430));
+    }
+    .mobileCard:nth-child(1) {
+        padding-bottom: calc(15 * (1px + (100vw - 430px) / 430));
+    }
+    .mobileCard:nth-child(4) {
+        padding-bottom: calc(39 * (1px + (100vw - 430px) / 430));;
+    }
+    .mobileCard:last-child {
+        margin-bottom: 0;
+    }
+    .mobileCardTitle {
+        font-weight: 600;
+        font-size: calc(20 * (1px + (100vw - 430px) / 430));
+        line-height: calc(24 * (1px + (100vw - 430px) / 430));
+    }
+    .mobileCardSubtitle {
+        opacity: .3;
+        font-size: calc(14 * (1px + (100vw - 430px) / 430));
+        line-height: calc(22 * (1px + (100vw - 430px) / 430));
+        margin-top: calc(10 * (1px + (100vw - 430px) / 430));
+        margin-bottom: calc(19 * (1px + (100vw - 430px) / 430));
+        font-weight: 600;
+    }
+    .mobileImg {
+        width: 100%;
+    }
+    .mobileCardText {
+        opacity: .7;
+        font-weight: 600;
+        font-size: calc(14 * (1px + (100vw - 430px) / 430));
+        margin-bottom: calc(40 * (1px + (100vw - 430px) / 430));
+    }
+    .mobileCards {
+        padding-left: calc(21 * (1px + (100vw - 430px) / 430));
+        padding-right: calc(21 * (1px + (100vw - 430px) / 430));
+    }
+}

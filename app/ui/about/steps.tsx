@@ -109,7 +109,7 @@ export default function Steps() {
                     стратегию их оптимизации с учетом ваших планов.
                 </p>,
               ]}
-              order={2}
+              order={1}
             ></MainText>
           </div>
         </div>
@@ -143,7 +143,7 @@ export default function Steps() {
                     оптимизируя решения для долгосрочной эффективности.
                 </p>,
               ]}
-              order={2}
+              order={3}
             ></MainText>
           </div>
         </div>

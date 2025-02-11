@@ -1,0 +1,45 @@
+.wrapper {
+    background: linear-gradient(270deg, #00252E 0%, #000000 100%);
+    padding-bottom: calc(75 * (1px + (100vw - 1530px) / 1530));
+    background-image: url("/mackbook-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+.inner {
+    margin-top: calc(295 * (1px + (100vw - 1530px) / 1530));
+}
+.text {
+    max-width: calc(446 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(22 * (1px + (100vw - 1530px) / 1530));
+    font-weight: 600;
+    opacity: .7;
+    margin-top: calc(46 * (1px + (100vw - 1530px) / 1530));
+    margin-bottom: calc(55 * (1px + (100vw - 1530px) / 1530));
+    font-size: calc(16 * (1px + (100vw - 1530px) / 1530));
+}
+.logo {
+    width: calc(148 * (1px + (100vw - 1530px) / 1530));
+    height: calc(28 * (1px + (100vw - 1530px) / 1530));
+}
+
+@media (max-width: 767px) {
+    .text {
+        max-width: calc(333 * (1px + (100vw - 430px) / 430));
+        line-height: calc(22 * (1px + (100vw - 430px) / 430));
+        font-weight: 600;
+        opacity: .7;
+        margin-top: calc(34 * (1px + (100vw - 430px) / 430));
+        margin-bottom: calc(44 * (1px + (100vw - 430px) / 430));
+        font-size: calc(16 * (1px + (100vw - 430px) / 430));
+    }
+    .btns > div:last-child {
+        margin-top: calc(15 * (1px + (100vw - 430px) / 430));
+    }
+    .wrapper {
+        background-image: url("/macbook-bg-mobile.png");
+        background-size: cover;
+        background-position: bottom;
+        min-height: 123vh;
+        padding-bottom: calc(75 * (1px + (100vw - 430px) / 430));
+    }
+}

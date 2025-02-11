@@ -17,6 +17,8 @@ export default function Button({link, isFull, text, withArrow = false}: {link: s
     return (
         <Link href={link} className={`border inline-block font-semibold text-fluid ${styles.button}`} style={{
             borderColor: "#404040",
-        }}>{text}</Link>
+        }}>{text}                 {withArrow && (
+            <Image src={"/icons/arrow-right-btn.svg"} alt="arrow" width={0} height={0} className={`inline ${styles.icon}`} style={{filter: "invert(1)"}}/>
+        )} </Link>
     )
 }

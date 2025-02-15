@@ -17,7 +17,7 @@
     flex-wrap: wrap;
 }
 .card {
-    width: calc(477 * (1px + (100vw - 1530px) / 1530));
+    width: 32.7%;
     border: 1px solid #FFFFFF40;
     border-radius: calc(30 * (1px + (100vw - 1530px) / 1530));
     padding-top: calc(30 * (1px + (100vw - 1530px) / 1530));

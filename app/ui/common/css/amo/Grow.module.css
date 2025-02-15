@@ -29,6 +29,7 @@
     background: linear-gradient(180deg, #0A2426 0%, #151515 100%);
     border: 1px solid #FFFFFF17;
     border-radius: calc(30 * (1px + (100vw - 1530px) / 1530));
+    overflow: hidden;
 }
 .cardContent {
     max-width: calc(650 * (1px + (100vw - 1530px) / 1530));

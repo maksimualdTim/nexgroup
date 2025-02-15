@@ -56,7 +56,7 @@ export default function Consultation({bg = "/3D-Black.png", mobileBg="/3D-Black-
             alt="3dpng"
             style={{
               width: "calc(885 * (1px + (100vw - 1530px) / 1530))",
-              height: "calc(382 * (1px + (100vw - 1530px) / 1530))",
+              height: "calc(384 * (1px + (100vw - 1530px) / 1530))",
             }}
           ></Image>
         </div>

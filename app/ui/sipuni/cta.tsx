@@ -2,7 +2,6 @@ import Title from "../common/title";
 import s from "../common/css/amo/Cta.module.css";
 import Button from "../common/button";
 import Image from "next/image";
-import Link from "next/link";
 import styles from "../common/css/sipuni/Cta.module.css";
 
 export default function CTA() {

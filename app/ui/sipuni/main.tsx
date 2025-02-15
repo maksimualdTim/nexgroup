@@ -1,24 +1,27 @@
 import Header from "../common/header";
 import s from "../common/css/amo/Main.module.css";
+import sipuniStyles from "../common/css/sipuni/Main.module.css";
+
 import Title from "../common/title";
 import Button from "../common/button";
-import Image from "next/image";
 
 export default function Main() {
   return (
-    <div className={s.wrapper}>
+    <div className={`${s.wrapper} ${sipuniStyles.wrapper}`}>
       <Header></Header>
       <div className={`px-fluid relative ${s.inner} mobile-container`}>
-        <Title
-          title="Внедрение amoCRM"
-          title2=""
-          subtitle="Автоматизация отдела продаж"
-          isMain={true}
-          icon="/icons/light.svg"
-        ></Title>
+        <div className={sipuniStyles.title}>
+          <Title
+            title="Внедрение IP-телефонии"
+            title2=""
+            subtitle="Лучшее решение для колл-центров"
+            isMain={true}
+            icon="/icons/light.svg"
+          ></Title>
+        </div>
         <div className={s.text}>
-          Полный набор инструментов, который экономит время сотрудникам отдела
-          продаж и систематизирует работу с вашими клиентами.
+          Легкое и удобное решение для автоматизации колл-центра без
+          необходимости приобретать специальное оборудование.
         </div>
         <div className="flex justify-between items-end">
           <div className={`block md:flex ${s.btns}`}>
@@ -42,9 +45,6 @@ export default function Main() {
                 link="/"
               />
             </div>
-          </div>
-          <div className="hidden md:block">
-            <Image src={"/logos/amo-main.svg"} width={148} height={28} className={s.logo} alt="amo"></Image>
           </div>
         </div>
       </div>

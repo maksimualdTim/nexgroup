@@ -7,14 +7,16 @@ export default function Title({
   title2 = "",
   isMain = false,
   icon = "",
-  iconLeft= true
+  iconLeft= true,
+  isService = false
 }: {
   title: string;
   subtitle: string;
   title2?: string;
   isMain?: boolean;
   icon?: string;
-  iconLeft?: boolean
+  iconLeft?: boolean,
+  isService?: boolean
 }) {
   let image = null;
 
@@ -45,11 +47,11 @@ export default function Title({
         {!iconLeft && image}
       </div>
       {isMain ? (
-        <h1 className={`title leading-title font-bold text-title ${styles.title}`}>
+        <h1 className={`title leading-title font-bold text-title ${styles.title} ${styles.mainTitle} ${isService ? styles.serviceTitle : ""}`}>
           {title} <span className="inline opacity-50 md:block">{title2}</span>
         </h1>
       ) : (
-        <h3 className={`title leading-title font-bold text-title ${styles.title}`}>
+        <h3 className={`title leading-title font-bold text-title ${styles.title} ${isService ? styles.serviceTitle : ""}`}>
           {title} <span className="inline opacity-50 md:block">{title2}</span>
         </h3>
       )}

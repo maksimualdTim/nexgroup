@@ -70,7 +70,7 @@ export default function Expirience({ left = false }: { left?: boolean }) {
               "linear-gradient(90deg, #FFFFFF 35%, rgba(25, 25, 25, 0) 100%)",
           }}
         >
-          10+
+          5+
         </div>
         <div
           style={{
@@ -94,7 +94,7 @@ export default function Expirience({ left = false }: { left?: boolean }) {
               lineHeight: "calc(19 * (1px + (100vw - 1530px) / 1530))",
             }}
           >
-            Более 10 лет опыта в сфере автоматизации
+            Более 5 лет опыта в сфере автоматизации
           </div>
         </div>
       </div>

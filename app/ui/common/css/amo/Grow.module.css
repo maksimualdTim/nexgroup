@@ -73,10 +73,10 @@
     height: calc(301 * (1px + (100vw - 1530px) / 1530));
 }
 .cardLong {
-    max-width: 56.9%;
+    width: 56.9%;
 }
 .cardShort {
-    max-width: 41.7%;
+    width: 41.7%;
 }
 
 .cardShortBot {

@@ -28,7 +28,7 @@ export default function Problems() {
           <div>
             <Title
               title="Решаем ключевые проблемы"
-              title2="управления и коммуникации"
+              title2="управления и&nbsp;коммуникации"
               subtitle="Анализируем процессы"
             />
           </div>
@@ -132,7 +132,7 @@ export default function Problems() {
               isFull={true}
               text="Консультация"
               withArrow={true}
-              link="/"
+              link="https://t.me/nexgroup_support"
             />
           </div>
         </div>

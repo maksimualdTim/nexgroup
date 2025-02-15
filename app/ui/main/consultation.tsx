@@ -28,7 +28,7 @@ export default function Consultation({bg = "/3D-Black.png", mobileBg="/3D-Black-
               }}
             >
               <Button
-                link="/"
+                link="https://t.me/nexgroup_support"
                 isFull={true}
                 withArrow={false}
                 text="Начать автоматизацию"
@@ -56,7 +56,7 @@ export default function Consultation({bg = "/3D-Black.png", mobileBg="/3D-Black-
             alt="3dpng"
             style={{
               width: "calc(885 * (1px + (100vw - 1530px) / 1530))",
-              height: "calc(379 * (1px + (100vw - 1530px) / 1530))",
+              height: "calc(382 * (1px + (100vw - 1530px) / 1530))",
             }}
           ></Image>
         </div>
@@ -114,7 +114,7 @@ export default function Consultation({bg = "/3D-Black.png", mobileBg="/3D-Black-
         </div>
         <div>
           <Button
-            link="/"
+            link="https://t.me/nexgroup_support"
             isFull={true}
             withArrow={false}
             text="Начать автоматизацию"

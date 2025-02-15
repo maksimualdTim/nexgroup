@@ -44,13 +44,15 @@
     right: 28px;
     bottom: 0;
     width: calc(628 * (1px + (100vw - 1530px) / 1530));
-    height: calc(269 * (1px + (100vw - 1530px) / 1530));;
+    height: calc(269 * (1px + (100vw - 1530px) / 1530));
 }
 .messanger {
     position: absolute;
     right: 32%;
     bottom: 0;
     z-index: 20;
+    width: calc(383 * (1px + (100vw - 1530px) / 1530));
+    height: calc(338 * (1px + (100vw - 1530px) / 1530));
 }
 
 @media (max-width: 767px) {

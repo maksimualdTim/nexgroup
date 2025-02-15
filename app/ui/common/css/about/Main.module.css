@@ -40,6 +40,13 @@
     right: -15%;
     z-index: 0;
 }
+.robot > img {
+    width: calc(1530 * (1px + (100vw - 1530px) / 1530));
+    height: calc(1139 * (1px + (100vw - 1530px) / 1530));
+}
+.robot {
+    right: 0;
+}
 
 @media (max-width: 767px) {
     .main {
@@ -61,8 +68,12 @@
     }
     .robot {
         transform: translateX(50%);
+        width: calc(430 * (1px + (100vw - 430px) / 430));
         right: 75%;
-        width: calc(500 * (1px + (100vw - 430px) / 430));
+    }
+    .robot > img {
+        height: auto;
+        scale: 1.5;
     }
     .container {
         margin-top: calc(100 * (1px + (100vw - 430px) / 430));

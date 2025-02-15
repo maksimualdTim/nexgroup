@@ -15,17 +15,18 @@ export default function CTA() {
               title2="специальных чат-ботов"
               subtitle="Встроенный телеграм-бот"
               icon="/icons/robot.svg"
+              isService={true}
             ></Title>
           </div>
           <Button
             text="Настроить чат-бота"
             withArrow={true}
             isFull={false}
-            link="/"
+            link="https://t.me/nexgroup_support"
           ></Button>
         </div>
         <div className="relative z-10 hidden md:block">
-          <Link className={s.link} href={"/"}>
+          <Link className={s.link} href={"https://t.me/nexgroup_support"}>
             КОНСТРУКТОР ЧАТ-БОТОВ
             <Image
             className={s.telegram}

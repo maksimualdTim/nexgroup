@@ -1,7 +1,7 @@
 .wrapper {
     margin-top: calc(144 * (1px + (100vw - 1530px) / 1530));
     margin-bottom: calc(157 * (1px + (100vw - 1530px) / 1530));
-    /* height: calc(775 * (1px + (100vw - 1530px) / 1530)); */
+    /* height: calc(1000 * (1px + (100vw - 1530px) / 1530)); */
 }
 .title {
     margin-bottom: calc(100 * (1px + (100vw - 1530px) / 1530));
@@ -10,9 +10,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    height: calc(544 * (1px + (100vw - 1530px) / 1530));
+    overflow-anchor: none;
+    height: calc(600 * (1px + (100vw - 1530px) / 1530));
 }
-
 
 .cardInfo {
     display: flex;

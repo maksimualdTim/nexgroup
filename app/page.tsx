@@ -44,7 +44,7 @@ export default function Home() {
       <div className="relative"
         style={{
           background:
-            "linear-gradient(180deg, rgba(0, 0, 0, 0) 53.66%, #000000 100%);",
+            "linear-gradient(180deg, rgba(0, 0, 0, 0) 53.66%, #000000 100%)",
         }}
       >
         {" "}

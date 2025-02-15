@@ -10,8 +10,9 @@ export default function Info() {
         <div className="mobile-container">
           <Title
             title="Получайте максимум"
-            title2="от вашего отдела продаж"
+            title2="от&nbsp;вашего отдела продаж"
             subtitle="Новые высоты"
+            isService={true}
           ></Title>
         </div>
         <div className="mobile-container">
@@ -32,11 +33,11 @@ export default function Info() {
           <div className={s.period}>Беседы и чаты с вашими клиентами</div>
         </div>
         <div className={s.card}>
-          <Image alt="messages" src={"/amo-graphic.png"} width={279} height={382}></Image>
+          <Image alt="graphic" src={"/amo-graphic.png"} width={279} height={382}></Image>
           <div className={s.period}>Подробная статистика</div>
         </div>
         <div className={s.card}>
-          <Image alt="messages" src={"/leads.png"} width={456} height={320}></Image>
+          <Image alt="leads" src={"/leads.png"} width={456} height={320}></Image>
           <div className={s.period}>Аналитика с учетом ваших товаров</div>
         </div>
       </div>

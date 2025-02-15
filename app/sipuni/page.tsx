@@ -1,14 +1,14 @@
-import Advantages from "../ui/amo/advantages";
-import CTA from "../ui/amo/cta";
-import Grow from "../ui/amo/grow";
-import Info from "../ui/amo/info";
-import Main from "../ui/amo/main";
-import Steps from "../ui/amo/steps";
+import Advantages from "../ui/sipuni/advantages";
+import CTA from "../ui/sipuni/cta";
+import Grow from "../ui/sipuni/grow";
+import Info from "../ui/sipuni/info";
+import Main from "../ui/sipuni/main";
+import Steps from "../ui/sipuni/steps";
 import Consultation from "../ui/main/consultation";
 import ContactForm from "../ui/main/contact-form";
 import Faq from "../ui/main/faq";
 import Footer from "../ui/main/footer";
-import NumbersAmo from "../ui/amo/numbers";
+import NumbersAmo from "../ui/sipuni/numbers";
 
 export default function Amo() {
     return (

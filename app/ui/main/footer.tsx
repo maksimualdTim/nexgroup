@@ -54,11 +54,11 @@ export default function Footer() {
                   marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
                 }}
               >
-                <Link href={"/"} className={styles.link}>
+                <Link href={"/#services"} className={styles.link}>
                   Все услуги
                 </Link>
               </li>
-              <li
+              {/* <li
                 style={{
                   marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
                 }}
@@ -66,7 +66,7 @@ export default function Footer() {
                 <Link href={"/"} className={styles.link}>
                   Лицензии и тарифы
                 </Link>
-              </li>
+              </li> */}
               <li
                 style={{
                   marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
@@ -95,7 +95,7 @@ export default function Footer() {
                   marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
                 }}
               >
-                <Link href={"/"} className={styles.link}>
+                <Link href={"/amo"} className={styles.link}>
                   Внедрение amoCRM
                 </Link>
               </li>
@@ -104,7 +104,7 @@ export default function Footer() {
                   marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
                 }}
               >
-                <Link href={"/"} className={styles.link}>
+                <Link href={"/sipuni"} className={styles.link}>
                   Внедрение IP-телефонии
                 </Link>
               </li>

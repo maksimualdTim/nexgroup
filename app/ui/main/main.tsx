@@ -16,7 +16,7 @@ export default function Main() {
           <div className="main-title">
             <Title
               title="Помогаем бизнесу стать сильнее"
-              title2="с помощью цифровых решений"
+              title2="с&nbsp;помощью цифровых решений"
               subtitle="Умная автоматизация бизнеса"
               isMain={true}
               icon="/icons/nombus.svg"
@@ -39,7 +39,7 @@ export default function Main() {
                   text="Подробнее о нас"
                   isFull={false}
                   withArrow={false}
-                  link="/"
+                  link="/about"
                 />
               </div>
             </div>

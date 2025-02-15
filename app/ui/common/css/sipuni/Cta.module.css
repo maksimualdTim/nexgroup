@@ -1,0 +1,11 @@
+.img {
+    width: calc(846 * (1px + (100vw - 1530px) / 1530));
+    height: calc(384 * (1px + (100vw - 1530px) / 1530));
+}
+
+@media (max-width: 767px) {
+    .img {
+        width: calc(396 * (1px + (100vw - 430px) / 430));
+        height: calc(230 * (1px + (100vw - 430px) / 430));
+    }
+}

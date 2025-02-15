@@ -25,7 +25,7 @@ export default function Advantages() {
         >
           <Title
             title="Ваш бизнес работает лучше,"
-            title2="когда мы берёмся за дело"
+            title2="когда мы берёмся&nbsp;за дело"
             subtitle="Почему именно мы?"
           />
         </div>

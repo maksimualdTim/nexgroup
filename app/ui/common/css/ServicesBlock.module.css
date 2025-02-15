@@ -32,4 +32,7 @@
         margin-top: calc(62 * (1px + (100vw - 430px) / 430));
         padding-left: calc(8 * (1px + (100vw - 430px) / 430));
     }
+    .title {
+        max-width: calc(330 * (1px + (100vw - 430px) / 430));
+    }
 }

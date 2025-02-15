@@ -10,7 +10,7 @@ export default function Steps() {
         <div>
           <Title
             title="Внедряем IT-сервисы"
-            title2="и оптимизируем рутину"
+            title2="и&nbsp;оптимизируем рутину"
             subtitle="Цифровая трансформация"
           ></Title>
           <div className={`text-accent ${s.text}`}>Этапы ведения работ</div>

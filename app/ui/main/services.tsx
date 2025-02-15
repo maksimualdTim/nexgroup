@@ -16,7 +16,7 @@ export default function Services() {
                     order={2}
                     />
                 </div>
-                <div className="text-left md:text-right">
+                <div className={`text-left md:text-right ${s.title}`}>
                     <Title 
                     title="Предлагаемые услуги по"
                     title2="разработке и автоматизации"
@@ -28,7 +28,7 @@ export default function Services() {
                 <div className={`flex justify-between flex-col md:flex-row ${s.rowFirst}`}>
                     <div className="w-[100%] md:w-[66%]">
                         <ServiceCardLong
-                        link="/"
+                        link="/amo"
                         title="Внедрение CRM-системы"
                         text="Внедрим систему автоматизации продаж и управления клиентами, поможем повысить эффективность менеджеров"
                         logo="/logos/amo.svg"
@@ -56,7 +56,7 @@ export default function Services() {
                 <div className={`flex justify-between flex-col md:flex-row ${s.rowSecond}`} style={{minHeight: "calc(436 * (1px + (100vw - 1530px) / 1530))"}}>
                     <div className="w-[100%] md:w-[33%]">
                         <ServiceCardShort
-                        link="/"
+                        link="/sipuni"
                         title="Внедрение IP-телефонии"
                         text="Удобное решение для коммуникации с клиентами, которое упрощает работу менеджеров."
                         logo="/logos/utel.svg"

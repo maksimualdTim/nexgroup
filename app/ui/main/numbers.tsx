@@ -88,7 +88,7 @@ export default function Numbers() {
                   marginBottom: "calc(38 * (1px + (100vw - 1530px) / 1530))",
                 }}
               >
-                {inView ? <CountUp duration={3} end={10}></CountUp> : "10"}+
+                {inView ? <CountUp duration={3} end={5}></CountUp> : "5"}+
               </div>
               <div className={`inline-block text-fluid ${styles.period}`}>
                 Лет опыта
@@ -157,7 +157,7 @@ export default function Numbers() {
                 <div
                   className={`${styles.projectsNumber} ${styles.projectsNumberMini}`}
                 >
-                  {inView ? <CountUp duration={3} end={10}></CountUp> : "10"}+
+                  {inView ? <CountUp duration={3} end={5}></CountUp> : "5"}+
                 </div>
                 <div className={`inline-block text-fluid ${styles.period} ${styles.periodMin}`}>
                   Лет опыта
@@ -185,8 +185,8 @@ export default function Numbers() {
           </div>
         </div>
       </div>
-      <div className={`px-fluid ${s.servicesText} mobile-container`}>
-        <Link className="text-accent" href={"/"}>
+      <div className={`px-fluid ${s.servicesText} mobile-container relative z-10`}>
+        <Link className="text-accent" href={"https://t.me/nexgroup_support"}>
           Рассчитать стоимость услуг
           <Image
             className={`inline-block ${s.icon}`}

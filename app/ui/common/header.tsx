@@ -83,7 +83,7 @@ export default function Header() {
               >
                 Все услуги
               </Link>
-              <Link
+              {/* <Link
                 className="hidden md:inline-block"
                 href={"/"}
                 style={{
@@ -91,7 +91,7 @@ export default function Header() {
                 }}
               >
                 Лицензии
-              </Link>
+              </Link> */}
               <Link
                 className="hidden md:inline-block"
                 href={"/about"}
@@ -158,7 +158,7 @@ export default function Header() {
               </div>
               <div className={`header-btn ${styles.headerBtn}`}>
                 <Button
-                  link="/"
+                  link="https://t.me/nexgroup_support"
                   text="Оставить заявку"
                   isFull={true}
                   withArrow={false}
@@ -188,7 +188,7 @@ export default function Header() {
                   Все услуги
                 </button>
                 <div className={styles.panel}>
-                  <Link href={"/"} className={styles.panelLink}>
+                  <Link href={"/amo"} className={styles.panelLink}>
                       <div className="flex justify-between">
                         <Image src={"/logos/amo-main.svg"} alt="amo" className="opacity-50" width={91} height={18}></Image>
                         <Image src={"/icons/arrow-diag.svg"} alt="arrow" width={10} height={10} style={{
@@ -212,7 +212,7 @@ export default function Header() {
                         <div className={styles.panelText}>Все возможности управления торговлей</div>
                       </div>
                   </Link>
-                  <Link href={"/"} className={styles.panelLink}>
+                  <Link href={"/sipuni"} className={styles.panelLink}>
                       <div className="flex justify-between">
                         <Image src={"/logos/utel-main.svg"} alt="amo" className="opacity-50" width={71} height={21}></Image>
                         <Image src={"/icons/arrow-diag.svg"} alt="arrow" width={10} height={10} style={{
@@ -238,11 +238,11 @@ export default function Header() {
                   </Link>
                 </div>
               </li>
-              <li className={styles.mobileMenuItem}>
+              {/* <li className={styles.mobileMenuItem}>
                 <Link className={styles.mobileMenuLink} href={"/"}>
                   Лицензии
                 </Link>
-              </li>
+              </li> */}
               <li className={styles.mobileMenuItem}>
                 <Link className={styles.mobileMenuLink} href={"/about"}>
                   О компании
@@ -257,7 +257,7 @@ export default function Header() {
             <div className={styles.menuMobileBtnsWrapper}>
               <div>
                 <Button
-                  link="/"
+                  link="https://t.me/nexgroup_support"
                   isFull={true}
                   withArrow={true}
                   text="Консультация"
@@ -318,6 +318,7 @@ export default function Header() {
               className="relative"
               style={{
                 top: "calc(-15 * (1px + (100vw - 1530px) / 1530))",
+                right: "calc(30 * (1px + (100vw - 1530px) / 1530))"
               }}
             >
               <Lavr transparent={true}></Lavr>
@@ -330,7 +331,7 @@ export default function Header() {
             }}
           >
             <ServiceHeaderCard
-              link="/"
+              link="/amo"
               text="Система для увеличения продаж"
               title="Внедрение amoCRM"
               iconHeight={18}
@@ -347,7 +348,7 @@ export default function Header() {
               logo="/logos/sklad-menu.svg"
             ></ServiceHeaderCard>
             <ServiceHeaderCard
-              link="/"
+              link="/sipuni"
               text="Корпоративная телефония для бизнеса"
               title="Внедрение IP-телефонии"
               iconHeight={18}

@@ -88,7 +88,7 @@
         margin-top: calc(61 * (1px + (100vw - 430px) / 430));
     }
     .column {
-        max-width: 100%;
+        max-width: calc(338 * (1px + (100vw - 430px) / 430));
         margin-bottom: calc(40 * (1px + (100vw - 430px) / 430));
     }
     .column:last-child {

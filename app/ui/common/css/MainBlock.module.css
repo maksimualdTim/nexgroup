@@ -4,7 +4,7 @@
 .mainBlock {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     margin-top: calc(390 * (1px + (100vw - 1530px) / 1530));
     z-index: 10;
     position: relative;

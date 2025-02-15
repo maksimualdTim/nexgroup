@@ -8,6 +8,13 @@
     margin-bottom: calc(24 * (1px + (100vw - 1530px) / 1530));
 }
 
+.title {
+    font-size: calc(40 * (1px + (100vw - 1530px) / 1530));
+}
+.mainTitle {
+    font-size: calc(60 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(57 * (1px + (100vw - 1530px) / 1530));
+}
 @media (max-width: 767px) {
     .subtitle {
         font-size: calc(16 * (1px + (100vw - 430px) / 430));
@@ -17,14 +24,24 @@
     .title {
         font-size: calc(30 * (1px + (100vw - 430px) / 430));
         line-height: calc(40 * (1px + (100vw - 430px) / 430));
+        max-width: calc(370 * (1px + (100vw - 430px) / 430));
+        white-space: pre-line;
     }
     .wrapper {
-        max-width: calc(356 * (1px + (100vw - 430px) / 430));
+        max-width: 100%;
     }
     .icon {
         display: inline-block;
         width: calc(14 * (1px + (100vw - 430px) / 430));
         height: calc(14 * (1px + (100vw - 430px) / 430));
         margin-right: calc(13 * (1px + (100vw - 430px) / 430));
+    }
+    .mainTitle {
+        font-size: calc(36 * (1px + (100vw - 430px) / 430));
+        line-height: calc(42 * (1px + (100vw - 430px) / 430));
+    }
+    .serviceTitle {
+        font-size: calc(27 * (1px + (100vw - 430px) / 430));
+        line-height: calc(34 * (1px + (100vw - 430px) / 430));
     }
 }

@@ -1,0 +1,9 @@
+.topContainer {
+    max-width: calc(408 * (1px + (100vw - 1530px) / 1530));
+}
+
+@media (max-width: 767px) {
+    .topContainer {
+        max-width: 100%;
+    }
+}

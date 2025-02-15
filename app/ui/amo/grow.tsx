@@ -5,12 +5,15 @@ import Title from "../common/title";
 export default function Grow() {
   return (
     <div className={`${s.wrapper} px-fluid`}>
-      <div className={`flex justify-between items-end mobile-container ${s.title}`}>
+      <div
+        className={`flex justify-between items-end mobile-container ${s.title}`}
+      >
         <div>
           <Title
             title="Новая точка роста"
-            title2="для вашего бизнеса"
+            title2="для&nbsp;вашего бизнеса"
             subtitle="Продвинутая CRM-система"
+            isService={true}
           ></Title>
         </div>
         <div className="flex items-center hidden md:flex">
@@ -56,7 +59,9 @@ export default function Grow() {
               продаж, исключая потери клиентов. 
             </div>
           </div>
-          <div>
+          <div className="relative" style={{
+            top: "calc(2* (1px + (100vw - 1530px) / 1530))"
+          }}>
             <Image
               src={"/amo-screen.png"}
               alt="amo"
@@ -118,7 +123,7 @@ export default function Grow() {
               программы. 
             </div>
             <Image
-            unoptimized={true}
+              unoptimized={true}
               alt="amo"
               src={"/amo-long-top-mobile.png"}
               width={349}
@@ -165,17 +170,16 @@ export default function Grow() {
         <div className={s.mobileCard}>
           <div className={s.mobileContent}>
             <div className={s.mobileCardTitle}>
-              Обрабатывайте <br></br> поступающие заявки
+              Ставьте продажи<br></br> на автопилот
             </div>
-            <div className={s.mobileCardSubtitle}>Коммуникация и общение</div>
+            <div className={s.mobileCardSubtitle}>Digital-воронка</div>
             <div className={s.mobileCardText}>
-              Обрабатывайте заявки с разных источников и ведите коммуникацию с
-              помощью мессенджера со скоростью молнии прямо в интерфейсе
-              программы. 
+              Диджитал воронка позволяет интегрировать в вашу воронку продаж
+              весь спектр онлайн инструментов коммуникации и утепления клиентов.
             </div>
           </div>
           <Image
-          unoptimized={true}
+            unoptimized={true}
             alt="amo"
             src={"/amo-path-mobile.png"}
             width={349}

@@ -6,6 +6,7 @@
     padding-right: calc(33 * (1px + (100vw - 1530px) / 1530));
     border-radius: calc(20 * (1px + (100vw - 1530px) / 1530));
     margin-top: calc(134 * (1px + (100vw - 1530px) / 1530));
+    overflow: hidden;
 }
 
 @media (max-width: 767px) {

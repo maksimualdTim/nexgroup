@@ -1,7 +1,8 @@
-"use client"
+"use client";
 import MainText from "../common/mainText";
 import Title from "../common/title";
 import s from "../common/css/amo/Steps.module.css";
+import styles from "../common/css/sipuni/Steps.module.css";
 import Button from "../common/button";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,13 +14,15 @@ import "swiper/css/pagination";
 export default function Steps() {
   return (
     <div className={`px-fluid ${s.wrapper} mobile-container`}>
-      <div className={`flex justify-between flex-col-reverse md:flex-row ${s.top}`}>
-        <div className={s.topContainer}>
+      <div
+        className={`flex justify-between flex-col-reverse md:flex-row ${s.top}`}
+      >
+        <div className={`${s.topContainer} ${styles.topContainer}`}>
           <MainText
             text={[
               <p key={1}>
-                Внедрение amoCRM — это шаг к упрощению управления бизнесом,
-                увеличению доходов и созданию сильной команды
+                Внедрение IP-телефонии — это путь к оптимизации коммуникаций,
+                снижению затрат и повышению эффективности работы команды.
               </p>,
             ]}
             order={2}
@@ -27,8 +30,8 @@ export default function Steps() {
         </div>
         <div className="text-left md:text-right">
           <Title
-            title="Пошаговое внедрение"
-            title2="CRM в ваш бизнес"
+            title="Разделяем внедрение"
+            title2="IP-телефонии&nbsp;на&nbsp;этапы"
             subtitle="Этапность и процесс"
           />
         </div>
@@ -43,10 +46,10 @@ export default function Steps() {
               <span>Анализ</span>
             </div>
           </div>
-          <div className={s.title}>Анализ всех потребностей</div>
+          <div className={s.title}>Изучение потребностей</div>
           <div className={s.text}>
-            Начинаем с анализа вашего бизнеса, процессов и целей, чтобы понять,
-            как CRM может быть полезна и какие инструменты вам нужны.
+            Мы изучаем ваш бизнес, коммуникационные процессы и цели, чтобы
+            определить, как IP-телефония поможет повысить эффективность работы.
           </div>
         </div>
         <div className={s.card}>
@@ -55,14 +58,13 @@ export default function Steps() {
               <span>02</span>
             </div>
             <div className={s.subtitle}>
-              <span>Настройка</span>
+              <span>Планирование</span>
             </div>
           </div>
-          <div className={s.title}>Подготовка и настройка системы</div>
+          <div className={s.title}>Определение технического задания</div>
           <div className={s.text}>
-            Настраиваем amoCRM под ваши задачи: создаем воронки продаж,
-            интегрируем телефонию, настраиваем мессенджеры и автоматизируем
-            рутинные процессы.
+            Определяем ключевые требования, формируем техническое задание и
+            согласовываем его с вами для точного соответствия вашим задачам.
           </div>
         </div>
         <div className={s.card}>
@@ -71,14 +73,13 @@ export default function Steps() {
               <span>03</span>
             </div>
             <div className={s.subtitle}>
-              <span>Интеграция</span>
+              <span>Подготовка</span>
             </div>
           </div>
-          <div className={s.title}>Интеграция с вашими инструментами</div>
+          <div className={s.title}>Выбор и настройка оборудования</div>
           <div className={s.text}>
-            Соединяем amoCRM с вашими сайтами и соц. сетями. Это обеспечивает
-            бесшовное взаимодействие между всеми платформами и упрощает
-            управление бизнесом.
+            Помогаем подобрать оптимальное оборудование и программное
+            обеспечение, совместимое с вашей IT-инфраструктурой.
           </div>
         </div>
         <div className={s.card}>
@@ -87,13 +88,13 @@ export default function Steps() {
               <span>04</span>
             </div>
             <div className={s.subtitle}>
-              <span>Обучение</span>
+              <span>Внедрение</span>
             </div>
           </div>
-          <div className={s.title}>Обучение сотрудников</div>
+          <div className={s.title}>Установка и настройка</div>
           <div className={s.text}>
-            Объясняем, как эффективно использовать amoCRM в ежедневной работе, и
-            остаемся на связи для ответа на любые вопросы.
+            Интегрируем IP-телефонию, настраиваем маршрутизацию звонков и другие
+            функции для бесперебойной работы.
           </div>
         </div>
         <div className={s.card}>
@@ -107,9 +108,8 @@ export default function Steps() {
           </div>
           <div className={s.title}>Тестирование и запуск</div>
           <div className={s.text}>
-            После настройки и обучения мы тестируем систему на реальных данных,
-            устраняя возможные недочеты. Затем запускаем amoCRM в полноценную
-            работу.
+            Проводим тестирование связи, устраняем возможные неполадки и
+            оптимизируем работу системы перед запуском.
           </div>
         </div>
         <div className={s.card}>
@@ -148,11 +148,11 @@ export default function Steps() {
                   <span>Анализ</span>
                 </div>
               </div>
-              <div className={s.title}>Анализ всех потребностей</div>
+              <div className={s.title}>Изучение потребностей</div>
               <div className={s.text}>
-                Начинаем с анализа вашего бизнеса, процессов и целей, чтобы
-                понять, как CRM может быть полезна и какие инструменты вам
-                нужны.
+                Мы изучаем ваш бизнес, коммуникационные процессы и цели, чтобы
+                определить, как IP-телефония поможет повысить эффективность
+                работы.
               </div>
             </div>
           </SwiperSlide>
@@ -163,14 +163,13 @@ export default function Steps() {
                   <span>02</span>
                 </div>
                 <div className={s.subtitle}>
-                  <span>Настройка</span>
+                  <span>Планирование</span>
                 </div>
               </div>
-              <div className={s.title}>Подготовка и настройка системы</div>
+              <div className={s.title}>Определение технического задания</div>
               <div className={s.text}>
-                Настраиваем amoCRM под ваши задачи: создаем воронки продаж,
-                интегрируем телефонию, настраиваем мессенджеры и автоматизируем
-                рутинные процессы.
+                Определяем ключевые требования, формируем техническое задание и
+                согласовываем его с вами для точного соответствия вашим задачам.
               </div>
             </div>
           </SwiperSlide>
@@ -181,14 +180,13 @@ export default function Steps() {
                   <span>03</span>
                 </div>
                 <div className={s.subtitle}>
-                  <span>Интеграция</span>
+                  <span>Подготовка</span>
                 </div>
               </div>
-              <div className={s.title}>Интеграция с вашими инструментами</div>
+              <div className={s.title}>Выбор и настройка оборудования</div>
               <div className={s.text}>
-                Соединяем amoCRM с вашими сайтами и соц. сетями. Это
-                обеспечивает бесшовное взаимодействие между всеми платформами и
-                упрощает управление бизнесом.
+                Помогаем подобрать оптимальное оборудование и программное
+                обеспечение, совместимое с вашей IT-инфраструктурой.
               </div>
             </div>
           </SwiperSlide>
@@ -199,13 +197,13 @@ export default function Steps() {
                   <span>04</span>
                 </div>
                 <div className={s.subtitle}>
-                  <span>Обучение</span>
+                  <span>Внедрение</span>
                 </div>
               </div>
-              <div className={s.title}>Обучение сотрудников</div>
+              <div className={s.title}>Установка и настройка</div>
               <div className={s.text}>
-                Объясняем, как эффективно использовать amoCRM в ежедневной
-                работе, и остаемся на связи для ответа на любые вопросы.
+                Интегрируем IP-телефонию, настраиваем маршрутизацию звонков и
+                другие функции для бесперебойной работы.
               </div>
             </div>
           </SwiperSlide>
@@ -221,9 +219,8 @@ export default function Steps() {
               </div>
               <div className={s.title}>Тестирование и запуск</div>
               <div className={s.text}>
-                После настройки и обучения мы тестируем систему на реальных
-                данных, устраняя возможные недочеты. Затем запускаем amoCRM в
-                полноценную работу.
+              Проводим тестирование связи, устраняем возможные неполадки и
+              оптимизируем работу системы перед запуском.
               </div>
             </div>
           </SwiperSlide>
@@ -252,7 +249,12 @@ export default function Steps() {
         style={{ marginTop: "calc(64 * (1px + (100vw - 1530px) / 1530))" }}
       >
         <div>
-          <Button text="Консультация" withArrow={true} link="https://t.me/nexgroup_support" isFull={true} />
+          <Button
+            text="Консультация"
+            withArrow={true}
+            link="https://t.me/nexgroup_support"
+            isFull={true}
+          />
         </div>
         <div className={s.logoWrapper}>
           <Image

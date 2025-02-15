@@ -1,0 +1,12 @@
+.wrapper {
+    background-image: url("/sipuni.png");
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        background-image: url("/sipuni-mobile.png");
+    }
+    .title > div > h1{
+        max-width: 65%;
+    }
+}

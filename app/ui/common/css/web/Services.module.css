@@ -1,0 +1,10 @@
+.wrapper {}
+.title {
+    margin-bottom: calc(78 * (1px + (100vw - 1530px) / 1530));
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: calc(20 * (1px + (100vw - 1530px) / 1530));
+}

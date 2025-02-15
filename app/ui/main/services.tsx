@@ -69,7 +69,7 @@ export default function Services() {
                     </div>
                     <div className="w-[100%] md:w-[66%]">
                         <ServiceCardLong
-                        link="/"
+                        link="/web"
                         title="Разработка веб-сайтов"
                         text="Создаем современные и адаптивные сайты с уникальным дизайном, удобной навигацией и интеграциями."
                         logo="/logos/web.svg"

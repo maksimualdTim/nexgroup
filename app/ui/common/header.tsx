@@ -224,7 +224,7 @@ export default function Header() {
                         <div className={styles.panelText}>Корпоративная телефония для бизнеса</div>
                       </div>
                   </Link>
-                  <Link href={"/"} className={styles.panelLink}>
+                  <Link href={"/web"} className={styles.panelLink}>
                       <div className="flex justify-between">
                         <Image src={"/logos/web-main.svg"} className="opacity-50" alt="amo" width={63} height={20}></Image>
                         <Image src={"/icons/arrow-diag.svg"} alt="arrow" width={10} height={10} style={{
@@ -249,7 +249,7 @@ export default function Header() {
                 </Link>
               </li>
               <li className={styles.mobileMenuItem}>
-                <Link className={styles.mobileMenuLink} href={"/"}>
+                <Link className={styles.mobileMenuLink} href={"/contacts"}>
                   Контакты
                 </Link>
               </li>
@@ -356,7 +356,7 @@ export default function Header() {
               logo="/logos/utel-main.svg"
             ></ServiceHeaderCard>
             <ServiceHeaderCard
-              link="/"
+              link="/web"
               text="Полный цикл разработки и запуска сайта"
               title="Разработка веб-сайтов"
               iconHeight={18}

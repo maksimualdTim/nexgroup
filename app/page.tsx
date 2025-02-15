@@ -47,7 +47,6 @@ export default function Home() {
             "linear-gradient(180deg, rgba(0, 0, 0, 0) 53.66%, #000000 100%)",
         }}
       >
-        {" "}
         <video autoPlay muted loop id="bg-video" className={styles.video}>
         <source src="/pc_1.webm" type="video/webm"></source>
         <source src="/pc_1.mp4" type="video/mp4"></source>

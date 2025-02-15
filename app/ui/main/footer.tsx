@@ -81,7 +81,7 @@ export default function Footer() {
                   marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
                 }}
               >
-                <Link href={"/"} className={styles.link}>
+                <Link href={"/contacts"} className={styles.link}>
                   Контакты
                 </Link>
               </li>
@@ -122,7 +122,7 @@ export default function Footer() {
                   marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
                 }}
               >
-                <Link href={"/"} className={styles.link}>
+                <Link href={"/web"} className={styles.link}>
                   Разработка веб-сайтов
                 </Link>
               </li>

@@ -10,7 +10,6 @@ import Faq from "./ui/main/faq";
 import InfiniteHorizontalScroll from "./ui/common/infinite";
 import styles from "@/app/ui/common/css/MainBlock.module.css";
 
-
 export default function Home() {
   const logos = [
     {
@@ -41,17 +40,18 @@ export default function Home() {
   ];
   return (
     <>
-      <div className="relative"
+      <div
+        className="relative"
         style={{
           background:
             "linear-gradient(180deg, rgba(0, 0, 0, 0) 53.66%, #000000 100%)",
         }}
       >
         <video autoPlay muted loop id="bg-video" className={styles.video}>
-        <source src="/pc_1.webm" type="video/webm"></source>
-        <source src="/pc_1.mp4" type="video/mp4"></source>
-        Ваш браузер не поддерживает видео.
-      </video>
+          <source src="/pc_1.webm" type="video/webm"></source>
+          <source src="/pc_1.mp4" type="video/mp4"></source>
+          Ваш браузер не поддерживает видео.
+        </video>
         <Main></Main>
         <InfiniteHorizontalScroll logos={logos}></InfiniteHorizontalScroll>
       </div>

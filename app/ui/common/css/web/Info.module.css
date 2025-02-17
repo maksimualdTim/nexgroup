@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: cover;
-    column-gap: calc(20 * (1px + (100vw - 1530px) / 1530));
+    column-gap: calc(18 * (1px + (100vw - 1530px) / 1530));
     padding-bottom: calc(131 * (1px + (100vw - 1530px) / 1530));
 }
 .card {
@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: calc(477 * (1px + (100vw - 1530px) / 1530));
+    width: 49%;
     height: calc(291 * (1px + (100vw - 1530px) / 1530));
     padding-left: calc(35 * (1px + (100vw - 1530px) / 1530));
     padding-bottom: calc(27 * (1px + (100vw - 1530px) / 1530));
@@ -86,7 +86,7 @@
 }
 
 .cardOrder {
-    width: calc(477 * (1px + (100vw - 1530px) / 1530));
+    width: 49%;
     height: calc(291 * (1px + (100vw - 1530px) / 1530));
     padding-left: calc(35 * (1px + (100vw - 1530px) / 1530));
     padding-right: calc(35 * (1px + (100vw - 1530px) / 1530));
@@ -137,7 +137,7 @@
 
 .cardLong {
     height: calc(603 * (1px + (100vw - 1530px) / 1530));
-    width: calc(477 * (1px + (100vw - 1530px) / 1530));
+    width: 32.4%;
     backdrop-filter: blur(200px);
     border: 1px solid #FFFFFF1A;
     background: #2B2B2B42;

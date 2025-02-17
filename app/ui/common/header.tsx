@@ -85,7 +85,7 @@ export default function Header() {
               </Link>
               <Link
                 className="hidden md:inline-block"
-                href={"/"}
+                href={"/dev"}
                 style={{
                   marginRight: "calc(48 * (1px + (100vw - 1530px) / 1530))",
                 }}
@@ -200,7 +200,7 @@ export default function Header() {
                         <div className={styles.panelText}>Система для увеличения продаж</div>
                       </div>
                   </Link>
-                  <Link href={"/"} className={styles.panelLink}>
+                  <Link href={"/dev"} className={styles.panelLink}>
                       <div className="flex justify-between">
                         <Image src={"/logos/sklad-menu.svg"} alt="amo" width={129} height={19}></Image>
                         <Image src={"/icons/arrow-diag.svg"} alt="arrow" width={10} height={10} style={{
@@ -239,7 +239,7 @@ export default function Header() {
                 </div>
               </li>
               <li className={styles.mobileMenuItem}>
-                <Link className={styles.mobileMenuLink} href={"/"}>
+                <Link className={styles.mobileMenuLink} href={"/dev"}>
                   Лицензии
                 </Link>
               </li>
@@ -339,7 +339,7 @@ export default function Header() {
               logo="/logos/amo-main.svg"
             ></ServiceHeaderCard>
             <ServiceHeaderCard
-              link="/"
+              link="/dev"
               text="Все возможности управления торговлей"
               title="Внедрение системы МойСклад"
               iconHeight={19}

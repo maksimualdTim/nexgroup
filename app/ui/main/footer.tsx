@@ -58,15 +58,15 @@ export default function Footer() {
                   Все услуги
                 </Link>
               </li>
-              {/* <li
+              <li
                 style={{
                   marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
                 }}
               >
-                <Link href={"/"} className={styles.link}>
+                <Link href={"/dev"} className={styles.link}>
                   Лицензии и тарифы
                 </Link>
-              </li> */}
+              </li>
               <li
                 style={{
                   marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
@@ -113,7 +113,7 @@ export default function Footer() {
                   marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
                 }}
               >
-                <Link href={"/"} className={styles.link}>
+                <Link href={"/dev"} className={styles.link}>
                   Внедрение МойСклад
                 </Link>
               </li>

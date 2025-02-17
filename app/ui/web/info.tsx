@@ -51,7 +51,8 @@ export default function Info() {
           </div>
         </div>
         <div className="flex justify-between flex-wrap w-[67.6%]" style={{
-            rowGap: "calc(21 * (1px + (100vw - 1530px) / 1530))"
+            rowGap: "calc(21 * (1px + (100vw - 1530px) / 1530))",
+            columnGap: "calc(19 * (1px + (100vw - 1530px) / 1530))"
         }}>
           <div className={`${styles.card} ${styles.cardTop}`}>
             <Image

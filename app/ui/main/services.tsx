@@ -41,7 +41,7 @@ export default function Services() {
                     </div>
                     <div className="w-[100%] md:w-[33%]">
                     <ServiceCardShort
-                        link="/"
+                        link="/dev"
                         title="Внедрение системы МойСклад"
                         text="Внедрим облачную система для учета товаров, заказов и финансов."
                         logo="/logos/sklad.svg"

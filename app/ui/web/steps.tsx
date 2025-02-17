@@ -6,7 +6,7 @@ import s from "../common/css/web/Steps.module.css";
 
 export default function Steps() {
   return (
-    <div>
+    <div className={s.wrapper}>
       <div className="px-fluid">
         <div className="block justify-between md:flex">
           <div>

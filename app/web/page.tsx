@@ -4,8 +4,10 @@ import Footer from "../ui/main/footer";
 import Aspects from "../ui/web/aspects";
 import Info from "../ui/web/info";
 import Main from "../ui/web/main";
+import Portfolio from "../ui/web/portfolio";
 import Services from "../ui/web/services";
 import styles from "@/app/ui/common/css/web/Main.module.css";
+import Steps from "../ui/web/steps";
 
 export default function Web() {
   return (
@@ -19,6 +21,8 @@ export default function Web() {
         <Main></Main>
       </div>
       <Info></Info>
+      <Steps></Steps>
+      <Portfolio></Portfolio>
       <Services></Services>
       <Aspects></Aspects>
       <Faq></Faq>

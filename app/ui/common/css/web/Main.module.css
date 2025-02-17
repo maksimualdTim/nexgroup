@@ -2,7 +2,7 @@
     padding-bottom: calc(75 * (1px + (100vw - 1530px) / 1530));
 }
 .rightBlock {
-    width: calc(555 * (1px + (100vw - 1530px) / 1530));
+    width: 36.5%;
     background: #191919B2;
     backdrop-filter: blur(100px);
     border-radius: calc(30 * (1px + (100vw - 1530px) / 1530));
@@ -25,6 +25,7 @@
     object-fit: cover;
     border-radius: calc(26 * (1px + (100vw - 1530px) / 1530));
     height: 100%;
+    width: 100%;
 }
 .overlay {
     position: absolute;

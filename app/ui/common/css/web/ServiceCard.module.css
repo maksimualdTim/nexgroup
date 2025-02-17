@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     max-height: calc(398 * (1px + (100vw - 1530px) / 1530));
-    max-width: calc(725 * (1px + (100vw - 1530px) / 1530));
+    width: 49.3%;
     position: relative;
 }
 

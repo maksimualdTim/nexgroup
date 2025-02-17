@@ -25,7 +25,7 @@ export default function Main() {
             помогая вам достичь новых уровней эффективности и роста.
           </div>
           <div className={s.btn}>
-            <Button link="/" isFull={true} text="Начать сотрудничать"></Button>
+            <Button link="https://t.me/nexgroup_support" isFull={true} text="Начать сотрудничать"></Button>
           </div>
           <div>
             <Expirience left={true}></Expirience>

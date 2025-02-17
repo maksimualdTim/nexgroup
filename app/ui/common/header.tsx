@@ -109,7 +109,7 @@ export default function Header() {
               <Link href={"/"} className={`${styles.lang} ${styles.active}`}>
                 RU
               </Link>
-              <Link href={"/"} className={styles.lang}>
+              <Link href={"/dev"} className={styles.lang}>
                 UZ
               </Link>
               <div

@@ -83,7 +83,7 @@ export default function Header() {
               >
                 Все услуги
               </Link>
-              {/* <Link
+              <Link
                 className="hidden md:inline-block"
                 href={"/"}
                 style={{
@@ -91,7 +91,7 @@ export default function Header() {
                 }}
               >
                 Лицензии
-              </Link> */}
+              </Link>
               <Link
                 className="hidden md:inline-block"
                 href={"/about"}
@@ -238,11 +238,11 @@ export default function Header() {
                   </Link>
                 </div>
               </li>
-              {/* <li className={styles.mobileMenuItem}>
+              <li className={styles.mobileMenuItem}>
                 <Link className={styles.mobileMenuLink} href={"/"}>
                   Лицензии
                 </Link>
-              </li> */}
+              </li>
               <li className={styles.mobileMenuItem}>
                 <Link className={styles.mobileMenuLink} href={"/about"}>
                   О компании

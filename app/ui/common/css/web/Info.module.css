@@ -1,0 +1,171 @@
+.wrapper {
+    margin-top: calc(96 * (1px + (100vw - 1530px) / 1530));
+}
+.text {
+    max-width: calc(300 * (1px + (100vw - 1530px) / 1530));
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    background: url("/web-rock.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    column-gap: calc(20 * (1px + (100vw - 1530px) / 1530));
+    padding-bottom: calc(131 * (1px + (100vw - 1530px) / 1530));
+}
+.card {
+    border: 1px solid #FFFFFF1A;
+    border-radius: calc(30 * (1px + (100vw - 1530px) / 1530));
+}
+.cardTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(477 * (1px + (100vw - 1530px) / 1530));
+    height: calc(291 * (1px + (100vw - 1530px) / 1530));
+    padding-left: calc(35 * (1px + (100vw - 1530px) / 1530));
+    padding-bottom: calc(27 * (1px + (100vw - 1530px) / 1530));
+    padding-top: calc(28 * (1px + (100vw - 1530px) / 1530));
+    backdrop-filter: blur(200px);
+    background: 
+    linear-gradient(0deg, rgba(43, 43, 43, 0.26), rgba(43, 43, 43, 0.26)), 
+    linear-gradient(180deg, #00292D 0%, rgba(0, 0, 0, 0) 100%);
+    position: relative;
+}
+.cardTop > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(408 * (1px + (100vw - 1530px) / 1530));
+    height: calc(234 * (1px + (100vw - 1530px) / 1530));
+}
+.period {
+    font-weight: 600;
+    font-size: calc(13 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(19 * (1px + (100vw - 1530px) / 1530));
+    color: #fff;
+    padding-top: calc(15 * (1px + (100vw - 1530px) / 1530));
+    padding-bottom: calc(15 * (1px + (100vw - 1530px) / 1530));
+    padding-left: calc(27 * (1px + (100vw - 1530px) / 1530));
+    padding-right: calc(27 * (1px + (100vw - 1530px) / 1530));
+    background: rgba(37, 48, 49, 0.83);
+    backdrop-filter: blur(20px);
+    border-radius: calc(100 * (1px + (100vw - 1530px) / 1530));
+    display: inline-block;
+    flex-grow: 0;
+    max-width: fit-content;
+    align-self: flex-start;
+}
+.period >span {
+    opacity: .8;
+}
+.subtitle {
+    font-weight: 600;
+    font-size: calc(14 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(22 * (1px + (100vw - 1530px) / 1530));
+    opacity: .3;
+}
+.title {
+    font-weight: 600;
+    font-size: calc(18 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(32 * (1px + (100vw - 1530px) / 1530));
+}
+.cardTopBackground {
+    background: 
+    url("/hosting.png");
+    background-size: cover; /* Или 'contain', если не хочешь обрезки */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cardBottom {
+    background: url("/web-laptop.png");
+    background-size: cover; /* Или 'contain', если не хочешь обрезки */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cardOrder {
+    width: calc(477 * (1px + (100vw - 1530px) / 1530));
+    height: calc(291 * (1px + (100vw - 1530px) / 1530));
+    padding-left: calc(35 * (1px + (100vw - 1530px) / 1530));
+    padding-right: calc(35 * (1px + (100vw - 1530px) / 1530));
+    padding-bottom: calc(27 * (1px + (100vw - 1530px) / 1530));
+    padding-top: calc(28 * (1px + (100vw - 1530px) / 1530));
+}
+.cardOrderTop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: calc(45 * (1px + (100vw - 1530px) / 1530));
+}
+.cardOrderBottom {
+    padding-top: calc(33 * (1px + (100vw - 1530px) / 1530));
+    border-top: 1px solid #FFFFFF33;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flower {
+    width: calc(43 * (1px + (100vw - 1530px) / 1530));
+    height: calc(43 * (1px + (100vw - 1530px) / 1530));
+}
+.cardOrderSubtitle {
+    color: #00EAFF;
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: calc(14 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(22 * (1px + (100vw - 1530px) / 1530));
+}
+.cardText {
+    font-weight: 600;
+    font-size: calc(15 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(22 * (1px + (100vw - 1530px) / 1530));
+    opacity: .7;
+    max-width: calc(265 * (1px + (100vw - 1530px) / 1530));
+}
+.btn {
+    padding: calc(48 * (1px + (100vw - 1530px) / 1530));
+    right: calc(40 * (1px + (100vw - 1530px) / 1530));
+    bottom: calc(40 * (1px + (100vw - 1530px) / 1530));
+    cursor: pointer;
+    display: inline-block;
+}
+.arrow {
+    width: calc(13 * (1px + (100vw - 1530px) / 1530));
+    height: calc(13 * (1px + (100vw - 1530px) / 1530));
+}
+
+.cardLong {
+    height: calc(603 * (1px + (100vw - 1530px) / 1530));
+    width: calc(477 * (1px + (100vw - 1530px) / 1530));
+    backdrop-filter: blur(200px);
+    border: 1px solid #FFFFFF1A;
+    background: #2B2B2B42;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: calc(30 * (1px + (100vw - 1530px) / 1530));
+}
+.cardLongImg {
+    padding-left: calc(10 * (1px + (100vw - 1530px) / 1530));
+    padding-top: calc(8 * (1px + (100vw - 1530px) / 1530));
+    padding-right: calc(10 * (1px + (100vw - 1530px) / 1530));
+    margin-bottom: calc(38 * (1px + (100vw - 1530px) / 1530));;
+}
+.cardLongImg > img {
+    height: calc(367 * (1px + (100vw - 1530px) / 1530));
+    width: 100%;
+}
+.cardLongContent {
+    padding-bottom: calc(46 * (1px + (100vw - 1530px) / 1530));
+    padding-left: calc(46 * (1px + (100vw - 1530px) / 1530));
+    padding-right: calc(70 * (1px + (100vw - 1530px) / 1530));
+}
+.cardLongText {
+    margin-top: calc(19 * (1px + (100vw - 1530px) / 1530));
+    max-width: calc(362 * (1px + (100vw - 1530px) / 1530));
+    font-weight: 600;
+    font-size: calc(15 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(22 * (1px + (100vw - 1530px) / 1530));
+    opacity: .7;
+}

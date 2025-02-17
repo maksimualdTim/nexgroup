@@ -2,9 +2,10 @@ import ContactForm from "../ui/main/contact-form";
 import Faq from "../ui/main/faq";
 import Footer from "../ui/main/footer";
 import Aspects from "../ui/web/aspects";
+import Info from "../ui/web/info";
 import Main from "../ui/web/main";
 import Services from "../ui/web/services";
-import styles from "@/app/ui/common/css/MainBlock.module.css";
+import styles from "@/app/ui/common/css/web/Main.module.css";
 
 export default function Web() {
   return (
@@ -17,6 +18,7 @@ export default function Web() {
         </video>
         <Main></Main>
       </div>
+      <Info></Info>
       <Services></Services>
       <Aspects></Aspects>
       <Faq></Faq>

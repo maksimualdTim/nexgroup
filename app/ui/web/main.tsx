@@ -7,7 +7,7 @@ import Button from "../common/button";
 
 export default function Main() {
   return (
-    <div className={`${s.wrapper} ${styles.wrapper}`}>
+    <div className={`${styles.wrapper}`}>
       <Header></Header>
       <div
         className={`px-fluid relative ${s.inner} ${styles.inner} mobile-container`}
@@ -72,7 +72,6 @@ export default function Main() {
           </div>
         </div>
         <div className={styles.panel}>
-          <div className={styles.panelNumber}>5&lt;</div>
           <div className={styles.panelContent}>
             <div className={styles.panelTitle}>Более 5 лет на рынке</div>
             <div className={styles.panelText}>
@@ -80,6 +79,7 @@ export default function Main() {
               бизнес с 2019 года.
             </div>
           </div>
+          <div className={styles.panelNumber}>5&lt;</div>
         </div>
       </div>
     </div>

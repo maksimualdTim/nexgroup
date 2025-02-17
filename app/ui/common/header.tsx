@@ -101,7 +101,7 @@ export default function Header() {
               >
                 О компании
               </Link>
-              <Link href={"/"} className="hidden md:inline-block">
+              <Link href={"/contacts"} className="hidden md:inline-block">
                 Контакты
               </Link>
             </div>

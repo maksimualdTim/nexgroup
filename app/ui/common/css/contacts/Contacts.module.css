@@ -1,0 +1,8 @@
+.wrapper {
+    margin-top: calc(30 * (1px + (100vw - 1530px) / 1530));
+}
+@media (max-width: 767px) {
+    .wrapper {
+        margin-top: calc(66 * (1px + (100vw - 1530px) / 1530));
+    }
+}

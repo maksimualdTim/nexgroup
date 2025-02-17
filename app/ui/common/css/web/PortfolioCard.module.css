@@ -2,7 +2,7 @@
 .wrapper {
     position: relative;
     top: calc(-400 * (1px + (100vw - 1530px) / 1530));
-    margin-bottom: calc(-140 * (1px + (100vw - 1530px) / 1530));
+    margin-bottom: calc(-240 * (1px + (100vw - 1530px) / 1530));
 }
 .cards {
     display: flex;

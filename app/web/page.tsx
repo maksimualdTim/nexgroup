@@ -20,6 +20,16 @@ export default function Web() {
         </video>
         <Main></Main>
       </div>
+      <div className="block md:hidden">
+        <video autoPlay muted style={{
+          height: "calc(354 * (1px + (100vw - 430px) / 430))",
+          objectFit: "cover"
+        }}>
+          <source src="/laptop.webm" type="video/webm"></source>
+          <source src="/laptop.mp4" type="video/mp4"></source>
+          Ваш браузер не поддерживает видео.
+        </video>
+        </div>
       <Info></Info>
       <Steps></Steps>
       <Portfolio></Portfolio>

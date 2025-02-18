@@ -13,6 +13,7 @@ export default function Portfolio() {
             title="Создаем лучшие проекты"
             title2="на рынке Узбекистана"
             subtitle="Ваш сайт — следующий!"
+            isService={true}
           ></Title>
         </div>
         <div className="hidden md:block">

@@ -11,7 +11,7 @@ export default function Info() {
       >
         <div>
           <Title
-            title="Проектируем сайты"
+            title={"Проектируем сайты\n"}
             title2="для бизнеса любого масштаба"
             subtitle="Веб-разработка"
             isService={true}
@@ -50,10 +50,7 @@ export default function Info() {
             </div>
           </div>
         </div>
-        <div className="flex justify-between flex-wrap w-[67.6%]" style={{
-            rowGap: "calc(21 * (1px + (100vw - 1530px) / 1530))",
-            columnGap: "calc(19 * (1px + (100vw - 1530px) / 1530))"
-        }}>
+        <div className={styles.miniCards}>
           <div className={`${styles.card} ${styles.cardTop}`}>
             <Image
               src={"/web-spirale.png"}
@@ -113,7 +110,7 @@ export default function Info() {
               </div>
               <div className="relative">
                 <div className={`bg-white rounded-full ${styles.btn}`}>
-                  <div>
+                  <div style={{height: "100%"}}>
                     <Image
                       src={"/icons/arrow-right.svg"}
                       alt="arrow"

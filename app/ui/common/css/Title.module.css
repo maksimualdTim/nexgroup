@@ -43,5 +43,6 @@
     .serviceTitle {
         font-size: calc(27 * (1px + (100vw - 430px) / 430));
         line-height: calc(34 * (1px + (100vw - 430px) / 430));
+        max-width: 100%;
     }
 }

@@ -102,7 +102,16 @@
     filter: saturate(0);
 }
 @media (max-width: 767px) {
+    .wrapper {
+        padding-bottom: calc(61 * (1px + (100vw - 430px) / 430));
+    }
     .video {
         height: 100%;
+    }
+    .rightBlock {
+        display: none;
+    }
+    .wrapper {
+        padding-bottom: calc(75 * (1px + (100vw - 430px) / 430));
     }
 }

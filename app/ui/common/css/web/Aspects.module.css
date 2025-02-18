@@ -29,7 +29,6 @@
     margin-bottom: calc(50 * (1px + (100vw - 1530px) / 1530));
 }
 .cards {
-    display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
@@ -85,4 +84,67 @@
 }
 .cardRight {
     max-width: calc(337 * (1px + (100vw - 1530px) / 1530));
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        margin-top: calc(89 * (1px + (100vw - 430px) / 430));
+        margin-bottom: calc(105 * (1px + (100vw - 430px) / 430));
+    }
+    .cards {
+        padding-left: calc(22 * (1px + (100vw - 430px) / 430));
+        padding-right: calc(22 * (1px + (100vw - 430px) / 430));
+    }
+    .title {
+        margin-bottom: calc(43 * (1px + (100vw - 430px) / 430));
+    }
+
+    .cards :global(.swiper-pagination) {
+        position: relative;
+        margin-top: calc(26 * (1px + (100vw - 430px) / 430));
+    }
+    .cards :global(.swiper-pagination-bullet) {
+        width: calc(9 * (1px + (100vw - 430px) / 430));
+        height: calc(9 * (1px + (100vw - 430px) / 430));
+        background-color: #373737;
+        opacity: 1;
+        transition: .3s;
+    }
+    .cards :global(.swiper-pagination-bullet-active) {
+        width: calc(36 * (1px + (100vw - 430px) / 430));
+        background-color: white;
+        border-radius: calc(100 * (1px + (100vw - 430px) / 430));
+        transition: .3s;
+    }
+    .card {
+        width: 100% !important;
+        display: block !important;
+        padding-top: calc(8 * (1px + (100vw - 430px) / 430));
+        padding-bottom: calc(8 * (1px + (100vw - 430px) / 430));
+        padding-left: calc(8 * (1px + (100vw - 430px) / 430));
+        padding-right: calc(8 * (1px + (100vw - 430px) / 430));
+        border-radius: calc(30 * (1px + (100vw - 430px) / 430));
+    }
+
+    .cardContent {
+        padding-left: calc(31 * (1px + (100vw - 430px) / 430));
+        padding-right: calc(44 * (1px + (100vw - 430px) / 430));
+        padding-bottom: calc(30 * (1px + (100vw - 430px) / 430));
+    }
+    .cardText {
+        font-size: calc(16 * (1px + (100vw - 430px) / 430));
+        line-height: calc(24 * (1px + (100vw - 430px) / 430));
+    }
+    .cardText > p:first-child{
+        display: inline-block;
+        margin-bottom: calc(14 * (1px + (100vw - 430px) / 430));
+    }
+    .img {
+        margin-bottom: calc(30 * (1px + (100vw - 430px) / 430));
+    }
+    .cardTitle {
+        font-size: calc(16 * (1px + (100vw - 430px) / 430));
+        line-height: calc(18 * (1px + (100vw - 430px) / 430));
+        margin-bottom: calc(15 * (1px + (100vw - 430px) / 430));
+    }
 }

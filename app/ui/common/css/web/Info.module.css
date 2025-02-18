@@ -169,3 +169,116 @@
     line-height: calc(22 * (1px + (100vw - 1530px) / 1530));
     opacity: .7;
 }
+.miniCards {
+    width: 67.6%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    row-gap: calc(21 * (1px + (100vw - 1530px) / 1530));
+    column-gap: calc(19 * (1px + (100vw - 1530px) / 1530));
+}
+
+@media (max-width: 767px) {
+    .card {
+        border-radius: calc(30 * (1px + (100vw - 430px) / 430));
+    }
+    .cardLong {
+        display: none;
+    }
+    .miniCards {
+        width: 100%;
+    }
+    .cardOrder,
+    .cardTop {
+        width: 100%;
+        height: calc(291 * (1px + (100vw - 430px) / 430));
+    }
+    .cardTop {
+        padding-left: calc(35 * (1px + (100vw - 430px) / 430));
+        padding-bottom: calc(27 * (1px + (100vw - 430px) / 430));
+        padding-top: calc(28 * (1px + (100vw - 430px) / 430));
+    }
+    .period {
+        font-size: calc(13 * (1px + (100vw - 430px) / 430));
+        line-height: calc(19 * (1px + (100vw - 430px) / 430));
+        padding-top: calc(15 * (1px + (100vw - 430px) / 430));
+        padding-bottom: calc(15 * (1px + (100vw - 430px) / 430));
+        padding-left: calc(27 * (1px + (100vw - 430px) / 430));
+        padding-right: calc(27 * (1px + (100vw - 430px) / 430));
+        border-radius: calc(100 * (1px + (100vw - 430px) / 430));
+    }
+    .subtitle {
+        font-size: calc(14 * (1px + (100vw - 430px) / 430));
+        line-height: calc(22 * (1px + (100vw - 430px) / 430));
+    }
+    .title {
+        font-size: calc(18 * (1px + (100vw - 430px) / 430));
+        line-height: calc(32 * (1px + (100vw - 430px) / 430));
+    }
+    .cardTop > img {
+        width: calc(309 * (1px + (100vw - 430px) / 430));
+        height: calc(228 * (1px + (100vw - 430px) / 430));
+    }
+    .cardBottom {
+        background-position: 0;
+        background-size: 130% 100%;
+    }
+    .cards {
+        margin-top: calc(60 * (1px + (100vw - 430px) / 430));
+        padding-left: calc(22 * (1px + (100vw - 430px) / 430));
+        padding-right: calc(22 * (1px + (100vw - 430px) / 430));
+        display: block;
+        background-position: bottom;
+        background-size: cover;
+    }
+    .card {
+        margin-bottom: calc(15 * (1px + (100vw - 430px) / 430));
+    }
+    .card:last-child {
+        margin-bottom: 0;
+    }
+    .flower {
+        display: none;
+    }
+    .cardOrderSubtitle {
+        color: #00EAFF;
+        font-size: calc(14 * (1px + (100vw - 430px) / 430));
+        line-height: calc(22 * (1px + (100vw - 430px) / 430));
+    }
+    .cardText {
+        font-size: calc(15 * (1px + (100vw - 430px) / 430));
+        line-height: calc(22 * (1px + (100vw - 430px) / 430));
+        max-width: calc(265 * (1px + (100vw - 430px) / 430));
+    }
+    .cardOrder {
+        padding-left: calc(35 * (1px + (100vw - 430px) / 430));
+        padding-right: calc(35 * (1px + (100vw - 430px) / 430));
+        padding-bottom: calc(35 * (1px + (100vw - 430px) / 430));
+        padding-top: calc(35 * (1px + (100vw - 430px) / 430));
+    }
+    .btn {
+        right: calc(40 * (1px + (100vw - 430px) / 430));
+        bottom: calc(40 * (1px + (100vw - 430px) / 430));
+        cursor: pointer;
+        display: inline-block;
+        width: calc(85 * (1px + (100vw - 430px) / 430));
+        height: calc(85 * (1px + (100vw - 430px) / 430));
+    }
+    .arrow {
+        width: calc(13 * (1px + (100vw - 430px) / 430));
+        height: calc(13 * (1px + (100vw - 430px) / 430));
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .cardOrderTop {
+        margin-bottom: calc(35 * (1px + (100vw - 430px) / 430));
+    }
+    .cardOrderBottom {
+        padding-top: calc(35 * (1px + (100vw - 430px) / 430));
+    }
+    .wrapper {
+        margin-top: calc(110 * (1px + (100vw - 430px) / 430));
+    }
+}

@@ -138,3 +138,131 @@
     top: -14%;
     z-index: 0;
 }
+.mobileContent {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        margin-top: calc(44 * (1px + (100vw - 430px) / 430));
+        overflow: hidden;
+        background: linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, #000000 31.06%, #000000 100%);
+    }
+    .link {
+        margin-top: calc(42 * (1px + (100vw - 430px) / 430));
+        font-size: calc(15 * (1px + (100vw - 430px) / 430));
+    }
+    .linkIcon {
+        width: calc(10 * (1px + (100vw - 430px) / 430));
+        height: calc(10 * (1px + (100vw - 430px) / 430));
+        margin-left: calc(5 * (1px + (100vw - 430px) / 430));
+    }
+    .content {
+        display: none;
+    }
+    .mobileContent {
+        display: block;
+        margin-top: calc(130 * (1px + (100vw - 430px) / 430));
+        padding-bottom: calc(165 * (1px + (100vw - 430px) / 430));
+    }
+    .video {
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: lighten;
+        opacity: .5;
+        object-fit: cover;
+    }
+    .videoWrapper {
+        position: relative;
+        right: -20%;
+        width: calc(636 * (1px + (100vw - 430px) / 430));
+        height: calc(636 * (1px + (100vw - 430px) / 430));
+    }
+    .elipse {
+        width: calc(636 * (1px + (100vw - 430px) / 430));
+        height: calc(636 * (1px + (100vw - 430px) / 430));
+        top: 0%;
+        scale: 1.18;
+        left: 0;
+        /* right: -50%; */
+    }
+    .info {
+        display: block;
+        position: absolute;
+        max-height: calc(70 * (1px + (100vw - 430px) / 430));
+    }
+    .number {
+        font-weight: 600;
+        font-size: calc(70 * (1px + (100vw - 430px) / 430));
+        line-height: calc(50 * (1px + (100vw - 430px) / 430));
+        left: 20%;
+    }
+    .number:nth-child(1) {
+        position: relative;
+    }
+    .number:nth-child(2) {
+        top: calc(255 * (1px + (100vw - 430px) / 430));
+        left: calc(322 * (1px + (100vw - 430px) / 430));
+        transform: translateY(-50%);
+    }
+    .number:nth-child(3) {
+        bottom: calc(-490 * (1px + (100vw - 430px) / 430));
+        position: relative;
+    }
+    .steps {
+        width: 110%;
+        display: block;
+    }
+    .step {
+        border: 1px solid #404040;
+        backdrop-filter: blur(100px);
+        border-radius: calc(100 * (1px + (100vw - 430px) / 430));
+        padding: calc(33 * (1px + (100vw - 430px) / 430));
+        font-size: calc(16 * (1px + (100vw - 430px) / 430));
+        line-height: calc(9 * (1px + (100vw - 430px) / 430));
+    }
+    .step:first-child{
+        width: calc(231 * (1px + (100vw - 430px) / 430));
+        top: calc(-83 * (1px + (100vw - 430px) / 430));
+        right: calc(-170 * (1px + (100vw - 430px) / 430));
+    }
+    .step:nth-child(2) {
+        width: calc(208 * (1px + (100vw - 430px) / 430));
+        backdrop-filter: blur(100px);
+        top: calc(45 * (1px + (100vw - 430px) / 430));
+        left: calc(80 * (1px + (100vw - 430px) / 430));
+        position: relative;
+    }
+    .step:last-child {
+        width: calc(235 * (1px + (100vw - 430px) / 430));
+        top: calc(185 * (1px + (100vw - 430px) / 430));
+        right: calc(-170 * (1px + (100vw - 430px) / 430));
+    }
+
+    .circle {
+        width: calc(17 * (1px + (100vw - 430px) / 430));
+        height: calc(17 * (1px + (100vw - 430px) / 430));
+        top: 47%;
+    }
+    .circleWrapper {
+        width: calc(40 * (1px + (100vw - 430px) / 430));
+        height: calc(40 * (1px + (100vw - 430px) / 430));
+    }
+    .circleWrapper:nth-child(5) {
+        top: 0%;
+        left: calc(155 * (1px + (100vw - 430px) / 430));
+    }
+    .circleWrapper:nth-child(6) {
+        top: calc(290 * (1px + (100vw - 430px) / 430));
+        left: calc(10 * (1px + (100vw - 430px) / 430));
+    }
+    .circleWrapper:nth-child(7) {
+        top: calc(592 * (1px + (100vw - 430px) / 430));
+        left: calc(155 * (1px + (100vw - 430px) / 430));
+    }
+}
+@media (max-width: 400px) {
+    .circle {
+        top: 44%;
+    }
+}

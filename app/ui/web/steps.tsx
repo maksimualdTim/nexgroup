@@ -7,18 +7,19 @@ import s from "../common/css/web/Steps.module.css";
 export default function Steps() {
   return (
     <div className={s.wrapper}>
-      <div className="px-fluid">
+      <div className="px-fluid mobile-container">
         <div className="block justify-between md:flex">
           <div>
             <Title
               title="Современные, привлекательные"
-              title2="и продающие сайты"
+              title2={"\nи продающие сайты"}
               subtitle="Поэтапная разработка"
+              isService={true}
             />
           </div>
           <div>
             <MainText
-              order={1}
+              order={2}
               text={[
                 <p key={1} className="font-semibold">
                   Наш подход включает исследование рынка и аудитории, чтобы
@@ -98,6 +99,41 @@ export default function Steps() {
             Ваш браузер не поддерживает видео.
           </video>
           <div className={s.overlay}></div>
+        </div>
+      </div>
+      <div className={s.mobileContent}>
+        <div className={s.info}>
+          <div className={s.number}>01</div>
+          <div className={s.number}>02</div>
+          <div className={s.number}>03</div>
+          <div className={s.steps}>
+            <div className={s.step}>
+              <span>Проработка дизайна</span>
+            </div>
+            <div className={s.step}>
+              <span>Разработка сайта</span>
+            </div>
+            <div className={s.step}>
+              <span>Полноценный запуск</span>
+            </div>
+          </div>
+          <div className={s.circleWrapper}>
+            <div className={s.circle}></div>
+          </div>
+          <div className={s.circleWrapper}>
+            <div className={s.circle}></div>
+          </div>
+          <div className={s.circleWrapper}>
+            <div className={s.circle}></div>
+          </div>
+        </div>
+        <div className={s.videoWrapper}>
+          <div className={s.elipse}></div>
+          <video autoPlay muted loop className={s.video}>
+            <source src="/hero_1.webm" type="video/webm"></source>
+            <source src="/hero_1.mp4" type="video/mp4"></source>
+            Ваш браузер не поддерживает видео.
+          </video>
         </div>
       </div>
     </div>

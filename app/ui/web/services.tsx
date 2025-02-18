@@ -10,7 +10,7 @@ export default function Services() {
         <div className="mobile-container">
           <Title
             title="Профессиональная разработка"
-            title2="с акцентом на результат"
+            title2={"с акцентом \nна результат"}
             subtitle="Доверьтесь нашему опыту"
             isService={true}
           ></Title>

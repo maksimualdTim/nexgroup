@@ -19,7 +19,7 @@ export default function Card({
   return (
     <div className={s.card}>
       <div className={s.info}>
-        <div className={s.period}>{period}</div>
+        <div className={`${s.period} hidden md:inline-block`}>{period}</div>
         <div className={s.title}>{title}</div>
         <div className={s.subtitle}>{subtitle}</div>
         <div className={s.text}>{text}</div>
@@ -30,10 +30,21 @@ export default function Card({
         </div>
       </div>
       <div className={s.imgBlock}>
-        <Image src={img} alt="service" className={s.img} width={379} height={398}></Image>
+        <Image
+          src={img}
+          alt="service"
+          className={s.img}
+          width={379}
+          height={398}
+        ></Image>
       </div>
-      <div className={`bg-white rounded-full ${s.btn} absolute`}>
-          <div>
+      <div className="flex items-end justify-between">
+        <div
+          className={`bg-white rounded-full ${s.btn} relative z-10 md:absolute`}
+        >
+          <div style={{
+            height: "100%"
+          }}>
             <Image
               src={"/icons/arrow-right.svg"}
               alt="arrow"
@@ -43,6 +54,8 @@ export default function Card({
             />
           </div>
         </div>
+        <div className={`${s.period} inline-block md:hidden`}>{period}</div>
+      </div>
     </div>
   );
 }

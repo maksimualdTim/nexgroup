@@ -94,7 +94,7 @@ export default function Steps() {
           ></Image>
 
           <video autoPlay muted loop className={s.video}>
-            <source src="/hero_1.webm" type="video/webm"></source>
+            <source src="/hero_1_compressed.webm" type="video/webm"></source>
             <source src="/hero_1.mp4" type="video/mp4"></source>
             Ваш браузер не поддерживает видео.
           </video>
@@ -130,7 +130,7 @@ export default function Steps() {
         <div className={s.videoWrapper}>
           <div className={s.elipse}></div>
           <video autoPlay muted loop className={s.video}>
-            <source src="/hero_1.webm" type="video/webm"></source>
+            <source src="/hero_1_compressed.webm" type="video/webm"></source>
             <source src="/hero_1.mp4" type="video/mp4"></source>
             Ваш браузер не поддерживает видео.
           </video>

@@ -48,7 +48,7 @@ export default function Home() {
         }}
       >
         <video autoPlay muted loop id="bg-video" className={styles.video}>
-          <source src="/pc_1.webm" type="video/webm"></source>
+          <source src="/pc_1_compressed.webm" type="video/webm"></source>
           <source src="/pc_1.mp4" type="video/mp4"></source>
           Ваш браузер не поддерживает видео.
         </video>

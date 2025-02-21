@@ -55,7 +55,7 @@ export default function Main() {
       <div className={styles.rightBlock}>
         <div className={styles.rightVideoBlock}>
           <video autoPlay muted className={styles.rightVideo}>
-            <source src="/laptop.webm" type="video/webm"></source>
+            <source src="/laptop_compressed.webm" type="video/webm"></source>
             <source src="/laptop.mp4" type="video/mp4"></source>
             Ваш браузер не поддерживает видео.
           </video>

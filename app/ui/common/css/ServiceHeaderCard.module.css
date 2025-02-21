@@ -1,7 +1,6 @@
 .card {
     border: 1px solid #FFFFFF12;
     background: #4747474D;
-    backdrop-filter: blur(150px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;

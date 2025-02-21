@@ -14,7 +14,7 @@ export default function Web() {
     <div>
       <div className="relative">
         <video autoPlay muted loop id="bg-video" className={styles.video}>
-          <source src="/web.webm" type="video/webm"></source>
+          <source src="/web_compressed.webm" type="video/webm"></source>
           <source src="/web.mp4" type="video/mp4"></source>
           Ваш браузер не поддерживает видео.
         </video>
@@ -25,7 +25,7 @@ export default function Web() {
           height: "calc(354 * (1px + (100vw - 430px) / 430))",
           objectFit: "cover"
         }}>
-          <source src="/laptop.webm" type="video/webm"></source>
+          <source src="/laptop_compressed.webm" type="video/webm"></source>
           <source src="/laptop.mp4" type="video/mp4"></source>
           Ваш браузер не поддерживает видео.
         </video>

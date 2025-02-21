@@ -5,30 +5,92 @@
     padding-left: calc(37 * (1px + (100vw - 1530px) / 1530));
     line-height: calc(17 * (1px + (100vw - 1530px) / 1530));
 }
-.servicesBlock {
-    background: linear-gradient(180deg, rgba(37, 37, 37, 0.83) 0%, rgba(30, 30, 30, 0.6557) 100%);
-    backdrop-filter: blur(50px);
-    z-index: 15;
-    transition: 
-        padding-bottom 0.4s ease, 
-        height 0.2s ease,
-        padding-top 0.4s ease;
-        
-    padding-bottom: 0;
-    padding-top: 0;
-    top: 0%;
+.overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0E0E0E;
+    opacity: .8;
+    z-index: 20;
+}
+.menuServicesTextWrapper {
+    position: relative;
+}
+.menuServicesTextWrapper::before {
     height: 0;
+    display: block;
+    width: 1px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background-color: #fff;
+    transition: .5s cubic-bezier(.76,.09,.23,.89);
+    opacity: 0;
+}
+.menuServicesTextTitle {
+    font-size: calc(20 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(20 * (1px + (100vw - 1530px) / 1530));
+    margin-bottom: calc(10 * (1px + (100vw - 1530px) / 1530));
+    font-weight: 600;
+    opacity: 0;
+    position: relative;
+    right: -20%;
+    transition: .4s cubic-bezier(.82,.31,.21,.72);
+    transition-delay: 0;
+}
+.menuServicesText {
+    opacity: 0;
+    right: -20%;
+    font-size: calc(14 * (1px + (100vw - 1530px) / 1530));
+    transition: .4s cubic-bezier(.82,.31,.21,.72);
+    position: relative;
+    transition-delay: 0;
+}
+.active .menuServicesTextTitle {
+    opacity: 1;
+    right: 0;
+    transition-delay: .5s;
+}
+.active .menuServicesText {
+    opacity: .3;
+    right: 0;
+    transition-delay: .65s;
+}
+.servicesBlock {
+    background: linear-gradient(180deg, rgba(37, 37, 37, 1) 0%, rgba(30, 30, 30, 1) 100%);
+    z-index: 30;
+    transition: .4s;
+    padding-bottom: 0;
+    padding-top: calc(161 * (1px + (100vw - 1530px) / 1530));
+    top: 0%;
+    transform: translateY(-100%);
+    height: calc(484 * (1px + (100vw - 1530px) / 1530));
     overflow: hidden;
+    border-bottom-left-radius: calc(20 * (1px + (100vw - 1530px) / 1530));
+    border-bottom-right-radius: calc(20 * (1px + (100vw - 1530px) / 1530));
+}
+.servicesBlock > div {
+    opacity: 0;
+    transition: .15s;
+}
+.active .servicesBlock > div {
+    opacity: 1;
 }
 .active .servicesBlock {
-    padding-top: calc(161 * (1px + (100vw - 1530px) / 1530));
-    padding-bottom: calc(50 * (1px + (100vw - 1530px) / 1530));
-    box-shadow: 0px 4px 100px 500px #000C0DB2;
-    height: calc(534 * (1px + (100vw - 1530px) / 1530));
-    transition: 
-        padding-bottom 0.2s ease, 
-        height 0.4s ease,
-        padding-top 0.2s ease;
+    transform: translateY(0);
+}
+.active .menuServicesTextWrapper::before {
+    opacity: 1;
+    height: calc(46 * (1px + (100vw - 1530px) / 1530));
+    transition-delay: .4s;
+}
+
+.lavrWrapper {
+    position: relative;
+    top: calc(-15 * (1px + (100vw - 1530px) / 1530));
+    right: calc(30 * (1px + (100vw - 1530px) / 1530));
 }
 .allServicesLink::before {
     content: "";
@@ -42,9 +104,49 @@
     margin-right: calc(8 * (1px + (100vw - 1530px) / 1530));
 }
 
+.lavrWrapper > div > img:first-child,
+.lavrWrapper > div > span,
+.lavrWrapper > div > img:last-child {
+    opacity: 0;
+    position: relative;
+    transition: 0.4s cubic-bezier(.76,.09,.23,.89);
+}
+
+
+.active .lavrWrapper > div > img:first-child {
+    opacity: 1;
+    left: 0;
+    transition-delay: .6s;
+}
+.active .lavrWrapper > div > span {
+    opacity: 1;
+    left: 0;
+    transition-delay: .5s;
+}
+.active .lavrWrapper > div > img:last-child {
+    opacity: 1;
+    left: 0;
+    transition-delay: .4s;
+}
+
+
 .active .allServicesLink::before {
     opacity: 1;
-    transition: .3s;
+}
+.cardsWrapper {
+    margin-top: calc(48 * (1px + (100vw - 1530px) / 1530));
+}
+
+.cardsWrapper > a{
+    transform: scale(0.95);
+    opacity: 0;
+    transition: .4s;
+}
+
+.active .cardsWrapper > a {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: .4s;
 }
 
 .lang {
@@ -65,7 +167,7 @@
 .lang.active {
     border: 1px solid transparent;
     opacity: 1;
-    backdrop-filter: blur(50px);
+    /* backdrop-filter: blur(50px); */
     background: rgba(255, 255, 255, 0.15);
 }
 .menuBtn {

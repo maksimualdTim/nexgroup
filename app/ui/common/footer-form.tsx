@@ -5,20 +5,33 @@ import styles from "../common/css/Button.module.css";
 import formStyles from "../common/css/Input.module.css";
 import Link from "next/link";
 import { useState } from "react";
-
+import { sendToTelegram } from "@/app/lib/actions";
 
 export default function FooterForm({text = "Отправить"} : {text?: string}) {
-  const [phone, setPhone] = useState("");
-  const [name, setName] = useState("");
-  const [comment, setComment] = useState("");
+  const [phone, setPhone] = useState<string>("");
+  const [name, setName] = useState<string>("");
+  const [comment, setComment] = useState<string>("");
+  const [status, setStatus] = useState<string | null>(null);
+
+
+  const handleSubmit = async (formData: FormData) => {
+    setStatus("Отправка...");
+    const result = await sendToTelegram(formData);
+    if (result?.error) {
+      setStatus(`❌ Ошибка: ${result.error}`);
+  } else {
+      setStatus("✅ Успешно отправлено!");
+  }
+  }
 
   return (
-    <form action="" className={formStyles.form}>
+    <form action={handleSubmit} className={formStyles.form}>
       <div className={`${formStyles["input-container"]} ${name.length == 0 ? "": formStyles.active}`}>
         <label className={`text-fluid ${formStyles.label}`} htmlFor="name">
           Ваше имя*
         </label>
         <input
+          name="name"
           id="name"
           type="text"
           value={name}
@@ -76,6 +89,7 @@ export default function FooterForm({text = "Отправить"} : {text?: strin
         <Link target="_blank" href={"https://policies.google.com/privacy"}>Политике конфиденциальности</Link> и <Link target="_blank" href={"https://policies.google.com/terms;%20target="}>Условиям
         использования</Link> Google.
       </div>
+      {status && <p className="mt-4 text-center">{status}</p>}
     </form>
   );
 }

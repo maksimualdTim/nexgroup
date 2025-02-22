@@ -1,5 +1,9 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import s from "../common/css/web/ServiceCard.module.css";
+import Modal from "../common/modal";
 
 export default function Card({
   price,
@@ -16,6 +20,8 @@ export default function Card({
   period: string;
   img: string;
 }) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className={s.card}>
       <div className={s.info}>
@@ -40,6 +46,7 @@ export default function Card({
       </div>
       <div className="flex items-end justify-between">
         <div
+          onClick={() => setIsModalOpen(true)}
           className={`bg-white rounded-full ${s.btn} relative z-10 md:absolute`}
         >
           <div style={{
@@ -56,6 +63,7 @@ export default function Card({
         </div>
         <div className={`${s.period} inline-block md:hidden`}>{period}</div>
       </div>
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}></Modal>
     </div>
   );
 }

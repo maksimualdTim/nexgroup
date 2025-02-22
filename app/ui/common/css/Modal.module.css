@@ -1,0 +1,81 @@
+/* Затемнение фона */
+.modalOverlay {
+    position: fixed; /* Теперь фиксированное положение работает! */
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* backdrop-filter: blur(4px); */
+    z-index: 1000; /* Убеждаемся, что модалка поверх всего */
+    display: none;
+}
+.active .modalOverlay {
+    display: block;
+}
+
+/* Окно */
+.modalContent {
+    background: #1F1F1F;
+    padding: calc(10 * (1px + (100vw - 1530px) / 1530));
+    padding-right: calc(44 * (1px + (100vw - 1530px) / 1530));
+    border-radius: calc(30 * (1px + (100vw - 1530px) / 1530));
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    width: 57.5%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    transform: scale(0.8) translate(-50%, -50%);
+    opacity: 0;
+    justify-content: space-between;
+    transition: .3s;
+    
+}
+
+.active .modalContent {
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%);
+    z-index: 2000;
+}
+
+.subtitle {
+    color: #00EAFF;
+    font-weight: 600;
+    font-size: calc(14 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(20 * (1px + (100vw - 1530px) / 1530));
+}
+.title {
+    font-weight: 600;
+    font-size: calc(24 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(40 * (1px + (100vw - 1530px) / 1530));
+    margin-bottom: calc(44 * (1px + (100vw - 1530px) / 1530));
+}
+.button {
+    color: #0E0E0E;
+    font-weight: 600;
+    font-size: calc(16 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(9 * (1px + (100vw - 1530px) / 1530));
+    text-align: center;
+    padding: calc(33 * (1px + (100vw - 1530px) / 1530)) calc(40 * (1px + (100vw - 1530px) / 1530));
+    background-color: #fff;
+    border-radius: calc(100 * (1px + (100vw - 1530px) / 1530));
+    margin-top: calc(43 * (1px + (100vw - 1530px) / 1530));
+    margin-bottom: calc(31 * (1px + (100vw - 1530px) / 1530));
+}
+.policy {
+    color: #666666;
+    font-weight: 600;
+    font-size: calc(12 * (1px + (100vw - 1530px) / 1530));
+    line-height: calc(17 * (1px + (100vw - 1530px) / 1530));
+    max-width: calc(282 * (1px + (100vw - 1530px) / 1530));
+}
+.form {
+    width: 46%;
+    padding-top: calc(52 * (1px + (100vw - 1530px) / 1530));
+}
+.imgBlock {
+    background: #303030;
+    width: 46%;
+    border-radius: calc(23 * (1px + (100vw - 1530px) / 1530));
+}

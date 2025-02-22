@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: calc(390 * (1px + (100vw - 1530px) / 1530));
+    margin-top: 46vh;
     z-index: 10;
     position: relative;
 }

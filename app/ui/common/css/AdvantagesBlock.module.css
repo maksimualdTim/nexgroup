@@ -13,6 +13,10 @@
     padding-left: calc(32 * (1px + (100vw - 1530px) / 1530));
     top: calc(85 * (1px + (100vw - 1530px) / 1530));
     padding-bottom: calc(5 * (1px + (100vw - 1530px) / 1530));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
 }
 
 

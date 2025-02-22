@@ -17,42 +17,40 @@ export default function Advantages() {
       className={`block justify-between items-start py-block md:flex mobile-container-card ${s.wrapper}`}
       id="advantages"
     >
-      <div
-        className={`text-fluid md:sticky ${s.sticky}`}
-      >
-        <div
-          style={{ marginBottom: "calc(70 * (1px + (100vw - 1530px) / 1530))" }}
-        >
-          <Title
-            title="Ваш бизнес работает лучше,"
-            title2="когда мы берёмся&nbsp;за дело"
-            subtitle="Почему именно мы?"
-          />
-        </div>
-        <div
-          style={{
-            marginBottom: "calc(176 * (1px + (100vw - 1530px) / 1530))",
-          }}
-        >
-          <MainText
-            order={3}
-            text={[
-              <p
-                key={1}
-                style={{
-                  marginBottom: "calc(32 * (1px + (100vw - 1530px) / 1530))",
-                }}
-              >
-                Мы в NEX знаем, что эффективное управление и прозрачные
-                коммуникации — это основа успешного бизнеса
-              </p>,
-              <p key={2}>
-                Мы помогаем устранить барьеры, оптимизировать процессы и
-                внедрить современные технологии, чтобы ваш бизнес развивался
-                быстрее и с меньшими усилиями
-              </p>,
-            ]}
-          />
+      <div className={`text-fluid md:sticky ${s.sticky}`}>
+        <div>
+          <div
+            style={{
+              marginBottom: "calc(70 * (1px + (100vw - 1530px) / 1530))",
+            }}
+          >
+            <Title
+              title="Ваш бизнес работает лучше,"
+              title2="когда мы берёмся&nbsp;за дело"
+              subtitle="Почему именно мы?"
+            />
+          </div>
+          <div>
+            <MainText
+              order={3}
+              text={[
+                <p
+                  key={1}
+                  style={{
+                    marginBottom: "calc(32 * (1px + (100vw - 1530px) / 1530))",
+                  }}
+                >
+                  Мы в NEX знаем, что эффективное управление и прозрачные
+                  коммуникации — это основа успешного бизнеса
+                </p>,
+                <p key={2}>
+                  Мы помогаем устранить барьеры, оптимизировать процессы и
+                  внедрить современные технологии, чтобы ваш бизнес развивался
+                  быстрее и с меньшими усилиями
+                </p>,
+              ]}
+            />
+          </div>
         </div>
         <div className="hidden md:block">
           <Button
@@ -114,7 +112,6 @@ export default function Advantages() {
           slidesPerView={1}
           autoplay={{ delay: 3000 }}
           pagination={{ clickable: true }}
-          
           loop={true}
         >
           <SwiperSlide>

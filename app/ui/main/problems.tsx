@@ -66,6 +66,7 @@ export default function Problems() {
             alt="sphere"
             width={1122}
             height={1150}
+            unoptimized={true}
           ></Image>
           <div className={`block justify-between md:flex ${s.top}`}>
             <div>

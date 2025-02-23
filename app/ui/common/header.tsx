@@ -161,6 +161,7 @@ export default function Header() {
                   style={{
                     lineHeight: "calc(16 * (1px + (100vw - 1530px) / 1530))",
                     fontSize: "calc(13 * (1px + (100vw - 1530px) / 1530))",
+                    marginTop: "calc(3 * (1px + (100vw - 1530px) / 1530))"
                   }}
                 >
                   Заказать звонок
@@ -428,7 +429,7 @@ export default function Header() {
               text="Корпоративная телефония для бизнеса"
               title="Внедрение IP-телефонии"
               iconHeight={18}
-              iconWidth={91}
+              iconWidth={60}
               logo="/logos/utel-main.svg"
             ></ServiceHeaderCard>
             <ServiceHeaderCard
@@ -436,7 +437,7 @@ export default function Header() {
               text="Полный цикл разработки и запуска сайта"
               title="Разработка веб-сайтов"
               iconHeight={18}
-              iconWidth={91}
+              iconWidth={60}
               logo="/logos/web.svg"
             ></ServiceHeaderCard>
           </div>

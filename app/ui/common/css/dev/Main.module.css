@@ -1,5 +1,5 @@
 .wrapper {
-    background-image: url("/dev-bg.png");
+    background-image: url("/dev-bg.jpg");
     min-height: 100vh;
     display: flex;
     flex-direction: column;

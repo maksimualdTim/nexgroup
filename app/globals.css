@@ -7,7 +7,9 @@
   --fluid-font-size: 16;
   --fluid-spacing: 30;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   @apply bg-customBlack text-white;
 }
@@ -24,6 +26,25 @@ header {
   padding-top: calc(16 * (1px + (100vw - 1530px) / 1530));
   padding-bottom: calc(16 * (1px + (100vw - 1530px) / 1530));
 }
+
+/* Стили для вебкитовских браузеров (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 6px; /* Тонкий скроллбар */
+}
+
+::-webkit-scrollbar-track {
+  background: #111; /* Темный фон */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444; /* Стильный серый */
+  border-radius: 3px; /* Округление */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666; /* Чуть светлее при наведении */
+}
+
 
 
 @media (max-width: 767px) {

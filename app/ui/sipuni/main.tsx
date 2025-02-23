@@ -7,7 +7,7 @@ import Button from "../common/button";
 
 export default function Main() {
   return (
-    <div className={`${s.wrapper} ${sipuniStyles.wrapper}`}>
+    <div className={`${sipuniStyles.wrapper}`}>
       <Header></Header>
       <div className={`px-fluid relative ${s.inner} mobile-container`}>
         <div className={sipuniStyles.title}>

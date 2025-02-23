@@ -9,6 +9,10 @@
     height: calc(46 * (1px + (100vw - 1530px) / 1530));
 }
 
+.input[type="tel"] {
+    padding-bottom: calc(20 * (1px + (100vw - 1530px) / 1530));
+}
+
 .label {
     color: #878787;
     transition: .3s;
@@ -17,6 +21,7 @@
     overflow: hidden;
     top: 0;
     position: absolute;
+    cursor: text;
 }
 .textarea {
     background: transparent;
@@ -46,7 +51,66 @@
     font-size: calc(14 * (1px + (100vw - 1530px) / 1530));
     line-height: calc(17 * (1px + (100vw - 1530px) / 1530));
 }
+
+
+.intlContainer {
+    width: 100%;
+}
+.intlContainer :global(.iti__selected-country) {
+    padding-bottom: calc(20 * (1px + (100vw - 1530px) / 1530));
+}
+.intlContainer :global(.iti__selected-country-primary) {
+    padding-left: 0;
+}
+.intlContainer :global(.iti__selected-country-primary:hover) {
+    background-color: transparent !important;
+}
+.intlContainer :global(.iti__dropdown-content) {
+    background-color: #313131;
+    border: none !important;
+    border-radius: none;
+}
+.intlContainer :global(.iti__flag) {
+    box-shadow: none;
+    transform: scale(1.5);
+    transform-origin: center;
+}
+.intlContainer :global(.iti__selected-dial-code) {
+    font-size: calc(16 * (1px + (100vw - 1530px) / 1530));
+}
+
+.spinner {
+    width: calc(28 * (1px + (100vw - 1530px) / 1530));
+    height: calc(28 * (1px + (100vw - 1530px) / 1530));
+    border-radius: 50%;
+    display: inline-block;
+    border-top: calc(3 * (1px + (100vw - 1530px) / 1530)) solid #0E0E0E;
+    border-right: calc(3 * (1px + (100vw - 1530px) / 1530)) solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    top: 35%;
+    left: 45%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 @media (max-width: 767px) {
+    .intlContainer :global(.iti__selected-country) {
+        padding-bottom: calc(20 * (1px + (100vw - 430px) / 430));
+    }
+    .input[type="tel"] {
+        padding-bottom: calc(20 * (1px + (100vw - 430px) / 430));
+    }
+    .intlContainer :global(.iti__selected-dial-code) {
+        font-size: calc(16 * (1px + (100vw - 430px) / 430));
+    }
     .google {
         font-size: calc(14 * (1px + (100vw - 430px) / 430));
         line-height: calc(17 * (1px + (100vw - 430px) / 430));
@@ -78,5 +142,14 @@
     }
     .form {
         margin-top: calc(65 * (1px + (100vw - 430px) / 430));
+    }
+    .label {
+        font-size: calc(18 * (1px + (100vw - 430px) / 430));
+        line-height: calc(20 * (1px + (100vw - 430px) / 430));
+        color: #878787;
+    }
+    .spinner {
+        width: calc(28 * (1px + (100vw - 430px) / 430));
+        height: calc(28 * (1px + (100vw - 430px) / 430));
     }
 }

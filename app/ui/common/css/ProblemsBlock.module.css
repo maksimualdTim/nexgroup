@@ -12,7 +12,7 @@
 .linkIcon {
     width: calc(10 * (1px + (100vw - 1530px) / 1530));
     height: calc(10 * (1px + (100vw - 1530px) / 1530));
-    margin-left: calc(5 * (1px + (100vw - 1530px) / 1530));
+    margin-left: calc(7 * (1px + (100vw - 1530px) / 1530));
 }
 .bg {
     top: calc(-180 * (1px + (100vw - 1530px) / 1530));

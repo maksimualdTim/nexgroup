@@ -6,6 +6,7 @@
     padding-right: calc(40 * (1px + (100vw - 1530px) / 1530));
     padding-left: calc(40 * (1px + (100vw - 1530px) / 1530));
     border-radius: calc(100 * (1px + (100vw - 1530px) / 1530));
+    position: relative;
 }
 .icon {
     width: calc(11 * (1px + (100vw - 1530px) / 1530));

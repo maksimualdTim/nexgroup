@@ -1,20 +1,32 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import s from "../common/css/Modal.module.css";
 import { createPortal } from "react-dom";
 import formStyles from "../common/css/Input.module.css";
+import { sendMessage } from "@/app/lib/actions";
 
+const IntlTelInput = dynamic(() => import("intl-tel-input/reactWithUtils"), {
+  ssr: false,
+});
+import "intl-tel-input/styles";
+import Image from "next/image";
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
-  // children: ReactNode;
 }
 
 export default function Modal({ isOpen, onClose }: ModalProps) {
   const [mounted, setMounted] = useState(false);
   const [phone, setPhone] = useState<string>("");
   const [name, setName] = useState<string>("");
+  const [status, setStatus] = useState<number>(0);
+
+  const STATUS_DEFAULT = 0;
+  const STATUS_SENDING = 1;
+  const STATUS_SUCCESS = 2;
+  const STATUS_ERROR = 3;
 
   useEffect(() => {
     setMounted(true); // Устанавливаем true только в браузере
@@ -38,24 +50,39 @@ export default function Modal({ isOpen, onClose }: ModalProps) {
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [onClose]);
 
-  const handleSubmit = () => {
-
-  }
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    
+    const formData = new FormData(event.currentTarget);
+    formData.set("phone", phone)
+    setStatus(STATUS_SENDING);
+    event.currentTarget.reset()
+    const result = await sendMessage(formData);
+    if (result?.error) {
+        setStatus(STATUS_ERROR);
+      } else {
+        setStatus(STATUS_SUCCESS);
+      }
+    setPhone("");
+    setName("");
+  };
 
   if (!mounted) return null;
 
   return createPortal(
     <div className={`${isOpen ? s.active : ""}`} onClick={onClose}>
-        <div className={s.modalOverlay}></div>
+      <div className={s.modalOverlay}></div>
       <div
         className={`${s.modalContent} `}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className={s.imgBlock}></div>
+        <div className={s.imgBlock}>
+            <Image src={"/modal.png"} width={391} height={539} alt="laptop" className={s.img}></Image>
+        </div>
         <div className={s.form}>
-          <div className={s.subtitle}>Форма для связи</div>
+          <div className={s.subtitle}>Бесплатный аудит</div>
           <h3 className={s.title}>Обсудим ваш проект?</h3>
-          <form action={handleSubmit}>
+          <form onSubmit={handleSubmit}>
             <div
               className={`${formStyles["input-container"]} ${
                 name.length == 0 ? "" : formStyles.active
@@ -72,7 +99,7 @@ export default function Modal({ isOpen, onClose }: ModalProps) {
                 id="modalName"
                 type="text"
                 value={name}
-                onInput={(e) => setName(e.currentTarget.value.trim())}
+                onInput={(e) => setName(e.currentTarget.value)}
                 required={true}
                 className={`text-fluid ${formStyles.input}`}
               />
@@ -82,22 +109,34 @@ export default function Modal({ isOpen, onClose }: ModalProps) {
                 phone.length == 0 ? "" : formStyles.active
               }`}
             >
-              <label
-                className={`text-fluid ${formStyles.label}`}
-                htmlFor="modalPhone"
-              >
-                Номер телефона*
-              </label>
-              <input
-                id="modalPhone"
-                name="phone"
-                value={phone}
-                onInput={(e) => setPhone(e.currentTarget.value.trim())}
-                type="text"
-                required={true}
-                className={`text-fluid ${formStyles.input}`}
+              <IntlTelInput
+                onChangeNumber={setPhone}
+                inputProps={{
+                  className: `text-fluid ${formStyles.input}`,
+                  id: "modalPhone",
+                  name: "phone",
+                  required: true,
+                }}
+                initOptions={{
+                  initialCountry: "uz",
+                  strictMode: true,
+                  nationalMode: true,
+                  separateDialCode: true,
+                  allowDropdown: false,
+                  containerClass: formStyles.intlContainer,
+                  countrySearch: false,
+                  geoIpLookup: (success, failure) => {
+                    fetch("https://ipapi.co/json")
+                      .then((res) => res.json())
+                      .then((data) => success(data.country_code))
+                      .catch(() => failure());
+                  },
+                }}
               />
-              <button className={s.button}>Отправить</button>
+              <button className={s.button}>
+                <span className={`${status == STATUS_SENDING ? "opacity-0" : ""}`}>Отправить</span>
+                <span className={`${formStyles.spinner} ${s.spinner} ${status == STATUS_SENDING ? "" : "opacity-0"}`}></span>
+                </button>
               <div className={s.policy}>
                 Наш сайт защищен с помощью reCAPTCHA и соответствует Политике
                 конфиденциальности и Условиям использования Google.

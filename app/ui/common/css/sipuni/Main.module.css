@@ -1,10 +1,18 @@
 .wrapper {
     background-image: url("/sipuni.jpg");
+    /* background: linear-gradient(270deg, #00252E 0%, #000000 100%) url("/sipuni.jpg"); */
+    padding-bottom: calc(75 * (1px + (100vw - 1530px) / 1530));
+    background-size: cover;
+    background-position: center;
 }
 
 @media (max-width: 767px) {
     .wrapper {
         background-image: url("/sipuni-mobile.jpg");
+        background-size: cover;
+        background-position: bottom;
+        min-height: 123vh;
+        padding-bottom: calc(75 * (1px + (100vw - 430px) / 430));
     }
     .title > div > h1{
         max-width: 65%;

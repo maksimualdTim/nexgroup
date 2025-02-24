@@ -23,7 +23,7 @@ export default function Modal({ isOpen, onClose }: ModalProps) {
   const [name, setName] = useState<string>("");
   const [status, setStatus] = useState<number>(0);
 
-  const STATUS_DEFAULT = 0;
+  // const STATUS_DEFAULT = 0;
   const STATUS_SENDING = 1;
   const STATUS_SUCCESS = 2;
   const STATUS_ERROR = 3;

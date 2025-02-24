@@ -22,6 +22,7 @@
 .imageRight[data-transparent="true"] {
     width: calc(27 * (1px + (100vw - 1530px) / 1530));
     height: calc(56 * (1px + (100vw - 1530px) / 1530));
+    margin: 0;
 }
 
 .text {

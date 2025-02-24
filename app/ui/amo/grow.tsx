@@ -68,6 +68,7 @@ export default function Grow() {
               width={611}
               height={315}
               className={s.cardImage}
+              unoptimized={true}
             ></Image>
           </div>
         </div>
@@ -79,6 +80,7 @@ export default function Grow() {
               width={611}
               height={315}
               className={s.cardImage}
+              unoptimized={true}
             ></Image>
           </div>
           <div className={s.cardContent}>
@@ -106,6 +108,7 @@ export default function Grow() {
               width={835}
               height={190}
               className={s.cardImage}
+              unoptimized={true}
             ></Image>
           </div>
         </div>

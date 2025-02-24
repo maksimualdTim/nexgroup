@@ -37,6 +37,7 @@
         width: calc(14 * (1px + (100vw - 430px) / 430));
         height: calc(14 * (1px + (100vw - 430px) / 430));
         margin-right: calc(13 * (1px + (100vw - 430px) / 430));
+        top: calc(-2 * (1px + (100vw - 430px) / 430));
     }
     .mainTitle {
         font-size: calc(36 * (1px + (100vw - 430px) / 430));

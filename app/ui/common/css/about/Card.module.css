@@ -54,6 +54,7 @@
     .text {
         font-size: calc(15 * (1px + (100vw - 430px) / 430));
         line-height: calc(20 * (1px + (100vw - 430px) / 430));
+        white-space: pre-line;
     }
     .textWrapper {
         max-width: 100%;

@@ -27,7 +27,7 @@ export default function ServiceCardShort({
   return (
     <Link
       href={link}
-      className={`w-full h-full bg-cover bg-center bg-no-repeat inline-block flex flex-col-reverse md:flex-col justify-between ${styles.card}`}
+      className={`w-full h-full bg-cover bg-bottom md:bg-center bg-no-repeat inline-block flex flex-col-reverse md:flex-col justify-between ${styles.card}`}
       style={{
         backgroundImage: `url('${image}'), linear-gradient(180deg, #1E1E1E 0%, #373737 100%)`,
       }}
@@ -73,7 +73,7 @@ export default function ServiceCardShort({
           {period}
         </div>
         <div
-          className={`border rounded-full ${styles.btn}`}
+          className={`border rounded-full ${styles.btn} bg-white md:bg-transparent`}
         >
           <div>
             <Image
@@ -81,7 +81,7 @@ export default function ServiceCardShort({
               alt="arrow"
               width={0}
               height={0}
-              className={styles.arrow}
+              className={`${styles.arrow} brightness-0 md:brightness-[1]`}
             />
           </div>
         </div>

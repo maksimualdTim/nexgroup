@@ -18,11 +18,7 @@ export default function Problems() {
         height={1150}
       ></Image>
       <div
-        className="px-fluid mobile-container-card"
-        style={{
-          paddingTop: "calc(108 * (1px + (100vw - 1530px) / 1530))",
-          paddingBottom: "calc(108 * (1px + (100vw - 1530px) / 1530))",
-        }}
+        className={`px-fluid mobile-container-card ${s.inner}`}
       >
         <div className="block justify-between md:flex">
           <div>
@@ -45,7 +41,7 @@ export default function Problems() {
           </div>
         </div>
         <div className={`relative z-10 ${s.link}`}>
-          <Link className="text-accent" href={"/"}>
+          <Link className="text-accent" href={"#services"}>
             Все предоставляемые услуги
             <Image
               className={`inline-block ${s.linkIcon}`}

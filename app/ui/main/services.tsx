@@ -42,7 +42,7 @@ export default function Services() {
                     <div className="w-[100%] md:w-[33%]">
                     <ServiceCardShort
                         link="/dev"
-                        title="Внедрение системы МойСклад"
+                        title={"Внедрение \nсистемы МойСклад"}
                         text="Внедрим облачную система для учета товаров, заказов и финансов."
                         logo="/logos/sklad.svg"
                         logoWidth={43}
@@ -57,7 +57,7 @@ export default function Services() {
                     <div className="w-[100%] md:w-[33%]">
                         <ServiceCardShort
                         link="/sipuni"
-                        title="Внедрение IP-телефонии"
+                        title={"Внедрение \nIP-телефонии"}
                         text="Удобное решение для коммуникации с клиентами, которое упрощает работу менеджеров."
                         logo="/logos/utel.svg"
                         logoWidth={30}
@@ -82,7 +82,7 @@ export default function Services() {
                     </div>
                 </div>
             </div>
-            <div className="block md:flex justify-between items-center" style={{marginTop: "calc(64 * (1px + (100vw - 1530px) / 1530))"}}>
+            <div className={`block md:flex justify-between items-center ${s.btnWrapper}`}>
                 <div>
                     <Button 
                     text="Обсудить проект"

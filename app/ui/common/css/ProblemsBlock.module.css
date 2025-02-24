@@ -26,6 +26,10 @@
     margin-top: calc(14 * (1px + (100vw - 1530px) / 1530));
     margin-bottom: calc(22 * (1px + (100vw - 1530px) / 1530));
 }
+.inner {
+    padding-top: calc(108 * (1px + (100vw - 1530px) / 1530));
+    padding-bottom: calc(108 * (1px + (100vw - 1530px) / 1530));
+}
 @media (max-width: 767px) {
     .btn {
         margin-top: calc(36 * (1px + (100vw - 430px) / 430));
@@ -58,5 +62,9 @@
     .wrapper {
         padding-bottom: calc(200 * (1px + (100vw - 430px) / 430));
         overflow: hidden;
+    }
+    .inner {
+        padding-top: calc(108 * (1px + (100vw - 430px) / 430));
+        padding-bottom: 0;
     }
 }

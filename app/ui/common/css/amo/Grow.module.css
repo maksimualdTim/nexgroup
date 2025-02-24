@@ -101,8 +101,8 @@
     }
     .mobileContent {
         padding-top: calc(37 * (1px + (100vw - 430px) / 430));
-        padding-left: calc(19 * (1px + (100vw - 430px) / 430));
-        padding-right: calc(19 * (1px + (100vw - 430px) / 430));
+        padding-left: calc(28 * (1px + (100vw - 430px) / 430));
+        padding-right: calc(24 * (1px + (100vw - 430px) / 430));
     }
     .mobileCard {
         background: linear-gradient(180deg, #0A2426 0%, #151515 100%);

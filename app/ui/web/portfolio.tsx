@@ -11,7 +11,7 @@ export default function Portfolio() {
         <div className={s.titleWrapper}>
           <Title
             title="Создаем лучшие проекты"
-            title2="на рынке Узбекистана"
+            title2={"\nна рынке Узбекистана"}
             subtitle="Ваш сайт — следующий!"
             isService={true}
           ></Title>

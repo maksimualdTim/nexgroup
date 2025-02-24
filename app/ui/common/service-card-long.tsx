@@ -69,8 +69,7 @@ export default function ServiceCardLong({
         </div>
         <div className={`${styles.containerLong} hidden md:block`}>
           <div
-            className="font-semibold text-fluid opacity-50"
-            style={{ lineHeight: "calc(20 * (1px + (100vw - 1530px) / 1530))" }}
+            className={`font-semibold text-fluid opacity-50 ${styles.order}`}
           >
             0{order}
           </div>

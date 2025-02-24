@@ -79,7 +79,7 @@
     }
     .wrapper {
         background: linear-gradient(180deg, #000000 0%, #0E0E0E 100%);
-        padding-top: calc(130 * (1px + (100vw - 430px) / 430));
+        padding-top: calc(100 * (1px + (100vw - 430px) / 430));
     }
     .period {
         border-radius: calc(100 * (1px + (100vw - 430px) / 430));

@@ -171,4 +171,8 @@
     .flower {
         display: none;
     }
+    .wrapper {
+        margin-bottom: calc(82 * (1px + (100vw - 430px) / 430));
+        margin-top: calc(73 * (1px + (100vw - 430px) / 430));
+    }
 }

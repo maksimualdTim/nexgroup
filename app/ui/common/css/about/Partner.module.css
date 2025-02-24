@@ -115,14 +115,14 @@
         left: 0;
         padding-top: 0;
         align-items: normal;
-        padding-bottom: calc(70 * (1px + (100vw - 430px) / 430));
+        padding-bottom: calc(89 * (1px + (100vw - 430px) / 430));
     }
     .graphic {
         margin-top: calc(81 * (1px + (100vw - 430px) / 430));
         background: url("/graphic-mobile.png");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: bottom;
+        background-position: 72% 0px;
     }
     .cards > div {
         margin-top: calc(16 * (1px + (100vw - 430px) / 430)) !important;

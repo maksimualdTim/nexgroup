@@ -113,4 +113,7 @@
         width: calc(53 * (1px + (100vw - 430px) / 430));
         height: calc(53 * (1px + (100vw - 430px) / 430));
     }
+    .wrapper {
+        padding-top: calc(65 * (1px + (100vw - 430px) / 430));
+    }
 }

@@ -107,8 +107,8 @@
         margin-bottom: calc(25 * (1px + (100vw - 430px) / 430));
     }
     .icon {
-        width: calc(32 * (1px + (100vw - 430px) / 430));
-        height: calc(32 * (1px + (100vw - 430px) / 430));
+        width: calc(40 * (1px + (100vw - 430px) / 430));
+        height: calc(40 * (1px + (100vw - 430px) / 430));
         margin-right: calc(10 * (1px + (100vw - 430px) / 430));
     }
     .logo {

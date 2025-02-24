@@ -134,7 +134,7 @@ export default function Numbers() {
           <div className={`text-left ${styles.subtitle}`}>
             <Title
               title="Доверьте систематизацию"
-              title2="вашего бизнеса профессионалам"
+              title2={"\nвашего бизнеса профессионалам"}
               subtitle="Двигайтесь с NEX"
               icon="/icons/light.svg"
               iconLeft={true}

@@ -50,8 +50,9 @@
 @media (max-width: 767px) {
     .main {
         min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: calc(55 * (1px + (100vw - 430px) / 430));
     }
     .text {
         font-size: calc(15 * (1px + (100vw - 430px) / 430));

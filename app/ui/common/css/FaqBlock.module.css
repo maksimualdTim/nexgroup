@@ -1,6 +1,9 @@
 .qWrapper {
     margin-top: calc(62 * (1px + (100vw - 1530px) / 1530));
 }
+.qWrapper > div:last-child > a {
+    text-decoration: underline;
+}
 .qTitle {
     margin-bottom: calc(6 * (1px + (100vw - 1530px) / 1530));
 }

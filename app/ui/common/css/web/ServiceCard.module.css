@@ -67,6 +67,10 @@
     line-height: calc(20 * (1px + (100vw - 1530px) / 1530));
     letter-spacing: -1px;
 }
+.imgBlock {
+    position: relative;
+    right: -1px;
+}
 .img {
     width: calc(379 * (1px + (100vw - 1530px) / 1530));
     height: calc(398 * (1px + (100vw - 1530px) / 1530));

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Title from "../common/title";
 import FaqItems from "../common/faq-items";
 import s from "../common/css/FaqBlock.module.css";
+import Link from "next/link";
 
 export default function Faq() {
   return (
@@ -81,7 +82,7 @@ export default function Faq() {
           Возникли дополнительные вопросы?
         </div>
         <div className="text-fluid font-semibold">
-          Пожалуйста, оставьте заявку или напишите нам в телеграм и мы будем
+          Пожалуйста, <Link href={"/contacts"}>оставьте заявку</Link> или <Link href={"https://t.me/nexgroup_support"} target="_blank">напишите нам в телеграм</Link> и мы будем
           рады оказать вам консультацию по вашему кейсу.
         </div>
       </div>

@@ -3,6 +3,9 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .content {
     width: calc(736 * (1px + (100vw - 1530px) / 1530));

@@ -8,6 +8,9 @@
     width: 100%;
     height: calc(46 * (1px + (100vw - 1530px) / 1530));
 }
+.input::placeholder {
+    color: #878787;
+}
 
 .input[type="tel"] {
     padding-bottom: calc(20 * (1px + (100vw - 1530px) / 1530));

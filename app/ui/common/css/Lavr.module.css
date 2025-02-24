@@ -11,6 +11,13 @@
     height: calc(116 * (1px + (100vw - 1530px) / 1530));
 }
 
+.imageLeft {
+    margin-right: calc(-25 * (1px + (100vw - 1530px) / 1530));
+}
+.imageRight {
+    margin-left: calc(-25 * (1px + (100vw - 1530px) / 1530));
+}
+
 .imageLeft[data-transparent="true"],
 .imageRight[data-transparent="true"] {
     width: calc(27 * (1px + (100vw - 1530px) / 1530));

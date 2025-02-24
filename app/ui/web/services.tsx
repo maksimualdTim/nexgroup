@@ -35,7 +35,7 @@ export default function Services() {
           period="10-20 дней"
           subtitle="Landing Page"
           text="Сайт-визитка для презентации товаров, услуг, информации о компании или для рекламного мероприятия."
-          img="/landing.png"
+          img="/landing.svg"
         ></Card>
         <Card
           price="8 000 000"
@@ -43,7 +43,7 @@ export default function Services() {
           period="20-40 дней"
           subtitle="Multi-page"
           text="Многостраничный сайт для детального представления компании, ее услуг, товаров и преимуществ."
-          img="/multipage.png"
+          img="/multipage.svg"
         ></Card>
         <Card
           price="12 000 000"
@@ -51,7 +51,7 @@ export default function Services() {
           period="30-60 дней"
           subtitle="eCommerce"
           text="Онлайн-магазин для продажи товаров с удобным каталогом, системой оплаты и управления заказами."
-          img="/ecommerce.png"
+          img="/ecommerce.svg"
         ></Card>
         <Card
           price="20 000 000"
@@ -59,7 +59,7 @@ export default function Services() {
           period="от 60 дней"
           subtitle="WebApp"
           text="Сервисы и платформы для цифровых решений, интерактивных сервисов и эффективного онлайн-бизнеса"
-          img="/platforms.png"
+          img="/platforms.svg"
         ></Card>
       </div>
     </div>

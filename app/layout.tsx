@@ -29,7 +29,7 @@ export default function RootLayout({
       infinite: false, // Если true — можно листать бесконечно
     });
 
-    const raf = (time: any) => {
+    const raf = (time: number) => {
       lenis.raf(time);
       requestAnimationFrame(raf);
     };

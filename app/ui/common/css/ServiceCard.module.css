@@ -2,6 +2,17 @@
     max-height: calc(436 * (1px + (100vw - 1530px) / 1530));
     padding: calc(48 * (1px + (100vw - 1530px) / 1530));
     border-radius: calc(20 * (1px + (100vw - 1530px) / 1530));
+    background-size: 110%;
+    transition: .5s;
+}
+.card:hover {
+    background-size: 103%;
+}
+.card:hover .btn {
+    transform: scale(.9);
+}
+.card:hover .arrow {
+    transform: scale(1.1);
 }
 .short_card_title {
     font-size: calc(24 * (1px + (100vw - 1530px) / 1530));
@@ -40,10 +51,12 @@
 
 .btn {
     padding: calc(48 * (1px + (100vw - 1530px) / 1530));
+    transition: .5s;
 }
 .arrow {
     width: calc(13 * (1px + (100vw - 1530px) / 1530));
     height: calc(13 * (1px + (100vw - 1530px) / 1530));
+    transition: .5s;
 }
 
 

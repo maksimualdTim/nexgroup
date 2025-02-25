@@ -5,6 +5,13 @@
     margin-top: calc(50 * (1px + (100vw - 1530px) / 1530));
     font-size: calc(15 * (1px + (100vw - 1530px) / 1530));
 }
+.link > a {
+    opacity: 1;
+    transition: .3s;
+}
+.link > a:hover {
+    opacity: .8;
+}
 .linkIcon {
     width: calc(10 * (1px + (100vw - 1530px) / 1530));
     height: calc(10 * (1px + (100vw - 1530px) / 1530));

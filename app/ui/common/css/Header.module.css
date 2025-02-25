@@ -4,6 +4,12 @@
     padding-right: calc(37 * (1px + (100vw - 1530px) / 1530));
     padding-left: calc(37 * (1px + (100vw - 1530px) / 1530));
     line-height: calc(17 * (1px + (100vw - 1530px) / 1530));
+    border: 1px solid #ffffff7a;
+    transition: .3s;
+}
+.headerBtn:hover > a {
+    color: #fff;
+    background-color: transparent;
 }
 .overlay {
     position: absolute;
@@ -112,6 +118,12 @@
     transition: 0.4s cubic-bezier(.76,.09,.23,.89);
 }
 
+.link {
+    transition: .3s;
+}
+.link:hover {
+    opacity: .8;
+}
 
 .active .lavrWrapper > div > img:first-child {
     opacity: 1;
@@ -159,6 +171,10 @@
     padding: calc(10 * (1px + (100vw - 1530px) / 1530));
     font-weight: 600;
     display: inline-block;
+    transition: .3s;
+}
+.lang:hover {
+    background-color: #ffffff52;
 }
 .mobileBtnContainer {
     margin-right: calc(-60 * (1px + (100vw - 1530px) / 1530));
@@ -169,6 +185,9 @@
     opacity: 1;
     backdrop-filter: blur(50px);
     background: rgba(255, 255, 255, 0.15);
+}
+.lang.active:hover {
+    background-color: #ffffff52;
 }
 .menuBtn {
     width: calc(62 * (1px + (100vw - 430px) / 430));
@@ -196,6 +215,12 @@
     display: block;
     position: relative;
     top: calc(7 * (1px + (100vw - 430px) / 430));
+}
+.order {
+    transition: .2s;
+}
+.order:hover {
+    opacity: .7;
 }
 @media (max-width: 767px) {
     .lang {

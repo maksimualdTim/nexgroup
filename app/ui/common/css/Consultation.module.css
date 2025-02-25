@@ -8,6 +8,32 @@
     margin-top: calc(134 * (1px + (100vw - 1530px) / 1530));
     overflow: hidden;
 }
+.btns > div:first-child > a {
+    border: 1px solid #ffffff7a;
+    transition: .3s;
+}
+.btns > div:first-child > a:hover{
+    background-color: transparent;
+    color: #fff;
+}
+.btns > div:last-child > a:hover {
+    border-color: gray;
+}
+.title > div > div > img {
+    animation: online 1.5s infinite;
+}
+
+@keyframes online {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 @media (max-width: 767px) {
     .consultation {

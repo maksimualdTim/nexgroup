@@ -27,7 +27,7 @@ export default function ServiceCardLong({
   return (
     <Link
       href={link}
-      className={`w-full h-full bg-cover bg-center bg-no-repeat inline-block flex flex-col-reverse md:flex-col justify-between ${styles.card}`}
+      className={`w-full h-full bg-center bg-no-repeat inline-block flex flex-col-reverse md:flex-col justify-between ${styles.card}`}
       style={{
         backgroundImage: `url('${image}')`,
       }}

@@ -71,7 +71,7 @@ export default function Header() {
               }}
             >
               <Link
-                className={`${styles.allServicesLink} hidden md:inline-block`}
+                className={`${styles.allServicesLink} ${styles.link} hidden md:inline-block`}
                 href={"#"}
                 onClick={(e) => {
                   e.preventDefault();
@@ -94,7 +94,7 @@ export default function Header() {
                 Все услуги
               </Link>
               <Link
-                className="hidden md:inline-block"
+                className={`hidden md:inline-block ${styles.link}`}
                 href={"/dev"}
                 style={{
                   marginRight: "calc(48 * (1px + (100vw - 1530px) / 1530))",
@@ -103,7 +103,7 @@ export default function Header() {
                 Лицензии
               </Link>
               <Link
-                className="hidden md:inline-block"
+                className={`hidden md:inline-block ${styles.link}`}
                 href={"/about"}
                 style={{
                   marginRight: "calc(48 * (1px + (100vw - 1530px) / 1530))",
@@ -111,7 +111,7 @@ export default function Header() {
               >
                 О компании
               </Link>
-              <Link href={"/contacts"} className="hidden md:inline-block">
+              <Link href={"/contacts"} className={`hidden md:inline-block ${styles.link}`}>
                 Контакты
               </Link>
             </div>
@@ -157,7 +157,7 @@ export default function Header() {
                 </Link>
                 <Link
                   href={"tel:+998 90 333-77-39"}
-                  className="opacity-50 underline"
+                  className={`opacity-50 underline ${styles.order}`}
                   style={{
                     lineHeight: "calc(16 * (1px + (100vw - 1530px) / 1530))",
                     fontSize: "calc(13 * (1px + (100vw - 1530px) / 1530))",
@@ -421,8 +421,7 @@ export default function Header() {
               title="Внедрение системы МойСклад"
               iconHeight={19}
               iconWidth={129}
-              isSklad={true}
-              logo="/logos/sklad-menu.svg"
+              logo="/logos/sklad-main.svg"
             ></ServiceHeaderCard>
             <ServiceHeaderCard
               link="/sipuni"

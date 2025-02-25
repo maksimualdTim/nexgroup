@@ -121,8 +121,7 @@ export default function ContactForm() {
           <div
             className="relative z-10"
             style={{
-              background: "#2B2B2B73",
-              backdropFilter: "blur(150px)",
+              background: "#2b2b2b",
               paddingBottom: "calc(42 * (1px + (100vw - 1530px) / 1530))",
               paddingLeft: "calc(55 * (1px + (100vw - 1530px) / 1530))",
               paddingRight: "calc(55 * (1px + (100vw - 1530px) / 1530))",

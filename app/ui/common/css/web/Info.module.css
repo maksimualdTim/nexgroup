@@ -129,8 +129,19 @@
     bottom: calc(40 * (1px + (100vw - 1530px) / 1530));
     cursor: pointer;
     display: inline-block;
+    transition: .3s;
+    border: 1px solid #fff3;
+}
+.btn:hover {
+    transform: scale(0.95);
+    background-color: transparent;
+}
+.btn:hover .arrow {
+    transform: scale(1.05);
+    filter: brightness(1000);
 }
 .arrow {
+    transition: .3s;
     width: calc(13 * (1px + (100vw - 1530px) / 1530));
     height: calc(13 * (1px + (100vw - 1530px) / 1530));
 }

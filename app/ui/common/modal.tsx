@@ -36,8 +36,15 @@ export default function Modal({ isOpen, onClose }: ModalProps) {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
+        // const scrollBarWidth =
+        //   window.innerWidth - document.documentElement.clientWidth;
+          
+        // document.body.style.overflow = "hidden";
+        // document.body.style.paddingRight = `${scrollBarWidth}px`;
+        document.body.style.paddingRight = "5px";
     } else {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
     }
   }, [isOpen]);
 

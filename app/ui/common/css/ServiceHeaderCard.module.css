@@ -8,11 +8,13 @@
     padding: calc(33 * (1px + (100vw - 1530px) / 1530));
     height: calc(186 * (1px + (100vw - 1530px) / 1530));
     width: calc(356 * (1px + (100vw - 1530px) / 1530));
+    transition: .3s;
 }
 .icon {
     transform: rotate(-90deg);
     width: calc(16 * (1px + (100vw - 1530px) / 1530));
     height: calc(16 * (1px + (100vw - 1530px) / 1530));
+    transition: .3s;
 }
 .title {
     font-weight: 600;
@@ -24,4 +26,13 @@
     font-weight: 600;
     line-height: calc(20 * (1px + (100vw - 1530px) / 1530));
     font-size: calc(13 * (1px + (100vw - 1530px) / 1530));;
+}
+.card:hover .icon{
+    transform: rotateZ(-45deg);
+}
+.card img:first-child {
+    transition: .3s;
+}
+.card:hover img:first-child {
+    opacity: 1;
 }

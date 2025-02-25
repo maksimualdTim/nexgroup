@@ -7,11 +7,24 @@
     padding-left: calc(40 * (1px + (100vw - 1530px) / 1530));
     border-radius: calc(100 * (1px + (100vw - 1530px) / 1530));
     position: relative;
+    transition: .3s;
+}
+.button:hover .icon{
+    left: calc(4 * (1px + (100vw - 1530px) / 1530));
+}
+.button:hover.buttonTransaprent {
+    border-color: #808080;
 }
 .icon {
     width: calc(11 * (1px + (100vw - 1530px) / 1530));
     height: calc(11 * (1px + (100vw - 1530px) / 1530));
     margin-left: calc(11 * (1px + (100vw - 1530px) / 1530));
+    position: relative;
+    left: 0;
+    transition: .3s;
+}
+.buttonTransaprent {
+    border-color: #404040;
 }
 .telegramIcon {
     width: calc(26 * (1px + (100vw - 1530px) / 1530));

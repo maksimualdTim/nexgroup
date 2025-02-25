@@ -28,6 +28,14 @@
     margin-top: calc(55 * (1px + (100vw - 1530px) / 1530));
     margin-bottom: calc(55 * (1px + (100vw - 1530px) / 1530));
 }
+.btn > a {
+    transition: .3s;
+    border: 1px solid #ffffff7a;
+}
+.btn > a:hover {
+    background-color: transparent;
+    color: #fff;
+}
 .elipse {
     width: calc(1215 * (1px + (100vw - 1530px) / 1530));
     height: calc(1215 * (1px + (100vw - 1530px) / 1530));

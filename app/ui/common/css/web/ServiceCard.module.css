@@ -84,6 +84,14 @@
     right: calc(40 * (1px + (100vw - 1530px) / 1530));
     bottom: calc(40 * (1px + (100vw - 1530px) / 1530));
     cursor: pointer;
+    transition: .3s;
+    border: 1px solid #fff3;
+}
+.btn:hover {
+    transform: scale(0.9);
+}
+.btn:hover .arrow{
+    transform: scale(1.1);
 }
 
 @media (max-width: 767px) {

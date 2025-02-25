@@ -10,7 +10,7 @@ export default function Consultation({bg = "/3D-Black.png", mobileBg="/3D-Black-
     <div className={styles.consultation}>
       <div className="flex justify-between relative hidden md:flex">
         <div>
-          <div>
+          <div className={styles.title}>
             <Title
               title="Сделайте первый шаг"
               title2="к эффективному бизнесу"
@@ -19,7 +19,7 @@ export default function Consultation({bg = "/3D-Black.png", mobileBg="/3D-Black-
             />
           </div>
           <div
-            className="flex"
+            className={`flex ${styles.btns}`}
             style={{ marginTop: "calc(60 * (1px + (100vw - 1530px) / 1530))" }}
           >
             <div

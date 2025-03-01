@@ -28,46 +28,46 @@ export default function Portfolio() {
       </div>
       <div className={`${s.cards} px-fluid`}>
         <Card
-          title="CONCEPT  |  Производственная мастерская"
-          description="Одностраничный сайт (лендинг)"
-          tags={["Дизайн в Figma", "Разработка с нуля"]}
-          img="/portfolio-master.png"
-          link="/dev"
+          title="Enera  |  Инвестиционный холдинг"
+          description="Многостраничный сайт"
+          tags={["Дизайн в Figma", "Разработка на Tilda"]}
+          img="/portfolio/enera.jpg"
+          link="https://enera.uz/"
         ></Card>
         <Card
-          title="CONCEPT  |  Производственная мастерская"
+          title="Yard  |  Бизнес клуб"
           description="Одностраничный сайт (лендинг)"
-          tags={["Дизайн в Figma", "Разработка с нуля"]}
-          img="/portfolio-master.png"
-          link="/dev"
+          tags={["Дизайн в Figma", "Разработка на Tilda"]}
+          img="/portfolio/yard.jpg"
+          link="https://ybc.uz/"
         ></Card>
         <Card
-          title="CONCEPT  |  Производственная мастерская"
-          description="Одностраничный сайт (лендинг)"
+          title="Luxhouse  |  Архитектурное бюро"
+          description="Многостраничный сайт"
           tags={["Дизайн в Figma", "Разработка с нуля"]}
-          img="/portfolio-master.png"
-          link="/dev"
+          img="/portfolio/luxhouse.jpg"
+          link="https://luxhouse.uz/"
         ></Card>
         <Card
-          title="CONCEPT  |  Производственная мастерская"
-          description="Одностраничный сайт (лендинг)"
+          title="Divan  |  Магазин мебели"
+          description="Онлайн-магазин"
           tags={["Дизайн в Figma", "Разработка с нуля"]}
-          img="/portfolio-master.png"
-          link="/dev"
+          img="/portfolio/divan.jpg"
+          link="https://divan.uz/"
         ></Card>
         <Card
-          title="CONCEPT  |  Производственная мастерская"
-          description="Одностраничный сайт (лендинг)"
+          title="Fonon  |  Ювелирный магазин"
+          description="Онлайн-магазин"
           tags={["Дизайн в Figma", "Разработка с нуля"]}
-          img="/portfolio-master.png"
-          link="/dev"
+          img="/portfolio/fonon.jpg"
+          link="https://fonon.uz/"
         ></Card>
         <Card
-          title="CONCEPT  |  Производственная мастерская"
+          title="Impact  |  Коворкинг и офисы"
           description="Одностраничный сайт (лендинг)"
-          tags={["Дизайн в Figma", "Разработка с нуля"]}
-          img="/portfolio-master.png"
-          link="/dev"
+          tags={["Дизайн в Figma", "Разработка на Framer"]}
+          img="/portfolio/impact.jpg"
+          link="https://impactthub.uz/"
         ></Card>
       </div>
       <div className={`${s.bottom} px-fluid`}>

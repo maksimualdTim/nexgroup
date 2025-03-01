@@ -16,13 +16,14 @@ export default function Card({
   tags: Array<string>;
 }) {
   return (
-    <Link href={link} className={s.card}>
+    <Link href={link} className={s.card} target="_blank">
       <div className={s.img}>
         <Image
           src={img}
           alt="portfolio preview"
           width={709}
           height={338}
+          unoptimized={true}
         ></Image>
       </div>
       <div className={s.inner}>

@@ -62,15 +62,9 @@ export default function Steps() {
         </div>
         <div className={s.sphere}>
           <div className={s.elipse}></div>
-          <div className={s.circleWrapper}>
-            <div className={s.circle}></div>
-          </div>
-          <div className={s.circleWrapper}>
-            <div className={s.circle}></div>
-          </div>
-          <div className={s.circleWrapper}>
-            <div className={s.circle}></div>
-          </div>
+          <Image src={"/icons/web-circle.svg"} alt="circle" width={40} height={40} className={s.circleWrapper}></Image>
+          <Image src={"/icons/web-circle.svg"} alt="circle" width={40} height={40} className={s.circleWrapper}></Image>
+          <Image src={"/icons/web-circle.svg"} alt="circle" width={40} height={40} className={s.circleWrapper}></Image>
           <Image
             src={"/icons/dotted-middle.svg"}
             height={2}
@@ -117,15 +111,9 @@ export default function Steps() {
               <span>Полноценный запуск</span>
             </div>
           </div>
-          <div className={s.circleWrapper}>
-            <div className={s.circle}></div>
-          </div>
-          <div className={s.circleWrapper}>
-            <div className={s.circle}></div>
-          </div>
-          <div className={s.circleWrapper}>
-            <div className={s.circle}></div>
-          </div>
+          <Image src={"/icons/web-circle.svg"} alt="circle" width={40} height={40} className={s.circleWrapper}></Image>
+          <Image src={"/icons/web-circle.svg"} alt="circle" width={40} height={40} className={s.circleWrapper}></Image>
+          <Image src={"/icons/web-circle.svg"} alt="circle" width={40} height={40} className={s.circleWrapper}></Image>
         </div>
         <div className={s.videoWrapper}>
           <div className={s.elipse}></div>

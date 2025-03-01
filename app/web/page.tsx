@@ -8,6 +8,7 @@ import Portfolio from "../ui/web/portfolio";
 import Services from "../ui/web/services";
 import styles from "@/app/ui/common/css/web/Main.module.css";
 import Steps from "../ui/web/steps";
+import Image from "next/image";
 
 export default function Web() {
   return (
@@ -21,14 +22,18 @@ export default function Web() {
         <Main></Main>
       </div>
       <div className="block md:hidden">
-        <video autoPlay muted style={{
+        {/* <video autoPlay muted style={{
           height: "calc(354 * (1px + (100vw - 430px) / 430))",
           objectFit: "cover"
         }}>
           <source src="/laptop_compressed.webm" type="video/webm"></source>
           <source src="/laptop.mp4" type="video/mp4"></source>
           Ваш браузер не поддерживает видео.
-        </video>
+        </video> */}
+        <Image unoptimized={true} width={430} height={354} style={{
+          height: "calc(354 * (1px + (100vw - 430px) / 430))",
+          objectFit: "cover"
+        }} src={"/laptop-mobile.jpg"} alt="laptop"></Image>
         </div>
       <Info></Info>
       <Steps></Steps>

@@ -100,9 +100,6 @@
     left: 50%;
 }
 .circleWrapper {
-    display: inline-block;
-    border-radius: 50%;
-    background-color: #fff;
     width: calc(40 * (1px + (100vw - 1530px) / 1530));
     height: calc(40 * (1px + (100vw - 1530px) / 1530));
     position: absolute;
@@ -229,7 +226,7 @@
         line-height: calc(9 * (1px + (100vw - 430px) / 430));
     }
     .step:first-child{
-        width: calc(231 * (1px + (100vw - 430px) / 430));
+        width: calc(235 * (1px + (100vw - 430px) / 430));
         top: calc(-83 * (1px + (100vw - 430px) / 430));
         right: calc(-170 * (1px + (100vw - 430px) / 430));
     }

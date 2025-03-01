@@ -68,6 +68,7 @@
         min-height: 310px;
         padding: calc(43 * (1px + (100vw - 430px) / 430)) calc(29 * (1px + (100vw - 430px) / 430));
         border-radius: calc(20 * (1px + (100vw - 430px) / 430));
+        background-size: cover;
     }
     .period {
         background-color: rgba(217, 217, 217, 0.2);

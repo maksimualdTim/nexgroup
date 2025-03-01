@@ -158,6 +158,9 @@
         z-index: 0;
         opacity: .55;
     }
+    .btn:hover .arrow{
+        transform: scale(1.1) translate(-50%, -50%);
+    }
     .arrow {
         width: calc(13 * (1px + (100vw - 430px) / 430));
         height: calc(13 * (1px + (100vw - 430px) / 430));

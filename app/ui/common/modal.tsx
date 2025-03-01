@@ -14,10 +14,11 @@ import "intl-tel-input/styles";
 import Image from "next/image";
 interface ModalProps {
   isOpen: boolean;
+  subtitle?: string,
   onClose: () => void;
 }
 
-export default function Modal({ isOpen, onClose }: ModalProps) {
+export default function Modal({ isOpen, onClose, subtitle="Бесплатный аудит" }: ModalProps) {
   const [mounted, setMounted] = useState(false);
   const [phone, setPhone] = useState<string>("");
   const [name, setName] = useState<string>("");
@@ -36,11 +37,6 @@ export default function Modal({ isOpen, onClose }: ModalProps) {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
-        // const scrollBarWidth =
-        //   window.innerWidth - document.documentElement.clientWidth;
-          
-        // document.body.style.overflow = "hidden";
-        // document.body.style.paddingRight = `${scrollBarWidth}px`;
         document.body.style.paddingRight = "5px";
     } else {
       document.body.style.overflow = "";
@@ -87,7 +83,10 @@ export default function Modal({ isOpen, onClose }: ModalProps) {
             <Image src={"/modal.png"} width={391} height={539} alt="laptop" className={s.img}></Image>
         </div>
         <div className={s.form}>
-          <div className={s.subtitle}>Бесплатный аудит</div>
+        <div className={s.close} onClick={onClose}>
+          <Image src={"/icons/close.svg"} alt="close" width={17} height={17}></Image>
+        </div>
+          <div className={s.subtitle}>{subtitle}</div>
           <h3 className={s.title}>Обсудим ваш проект?</h3>
           <form onSubmit={handleSubmit}>
             <div

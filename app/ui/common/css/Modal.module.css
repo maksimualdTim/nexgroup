@@ -17,6 +17,17 @@
     left: 19%;
     top: 46%;
 }
+.close {
+    position: absolute;
+    right: calc(28 * (1px + (100vw - 1530px) / 1530));
+    top: calc(25 * (1px + (100vw - 1530px) / 1530));
+}
+.close img{
+    width: calc(17 * (1px + (100vw - 1530px) / 1530));
+    cursor: pointer;
+    height: calc(17 * (1px + (100vw - 1530px) / 1530));
+}
+
 /* Окно */
 .modalContent {
     background: #1F1F1F;
@@ -124,5 +135,14 @@
     }
     .spinner {
         left: 22%;
+    }
+    .close {
+        position: absolute;
+        right: calc(28 * (1px + (100vw - 430px) / 430));
+        top: calc(25 * (1px + (100vw - 430px) / 430));
+    }
+    .close img{
+        width: calc(17 * (1px + (100vw - 430px) / 430));
+        height: calc(17 * (1px + (100vw - 430px) / 430));
     }
 }

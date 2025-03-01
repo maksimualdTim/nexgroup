@@ -1,9 +1,21 @@
+"use client"
 import MainText from "../common/mainText";
 import Title from "../common/title";
 import s from "../common/css/web/Services.module.css";
 import Card from "./serviceCard";
+import { useState } from "react";
+import Modal from "../common/modal";
 
 export default function Services() {
+  const [selectedCard, setSelectedCard] = useState<null | string>(null);
+
+  const handleOpenModal = (title: string) => {
+    setSelectedCard(title);
+  };
+  const handleCloseModal = () => {
+    setSelectedCard(null);
+  };
+
   return (
     <div className={`${s.wrapper} px-fluid`}>
       <div className={`block md:flex justify-between items-end ${s.title}`}>
@@ -36,6 +48,7 @@ export default function Services() {
           subtitle="Landing Page"
           text="Сайт-визитка для презентации товаров, услуг, информации о компании или для рекламного мероприятия."
           img="/landing.svg"
+          onOpen={() => handleOpenModal("Одностраничный сайт")}
         ></Card>
         <Card
           price="8 000 000"
@@ -44,6 +57,7 @@ export default function Services() {
           subtitle="Multi-page"
           text="Многостраничный сайт для детального представления компании, ее услуг, товаров и преимуществ."
           img="/multipage.svg"
+          onOpen={() => handleOpenModal("Многостраничный сайт")}
         ></Card>
         <Card
           price="12 000 000"
@@ -52,6 +66,7 @@ export default function Services() {
           subtitle="eCommerce"
           text="Онлайн-магазин для продажи товаров с удобным каталогом, системой оплаты и управления заказами."
           img="/ecommerce.svg"
+          onOpen={() => handleOpenModal("Интернет-магазин")}
         ></Card>
         <Card
           price="20 000 000"
@@ -60,8 +75,10 @@ export default function Services() {
           subtitle="WebApp"
           text="Сервисы и платформы для цифровых решений, интерактивных сервисов и эффективного онлайн-бизнеса"
           img="/platforms.svg"
+          onOpen={() => handleOpenModal("Веб-сервисы и платфомы")}
         ></Card>
       </div>
+      <Modal isOpen={!!selectedCard} onClose={handleCloseModal} subtitle={selectedCard || ""} />
     </div>
   );
 }

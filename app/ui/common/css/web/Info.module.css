@@ -275,6 +275,9 @@
         width: calc(85 * (1px + (100vw - 430px) / 430));
         height: calc(85 * (1px + (100vw - 430px) / 430));
     }
+    .btn:hover .arrow {
+        transform: scale(1.05) translate(-50%, -50%);
+    }
     .arrow {
         width: calc(13 * (1px + (100vw - 430px) / 430));
         height: calc(13 * (1px + (100vw - 430px) / 430));

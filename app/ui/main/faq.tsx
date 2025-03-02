@@ -3,8 +3,9 @@ import Title from "../common/title";
 import FaqItems from "../common/faq-items";
 import s from "../common/css/FaqBlock.module.css";
 import Link from "next/link";
+import { FAQItem } from "../common/faq-items";
 
-export default function Faq() {
+export default function Faq({ faqData }: {faqData: FAQItem[]}) {
   return (
     <div className="px-fluid mobile-container">
       <div
@@ -41,40 +42,7 @@ export default function Faq() {
       </div>
       <div>
         <FaqItems
-          faqData={[
-            {
-              question: "1. Какие сервисы и продукты мы предлагаем",
-              answer:
-                "We prioritize the security of your insurance information. We use advanced encryption and strict data protection measures to ensure your data is safe and confidential.",
-            },
-            {
-              question: "2. Что такое amoCRM и зачем CRM моему бизнесу",
-              answer:
-                "We prioritize the security of your insurance information. We use advanced encryption and strict data protection measures to ensure your data is safe and confidential.",
-            },
-            {
-              question:
-                "3. Какие преимущества предлагает интеграция amoCRM с телефонией",
-              answer:
-                "We prioritize the security of your insurance information. We use advanced encryption and strict data protection measures to ensure your data is safe and confidential.",
-            },
-            {
-              question:
-                "4. Что такое IP-телефония и для чего она вам необходима",
-              answer:
-                "We prioritize the security of your insurance information. We use advanced encryption and strict data protection measures to ensure your data is safe and confidential.",
-            },
-            {
-              question: "5. Сколько времени занимает разработка сайта",
-              answer:
-                "We prioritize the security of your insurance information. We use advanced encryption and strict data protection measures to ensure your data is safe and confidential.",
-            },
-            {
-              question: "6. Какие этапы включает процесс разработки сайта",
-              answer:
-                "We prioritize the security of your insurance information. We use advanced encryption and strict data protection measures to ensure your data is safe and confidential.",
-            },
-          ]}
+          faqData={faqData}
         ></FaqItems>
       </div>
       <div className={s.qWrapper}>

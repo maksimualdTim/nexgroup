@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import styles from "@/app/ui/common/css/FAQ.module.css";
 
 // Тип для элемента FAQ
-interface FAQItem {
+export interface FAQItem {
   question: string;
-  answer: string;
+  answer: string | ReactNode;
 }
 
 export default function FaqItems({ faqData }: { faqData: FAQItem[] }) {
@@ -22,7 +22,7 @@ export default function FaqItems({ faqData }: { faqData: FAQItem[] }) {
         {faqData.map((item, index) => (
           <li key={index} className={styles.answer}>
             <button
-              className={`relative flex gap-2 items-center w-full text-left text-[#B5B5B5] ${styles.btn}`}
+              className={`relative flex gap-2 items-center w-full text-left text-[#e0e0e0] ${styles.btn}`}
               aria-expanded={openIndex === index}
               onClick={() => toggleFAQ(index)}
             >
@@ -40,7 +40,7 @@ export default function FaqItems({ faqData }: { faqData: FAQItem[] }) {
 
             <div
               className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                openIndex === index ? "max-h-40" : "max-h-0"
+                openIndex === index ? "max-h-80" : "max-h-0"
               }`}
             >
               <div
@@ -49,11 +49,11 @@ export default function FaqItems({ faqData }: { faqData: FAQItem[] }) {
                   lineHeight: "calc(20 * (1px + (100vw - 1530px) / 1530))",
                 }}
               >
-                <p
+                <div
                 className={styles.text}
                 >
                   {item.answer}
-                </p>
+                </div>
               </div>
             </div>
           </li>

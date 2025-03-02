@@ -27,6 +27,13 @@
     font-size: calc(16 * (1px + (100vw - 1530px) / 1530));
     margin-top: calc(10 * (1px + (100vw - 1530px) / 1530));
     line-height: calc(20 * (1px + (100vw - 1530px) / 1530));
+    color: #adadad;
+}
+.text ul {
+    padding: calc(10 * (1px + (100vw - 1530px) / 1530)) 0;
+}
+.text ul li::before {
+    content: "• ";
 }
 
 @media (max-width: 767px) {

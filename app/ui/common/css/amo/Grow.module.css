@@ -144,5 +144,6 @@
     .mobileCards {
         padding-left: calc(21 * (1px + (100vw - 430px) / 430));
         padding-right: calc(21 * (1px + (100vw - 430px) / 430));
+        margin-top: calc(50 * (1px + (100vw - 430px) / 430));
     }
 }

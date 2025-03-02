@@ -163,8 +163,7 @@
 
 .lang {
     border: 1px solid rgba(164, 164, 164, 0.29);    
-    background: transparent;
-    opacity: .85;
+    background: #14141461;
     margin-right: calc(4 * (1px + (100vw - 1530px) / 1530));
     border-radius: calc(10 * (1px + (100vw - 1530px) / 1530));
     font-size: calc(14 * (1px + (100vw - 1530px) / 1530));
@@ -183,8 +182,8 @@
 .lang.active {
     border: 1px solid transparent;
     opacity: 1;
-    backdrop-filter: blur(50px);
-    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    background: rgba(72, 72, 72, 0.411);
 }
 .lang.active:hover {
     background-color: #ffffff52;
@@ -192,9 +191,9 @@
 .menuBtn {
     width: calc(62 * (1px + (100vw - 430px) / 430));
     height: calc(59 * (1px + (100vw - 430px) / 430));
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(20px);
     align-items: center;
-    background: #FFFFFF33;
+    background: #4f4f4f9d;
     border-radius: calc(10 * (1px + (100vw - 430px) / 430));
     display: none;
     transition: .3s;
@@ -232,6 +231,7 @@
         line-height: calc(17 * (1px + (100vw - 430px) / 430));
         border-radius: calc(10 * (1px + (100vw - 430px) / 430));
         margin-right: calc(5 * (1px + (100vw - 430px) / 430));
+        backdrop-filter: blur(20px);
     }
     .mobileBtnContainer {
         margin-right: 0;
@@ -260,24 +260,48 @@
         top: 0;
     }
     .mobileMenu {
-        background: #000000D4;
-        backdrop-filter: blur(50px);
+        background: #0c0c0c;
         left: 0;
-        z-index: 15;
+        z-index: 30;
         padding-top: 0;
-        transition: height 0.4s ease, padding-top 0.3s ease 0.2s;
-        height: 0vh;
+        transition: height 0.4s ease;
         overflow-y: hidden;
-        top: calc(-28 * (1px + (100vw - 430px) / 430));
+        overflow-x: hidden;
+        padding-top: calc(146 * (1px + (100vw - 430px) / 430));
+        transform: translateY(-120vh);
+        transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);;
+        height: 100vh;
+    }
+    .mobileActive {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        z-index: 100;
+    }
+
+    .mobileActive .mobileMenuItem {
+        opacity: 1;
+    }
+    .mobileMenuItem {
+        margin-bottom: calc(40 * (1px + (100vw - 430px) / 430));
+        opacity: 0;
+        transition: .3s;
+        transition-delay: .3s;
+    }
+    .mobileMenu.mobileMenuActive {
+        overflow-y: visible;
+        transform: translateY(0%);
+        padding-bottom: calc(70 * (1px + (100vw - 430px) / 430));
+        overflow-x: hidden;
+    }
+    .mobileMenu ul {
+        margin-top: calc(50 * (1px + (100vw - 430px) / 430));
     }
     .mobileMenuSubtitle {
         color: #fff;
         opacity: .4;
         line-height: calc(17 * (1px + (100vw - 430px) / 430));
         margin-bottom: calc(36 * (1px + (100vw - 430px) / 430));
-    }
-    .mobileMenuItem {
-        margin-bottom: calc(40 * (1px + (100vw - 430px) / 430));
+        margin-top: calc(170 * (1px + (100vw - 430px) / 430));
     }
     .mobileMenuItem:last-child {
         margin-bottom: 0;
@@ -320,12 +344,12 @@
        width: calc(11 * (1px + (100vw - 430px) / 430));
        height: calc(9 * (1px + (100vw - 430px) / 430));
        position: absolute;
-       left: 130px;
+       left: calc(130 * (1px + (100vw - 430px) / 430));
        top: -4px;
     }
     .mobileMenuItemSubitems.activeSubitem::after {
         rotate: 180deg;
-        top: 15px;
+        top: 17px;
     }
     
     .accordion {
@@ -336,10 +360,7 @@
         text-align: left;
     }
     .mobileCubeContainer {
-        right: -100%;
-        top: 10%;
-        z-index: 0;
-        transition-duration: .2s;
+        right: 0%;
     }
     .cube {
         width: calc(245 * (1px + (100vw - 430px) / 430));
@@ -348,7 +369,7 @@
     .panel {
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease, margin-top 0.3s ease, padding-top 0.2s ease, padding-bottom 0.2s ease;
+        transition: max-height 0.3s ease, margin-top 0.3s ease, padding-top 0.2s ease, padding-bottom 0.2s ease, opacity .3s, transform .3s;
         backdrop-filter: blur(150px);
         background: rgba(30, 30, 30, 0.66);
         border-radius: calc(20 * (1px + (100vw - 430px) / 430));
@@ -358,35 +379,44 @@
         padding-top: 0;
         border: none;
         margin-top: 0;
+        opacity: 0;
+        transform: scale(0.95);
     }
     .activeSubitem > .panel {
         max-height: calc(666 * (1px + (100vw - 430px) / 430));
-        padding-left: calc(29 * (1px + (100vw - 430px) / 430));
-        padding-right: calc(29 * (1px + (100vw - 430px) / 430));
         padding-bottom: calc(40 * (1px + (100vw - 430px) / 430));
         padding-top: calc(40 * (1px + (100vw - 430px) / 430));
         border: 1px solid #FFFFFF12;
-        margin-top: calc(51 * (1px + (100vw - 430px) / 430));
+        margin-top: calc(30 * (1px + (100vw - 430px) / 430));
+        opacity: 1;
+        transform: scale(1);
     }
-    .mobileActive {
-        overflow-x: hidden;
-        overflow-y: scroll;
-        height: 100vh;
-        backdrop-filter: blur(50px);
-        background: #000000D4;
-        z-index: 100;
+
+    .activeSubitem .panelLink {
+        opacity: 1;
+        transform: scale(1);
     }
-    .mobileMenu.mobileMenuActive {
-        padding-top: calc(146 * (1px + (100vw - 430px) / 430));
-        transition: height 0.3s ease 0.1s, padding-top 0.3s ease;
-        overflow-y: visible;
-        height: 100vh;
-    }
+
+    .activeSubitem .panelLink:nth-child(2) {
+        transition-delay: .1s;
+        transform: scale(1);
+    } 
+    .activeSubitem .panelLink:nth-child(3) {
+        transition-delay: .2s;
+        transform: scale(1);
+    } 
+    .activeSubitem .panelLink:nth-child(4) {
+        transition-delay: .3s;
+        transform: scale(1);
+    } 
     .panelLink {
         display: block;
         padding-bottom: calc(31 * (1px + (100vw - 430px) / 430));
         border-bottom: 1px solid rgba(255, 255, 255, 0.26);
         margin-bottom: calc(31 * (1px + (100vw - 430px) / 430));
+        opacity: 0;
+        transition: .3s;
+        transform: scale(0.97);
     }
     .panelLink:last-child {
         margin-bottom: 0;
@@ -407,9 +437,18 @@
         font-size: calc(15 * (1px + (100vw - 430px) / 430));
         line-height: calc(20 * (1px + (100vw - 430px) / 430));
     }
-    .mobileMenuActive > .mobileCubeContainer {
-        right: 0;
-        transition-delay: .25s;
-        transition-duration: .4s;
+
+    .lang:hover {
+        background: transparent;
     }
+    .logoMobile{
+        box-shadow: 0px -1px 100px 12px rgba(34, 60, 80, 0.35);
+        border-radius: calc(10 * (1px + (100vw - 430px) / 430));
+    }
+}
+
+.mobileMenuActive {
+    overflow: auto;
+    -ms-overflow-style: none; /* IE, Edge */
+    scrollbar-width: none; /* Firefox */
 }

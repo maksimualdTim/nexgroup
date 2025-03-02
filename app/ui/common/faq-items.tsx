@@ -39,8 +39,8 @@ export default function FaqItems({ faqData }: { faqData: FAQItem[] }) {
             </button>
 
             <div
-              className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                openIndex === index ? "max-h-80" : "max-h-0"
+              className={`transition-all duration-400 ease-in-out overflow-hidden ${
+                openIndex === index ? "max-h-screen" : "max-h-0"
               }`}
             >
               <div

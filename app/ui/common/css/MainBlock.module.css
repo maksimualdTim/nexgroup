@@ -27,9 +27,6 @@
     opacity: .2;
 }
 @media (max-width: 767px) {
-    .mainBlock {
-        margin-top: calc(287 * (1px + (100vw - 430px) / 430));
-    }
     .buttonsContainer {
         display: block;
         margin-top: calc(52 * (1px + (100vw - 430px) / 430));
@@ -42,5 +39,8 @@
     }
     .video {
         height: 100%;
+    }
+    .mainBlock {
+        margin-top: 38vh;
     }
 }

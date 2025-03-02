@@ -55,8 +55,8 @@ header {
       padding: 0;
   }
   .mobile-container {
-    padding-left: calc(25 * (1px + (100vw - 430px) / 430));
-    padding-right: calc(25 * (1px + (100vw - 430px) / 430));
+    padding-left: calc(20 * (1px + (100vw - 430px) / 430));
+    padding-right: calc(20 * (1px + (100vw - 430px) / 430));
   }
   .mobile-container-card {
     padding-left: calc(17 * (1px + (100vw - 430px) / 430));
@@ -82,5 +82,16 @@ header {
   }
   .mb-fluid {
     margin-bottom: calc(30 * (1px + (100vw - 430px) / 430));
+  }
+  header .mobile-container {
+      position: fixed !important;
+      top: calc(0 * (1px + (100vw - 430px) / 430));;
+      z-index: 30;
+      width: 100%;
+      padding-top: calc(20 * (1px + (100vw - 430px) / 430));;
+  }
+  .swiper-horizontal {
+    margin: 0 -6% !important;
+    padding: 0 6% !important;
   }
 }

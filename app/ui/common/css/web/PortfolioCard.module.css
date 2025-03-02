@@ -188,4 +188,13 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    .card:hover .img > img{
+        transform: scale(1);
+        border-radius: calc(80 * (1px + (100vw - 1530px) / 1530));
+    }
+
+    .card:hover {
+        transform: scale(0.97);
+    }
 }

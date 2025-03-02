@@ -14,7 +14,7 @@ export default function Main() {
           <Title
             title="Внедрение IP-телефонии"
             title2=""
-            subtitle="Лучшее решение для колл-центров"
+            subtitle="Решение для колл-центров"
             isMain={true}
             icon="/icons/light.svg"
           ></Title>

@@ -59,15 +59,15 @@
         margin-bottom: 0;
     }
     .bg {
-        top: 24%;
+        top: 29%;
         width: 100%;
         height: auto;
     }
     .cardsWrapper {
-        margin-top: calc(154 * (1px + (100vw - 430px) / 430));
+        margin-top: calc(200 * (1px + (100vw - 430px) / 430));
     }
     .wrapper {
-        padding-bottom: calc(200 * (1px + (100vw - 430px) / 430));
+        padding-bottom: calc(260 * (1px + (100vw - 430px) / 430));
         overflow: hidden;
     }
     .inner {

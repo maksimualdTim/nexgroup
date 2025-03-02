@@ -118,4 +118,7 @@
     .wrapper {
         padding-bottom: calc(75 * (1px + (100vw - 430px) / 430));
     }
+    .inner {
+        margin-top: 33vh;
+    }
 }

@@ -41,45 +41,30 @@ export default function Footer() {
             <div className={styles.title}>Навигация</div>
             <ul className={styles.linkList}>
               <li
-                style={{
-                  marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
-                }}
               >
                 <Link href={"/"} className={styles.link}>
                   Главная
                 </Link>
               </li>
               <li
-                style={{
-                  marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
-                }}
               >
                 <Link href={"/#services"} className={styles.link}>
                   Все услуги
                 </Link>
               </li>
               <li
-                style={{
-                  marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
-                }}
               >
                 <Link href={"/dev"} className={styles.link}>
                   Лицензии и тарифы
                 </Link>
               </li>
               <li
-                style={{
-                  marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
-                }}
               >
                 <Link href={"/about"} className={styles.link}>
                   О компании
                 </Link>
               </li>
               <li
-                style={{
-                  marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
-                }}
               >
                 <Link href={"/contacts"} className={styles.link}>
                   Контакты
@@ -89,38 +74,26 @@ export default function Footer() {
           </div>
           <div className="column">
             <div className={styles.title}>Услуги</div>
-            <ul>
+            <ul className={styles.linkList}>
               <li
-                style={{
-                  marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
-                }}
               >
                 <Link href={"/amo"} className={styles.link}>
                   Внедрение amoCRM
                 </Link>
               </li>
               <li
-                style={{
-                  marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
-                }}
               >
                 <Link href={"/sipuni"} className={styles.link}>
                   Внедрение IP-телефонии
                 </Link>
               </li>
               <li
-                style={{
-                  marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
-                }}
               >
                 <Link href={"/dev"} className={styles.link}>
                   Внедрение МойСклад
                 </Link>
               </li>
               <li
-                style={{
-                  marginBottom: "calc(30 * (1px + (100vw - 1530px) / 1530))",
-                }}
               >
                 <Link href={"/web"} className={styles.link}>
                   Разработка веб-сайтов

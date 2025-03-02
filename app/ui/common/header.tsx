@@ -46,11 +46,12 @@ export default function Header() {
                     style={{
                       width: "calc(179 * (1px + (100vw - 1530px) / 1530))",
                       height: "calc(47 * (1px + (100vw - 1530px) / 1530))",
+                      backdropFilter: "blur(30px)",
                     }}
                     className="hidden md:block"
                   />
                   <Image
-                    className="block md:hidden"
+                    className={`block md:hidden ${styles.logoMobile}`}
                     src={"/logos/logo-mobile.svg"}
                     alt="logo"
                     width={96}
@@ -132,6 +133,7 @@ export default function Header() {
                   if (isActive) {
                     document.body.style.overflow = "hidden";
                   } else {
+                    setActiveSubitem(false)
                     document.body.style.overflow = "auto";
                   }
                 }}

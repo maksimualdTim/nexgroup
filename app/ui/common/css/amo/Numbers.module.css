@@ -32,8 +32,14 @@
 .card:nth-child(1) .cardNumber{
     width: calc(250 * (1px + (100vw - 1530px) / 1530));
 }
+.card:nth-child(1) {
+    margin-top: calc(250 * (1px + (100vw - 1530px) / 1530));
+}
 .card:nth-child(2) .cardNumber{
     width: calc(250 * (1px + (100vw - 1530px) / 1530));
+}
+.card:nth-child(2){
+    margin-bottom: calc(100 * (1px + (100vw - 1530px) / 1530));
 }
 .card:nth-child(3) .cardNumber {
     width: calc(254 * (1px + (100vw - 1530px) / 1530));

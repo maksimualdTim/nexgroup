@@ -40,7 +40,7 @@ export default function Numbers() {
             />
           </div>
           <div className={styles.projectsNumberBlock}>
-            <div
+            <div data-aos="fade-up"
               className={styles.projectsNumber}
               style={{
                 marginTop: "calc(15 * (1px + (100vw - 1530px) / 1530))",
@@ -48,7 +48,7 @@ export default function Numbers() {
             >
               {inView ? <CountUp duration={3} end={50}></CountUp> : "50"}+
             </div>
-            <div className={`inline-block text-fluid ${styles.period}`}>
+            <div data-aos="fade-up" className={`inline-block text-fluid ${styles.period}`}>
               Успешных проектов
             </div>
           </div>
@@ -80,7 +80,7 @@ export default function Numbers() {
                 paddingLeft: "calc(48 * (1px + (100vw - 1530px) / 1530))",
               }}
             >
-              <div
+              <div data-aos="fade-up"
                 className="font-semibold"
                 style={{
                   fontSize: "calc(128 * (1px + (100vw - 1530px) / 1530))",
@@ -90,7 +90,7 @@ export default function Numbers() {
               >
                 {inView ? <CountUp duration={3} end={5}></CountUp> : "5"}+
               </div>
-              <div className={`inline-block text-fluid ${styles.period}`}>
+              <div data-aos="fade-up" className={`inline-block text-fluid ${styles.period}`}>
                 Лет опыта
               </div>
             </div>
@@ -100,7 +100,7 @@ export default function Numbers() {
                 marginTop: "calc(30 * (1px + (100vw - 1530px) / 1530))",
               }}
             >
-              <div
+              <div data-aos="fade-up"
                 className="font-semibold"
                 style={{
                   fontSize: "calc(128 * (1px + (100vw - 1530px) / 1530))",
@@ -110,12 +110,12 @@ export default function Numbers() {
               >
                 {inView ? <CountUp duration={3} end={300}></CountUp> : "300"}+
               </div>
-              <div className={`inline-block text-fluid ${styles.period}`}>
+              <div data-aos="fade-up" className={`inline-block text-fluid ${styles.period}`}>
                 Обученных сотрудников
               </div>
             </div>
             <div className={`absolute ${styles.vint}`}>
-              <Image
+              <Image data-aos="fade-up" data-aos-delay="100"
                 src={"/vint.png"}
                 alt="vint"
                 width={511}

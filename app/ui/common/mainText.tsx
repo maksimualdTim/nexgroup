@@ -11,7 +11,7 @@ export default function MainText({
   const spans = [];
   for (let i = 0; i < order; i++) {
     spans.push(
-      <span
+      <span data-aos="fade-up"
         key={i}
         className={`bg-accent rounded-full inline-block relative ${styles.egs}`}
         style={{top: "calc(-2 * (1px + (100vw - 1530px) / 1530))"}}
@@ -22,13 +22,14 @@ export default function MainText({
     <div
       className={`advantages-text ${styles["advantages-text"]}`}
     >
-      <div className="text-accent mb-fluid">
+      <div className="text-accent mb-fluid"  data-aos="fade-up">
         <span className="text-fluid">/ </span>
         {spans}
         <span className="text-fluid"> /</span>
       </div>
       <div
         className={`opacity-70 text-fluid ${styles.text}`}
+        data-aos="fade-up" data-aos-delay="100" 
       >
         {text}
       </div>

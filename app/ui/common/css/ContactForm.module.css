@@ -38,6 +38,10 @@
 .socialsWrapper > a:last-child {
     margin-right: 0;
 }
+.formTitle > div > *[data-aos="fade-up"]{
+    opacity: 1;
+    transform: translateZ(0);
+}
 
 @media (max-width: 767px) {
     .text {

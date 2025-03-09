@@ -20,7 +20,7 @@ export default function FaqItems({ faqData }: { faqData: FAQItem[] }) {
     <div>
       <ul className="basis-1/2">
         {faqData.map((item, index) => (
-          <li key={index} className={styles.answer}>
+          <li key={index} className={styles.answer} data-aos="fade-up">
             <button
               className={`relative flex gap-2 items-center w-full text-left text-[#e0e0e0] ${styles.btn}`}
               aria-expanded={openIndex === index}

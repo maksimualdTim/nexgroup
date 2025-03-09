@@ -52,7 +52,7 @@ export default function Advantages() {
             />
           </div>
         </div>
-        <div className="hidden md:block">
+        <div data-aos="fade-up" className="hidden md:block">
           <Button
             link="/about"
             isFull={false}

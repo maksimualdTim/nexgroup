@@ -9,7 +9,6 @@ export default function Faq({ faqData }: {faqData: FAQItem[]}) {
   return (
     <div className="px-fluid mobile-container">
       <div
-        data-aos="fade-up"
         className="flex justify-between items-center"
         style={{
           marginBottom: "calc(87 * (1px + (100vw - 1530px) / 1530))",
@@ -46,7 +45,7 @@ export default function Faq({ faqData }: {faqData: FAQItem[]}) {
           faqData={faqData}
         ></FaqItems>
       </div>
-      <div className={s.qWrapper} data-aos="fade-up">
+      <div className={s.qWrapper}>
         <div className={`text-accent text-fluid font-semibold ${s.qTitle}`}>
           Возникли дополнительные вопросы?
         </div>

@@ -53,6 +53,7 @@ export default function Consultation({bg = "/3D-Black.png", mobileBg="/3D-Black-
             src={bg}
             width={885}
             height={379}
+            unoptimized={true}
             alt="3dpng"
             style={{
               width: "calc(885 * (1px + (100vw - 1530px) / 1530))",
@@ -145,6 +146,7 @@ export default function Consultation({bg = "/3D-Black.png", mobileBg="/3D-Black-
             width={395}
             height={522}
             alt="3dpng"
+            unoptimized={true}
             style={{
               width: "100%",
               height: "auto",

@@ -20,7 +20,7 @@ export default function Problems() {
       <div
         className={`px-fluid mobile-container-card ${s.inner}`}
       >
-        <div className="block justify-between md:flex" data-aos="fade-up">
+        <div className="block justify-between md:flex">
           <div>
             <Title
               title="Решаем ключевые проблемы"
@@ -53,11 +53,19 @@ export default function Problems() {
           </Link>
         </div>
 
-        <div
+        <div 
           className={`relative ${s.cardsWrapper}`}
         >
+           <Image
+            className={`hidden absolute left-1/2 md:block ${s.bg} ${s.elipse}`}
+            src={"problems_elipce.svg"}
+            alt="sphere"
+            width={1122}
+            height={1150}
+            unoptimized={false}
+          ></Image>
           <Image
-            className={`hidden absolute left-1/2 -translate-x-1/2 md:block ${s.bg}`}
+            className={`hidden absolute left-1/2 md:block ${s.bg} ${s.cube}`}
             src={"/problems-bg.png"}
             alt="sphere"
             width={1122}
@@ -65,7 +73,7 @@ export default function Problems() {
             unoptimized={true}
           ></Image>
           <div className={`block justify-between md:flex ${s.top}`}>
-            <div data-aos="fade-up">
+            <div>
               <ProblemCard
                 textWidth={298}
                 className={styles["problem-left"]}
@@ -76,7 +84,7 @@ export default function Problems() {
                 order="I"
               />
             </div>
-            <div data-aos="fade-up" data-aos-delay="200">
+            <div>
               <ProblemCard
                 textWidth={306}
                 className={styles["problem-right"]}
@@ -89,7 +97,7 @@ export default function Problems() {
           </div>
 
           <div className={`block md:flex ${s.center}`}>
-            <div className="mx-auto" data-aos="fade-up">
+            <div className="mx-auto">
               <ProblemCard
                 textWidth={337}
                 className={styles["problem-center"]}
@@ -101,7 +109,7 @@ export default function Problems() {
             </div>
           </div>
           <div className="hidden justify-between md:flex">
-            <div data-aos="fade-up" data-aos-delay="200">
+            <div>
               <ProblemCard
                 textWidth={335}
                 className={styles["problem-left"]}
@@ -122,7 +130,7 @@ export default function Problems() {
               />
             </div>
           </div>
-          <div
+          <div  data-aos="fade-up"
             className={`relative z-10 ${s.btn}`}
           >
             <Button

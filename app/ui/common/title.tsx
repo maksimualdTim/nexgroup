@@ -27,14 +27,15 @@ export default function Title({
         alt="logo"
         width={0}
         height={0}
-        className={styles.icon}
+        className={`${styles.icon} ${iconLeft ? "" : styles.iconRight}`}
       />
     );
   }
 
   return (
     <div className={styles.wrapper}>
-      <div
+      <div 
+        data-aos={`${!isMain ? "fade-up" : ""}`}
         className={`subtitle text-fluid font-semibold ${styles.subtitle}`}
       >
         {iconLeft && image}
@@ -51,9 +52,9 @@ export default function Title({
           {title} <span className="inline opacity-50 md:block">{title2}</span>
         </h1>
       ) : (
-        <h3 className={`title leading-title font-bold text-title ${styles.title} ${isService ? styles.serviceTitle : ""}`}>
+        <h2 data-aos="fade-up" data-aos-delay="100" className={`title leading-title font-bold text-title ${styles.title} ${isService ? styles.serviceTitle : ""}`}>
           {title} <span className="inline opacity-50 md:block">{title2}</span>
-        </h3>
+        </h2>
       )}
     </div>
   );

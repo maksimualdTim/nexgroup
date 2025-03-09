@@ -9,7 +9,7 @@ import s from "../common/css/ServicesBlock.module.css";
 export default function Services() {
     return (
         <div className="py-block px-fluid mobile-container-card" id="services">
-            <div className={`flex justify-between ${s.top}`} style={{marginBottom: "calc(80 * (1px + (100vw - 1530px) / 1530))"}}>
+            <div className={`flex justify-between ${s.top}`} style={{marginBottom: "calc(80 * (1px + (100vw - 1530px) / 1530))"}} data-aos="fade-up">
                 <div className={s.topContainer}>
                     <MainText 
                     text={[<p key={1}>Внедряем эффективные решения для автоматизации процессов, улучшения коммуникации, а также роста и развития вашего бизнеса.</p>]} 
@@ -26,7 +26,7 @@ export default function Services() {
             </div>
             <div>
                 <div className={`flex justify-between flex-col md:flex-row ${s.rowFirst}`}>
-                    <div className="w-[100%] md:w-[66%]">
+                    <div className="w-[100%] md:w-[66%]" data-aos="fade-up">
                         <ServiceCardLong
                         link="/amo"
                         title="Внедрение CRM-системы"
@@ -39,7 +39,7 @@ export default function Services() {
                         image="/amo.png"
                         />
                     </div>
-                    <div className="w-[100%] md:w-[33%]">
+                    <div className="w-[100%] md:w-[33%]" data-aos="fade-up" data-aos-delay="300">
                     <ServiceCardShort
                         link="/dev"
                         title={"Внедрение \nсистемы МойСклад"}
@@ -54,7 +54,7 @@ export default function Services() {
                     </div>
                 </div>
                 <div className={`flex justify-between flex-col md:flex-row ${s.rowSecond}`} style={{minHeight: "calc(436 * (1px + (100vw - 1530px) / 1530))"}}>
-                    <div className="w-[100%] md:w-[33%]">
+                    <div className="w-[100%] md:w-[33%]" data-aos="fade-up">
                         <ServiceCardShort
                         link="/sipuni"
                         title={"Внедрение \nIP-телефонии"}
@@ -67,7 +67,7 @@ export default function Services() {
                         image="/utel.png"
                         />
                     </div>
-                    <div className="w-[100%] md:w-[66%]">
+                    <div className="w-[100%] md:w-[66%]" data-aos="fade-up" data-aos-delay="200">
                         <ServiceCardLong
                         link="/web"
                         title="Разработка веб-сайтов"
@@ -83,7 +83,7 @@ export default function Services() {
                 </div>
             </div>
             <div className={`block md:flex justify-between items-center ${s.btnWrapper}`}>
-                <div>
+                <div data-aos="fade-up">
                     <Button 
                     text="Обсудить проект"
                     withArrow={true}
@@ -91,7 +91,7 @@ export default function Services() {
                     isFull={true}
                     />
                 </div>
-                <div className={s.logoWrapper}>
+                <div className={s.logoWrapper} data-aos="fade-up">
                     <Image 
                     src={"/logos/nex.svg"}
                     alt="logo"

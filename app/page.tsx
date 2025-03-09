@@ -55,8 +55,7 @@ export default function Home() {
         <Main></Main>
         <InfiniteHorizontalScroll logos={logos}></InfiniteHorizontalScroll>
       </div>
-
-      <Problems></Problems>
+        <Problems></Problems>
       <Services></Services>
       <div className="relative">
         <div className="relative z-10">

@@ -16,7 +16,7 @@ export default function Footer() {
         </div>
         <FooterForm text="Оставить заявку"></FooterForm>
       </div>      
-      <div className="block md:flex justify-between">
+      <div className="block md:flex justify-between" data-aos="fade-up">
         <div>
           <div className={styles.subtitle}>
             <Title

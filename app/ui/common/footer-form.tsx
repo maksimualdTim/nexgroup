@@ -42,7 +42,7 @@ export default function FooterForm({ text = "Отправить" }: { text?: str
   };
 
   return (
-    <form onSubmit={handleSubmit} className={formStyles.form}>
+    <form onSubmit={handleSubmit} className={formStyles.form} data-aos="fade-up">
       <div
         className={`${formStyles["input-container"]} ${
           name.length == 0 ? "" : formStyles.active

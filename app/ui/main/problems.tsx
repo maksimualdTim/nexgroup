@@ -20,7 +20,7 @@ export default function Problems() {
       <div
         className={`px-fluid mobile-container-card ${s.inner}`}
       >
-        <div className="block justify-between md:flex">
+        <div className="block justify-between md:flex" data-aos="fade-up">
           <div>
             <Title
               title="Решаем ключевые проблемы"
@@ -40,7 +40,7 @@ export default function Problems() {
             />
           </div>
         </div>
-        <div className={`relative z-10 ${s.link}`}>
+        <div className={`relative z-10 ${s.link}`} data-aos="fade-up">
           <Link className="text-accent" href={"#services"}>
             Все предоставляемые услуги
             <Image
@@ -65,7 +65,7 @@ export default function Problems() {
             unoptimized={true}
           ></Image>
           <div className={`block justify-between md:flex ${s.top}`}>
-            <div>
+            <div data-aos="fade-up">
               <ProblemCard
                 textWidth={298}
                 className={styles["problem-left"]}
@@ -76,7 +76,7 @@ export default function Problems() {
                 order="I"
               />
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="200">
               <ProblemCard
                 textWidth={306}
                 className={styles["problem-right"]}
@@ -89,7 +89,7 @@ export default function Problems() {
           </div>
 
           <div className={`block md:flex ${s.center}`}>
-            <div className="mx-auto">
+            <div className="mx-auto" data-aos="fade-up">
               <ProblemCard
                 textWidth={337}
                 className={styles["problem-center"]}
@@ -101,7 +101,7 @@ export default function Problems() {
             </div>
           </div>
           <div className="hidden justify-between md:flex">
-            <div>
+            <div data-aos="fade-up" data-aos-delay="200">
               <ProblemCard
                 textWidth={335}
                 className={styles["problem-left"]}

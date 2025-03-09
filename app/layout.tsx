@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Lenis from 'lenis';
 import { Manrope } from 'next/font/google';
 import "./globals.css";
+import AOSProvider from './AOSProvider';
 
 const manrope = Manrope({
   subsets: ['latin', 'cyrillic'],
@@ -45,7 +46,7 @@ export default function RootLayout({
       <body
         className={manrope.className}
       >
-        {children}
+        <AOSProvider>{children}</AOSProvider>
       </body>
     </html>
   );

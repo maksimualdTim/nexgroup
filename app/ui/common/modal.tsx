@@ -18,7 +18,7 @@ interface ModalProps {
   onClose: () => void;
 }
 
-export default function Modal({ isOpen, onClose, subtitle="Бесплатный аудит" }: ModalProps) {
+export default function Modal({ isOpen, onClose, subtitle = "Бесплатный аудит" }: ModalProps) {
   const [mounted, setMounted] = useState(false);
   const [phone, setPhone] = useState<string>("");
   const [name, setName] = useState<string>("");
@@ -37,6 +37,7 @@ export default function Modal({ isOpen, onClose, subtitle="Бесплатный 
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
+      if(window.innerWidth > 767)
         document.body.style.paddingRight = "5px";
     } else {
       document.body.style.overflow = "";
@@ -55,17 +56,17 @@ export default function Modal({ isOpen, onClose, subtitle="Бесплатный 
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    
+
     const formData = new FormData(event.currentTarget);
     formData.set("phone", phone)
     setStatus(STATUS_SENDING);
     event.currentTarget.reset()
     const result = await sendMessage(formData);
     if (result?.error) {
-        setStatus(STATUS_ERROR);
-      } else {
-        setStatus(STATUS_SUCCESS);
-      }
+      setStatus(STATUS_ERROR);
+    } else {
+      setStatus(STATUS_SUCCESS);
+    }
     setPhone("");
     setName("");
   };
@@ -80,19 +81,18 @@ export default function Modal({ isOpen, onClose, subtitle="Бесплатный 
         onClick={(e) => e.stopPropagation()}
       >
         <div className={s.imgBlock}>
-            <Image src={"/modal.png"} width={391} height={539} alt="laptop" className={s.img}></Image>
+          <Image src={"/modal.png"} width={391} height={539} alt="laptop" className={s.img}></Image>
         </div>
         <div className={s.form}>
-        <div className={s.close} onClick={onClose}>
-          <Image src={"/icons/close.svg"} alt="close" width={17} height={17}></Image>
-        </div>
+          <div className={s.close} onClick={onClose}>
+            <Image src={"/icons/close.svg"} alt="close" width={17} height={17}></Image>
+          </div>
           <div className={s.subtitle}>{subtitle}</div>
           <h3 className={s.title}>Обсудим ваш проект?</h3>
           <form onSubmit={handleSubmit}>
             <div
-              className={`${formStyles["input-container"]} ${
-                name.length == 0 ? "" : formStyles.active
-              }`}
+              className={`${formStyles["input-container"]} ${name.length == 0 ? "" : formStyles.active
+                }`}
             >
               <label
                 className={`text-fluid ${formStyles.label}`}
@@ -111,9 +111,8 @@ export default function Modal({ isOpen, onClose, subtitle="Бесплатный 
               />
             </div>
             <div
-              className={`${formStyles["input-container"]} ${
-                phone.length == 0 ? "" : formStyles.active
-              }`}
+              className={`${formStyles["input-container"]} ${phone.length == 0 ? "" : formStyles.active
+                }`}
             >
               <IntlTelInput
                 onChangeNumber={setPhone}
@@ -142,7 +141,7 @@ export default function Modal({ isOpen, onClose, subtitle="Бесплатный 
               <button className={s.button}>
                 <span className={`${status == STATUS_SENDING ? "opacity-0" : ""}`}>Отправить</span>
                 <span className={`${formStyles.spinner} ${s.spinner} ${status == STATUS_SENDING ? "" : "opacity-0"}`}></span>
-                </button>
+              </button>
               <div className={s.policy}>
                 Наш сайт защищен с помощью reCAPTCHA и соответствует Политике
                 конфиденциальности и Условиям использования Google.

@@ -30,15 +30,12 @@ export default function Advantages() {
               subtitle="Почему именно мы?"
             />
           </div>
-          <div>
+          <div className={s.mainWrapper}>
             <MainText
               order={3}
               text={[
                 <p
                   key={1}
-                  style={{
-                    marginBottom: "calc(100 * (1px + (100vw - 1530px) / 1530))",
-                  }}
                 >
                   Мы в NEX знаем, что эффективное управление и прозрачные
                   коммуникации — это основа успешного бизнеса

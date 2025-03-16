@@ -19,6 +19,10 @@
     height: 80vh;
 }
 
+.mainWrapper > div > div:last-child > p:first-child{
+    margin-bottom: calc(30 * (1px + (100vw - 1530px) / 1530));
+}
+
 
 @media (max-width: 767px) {
     .cards :global(.swiper-pagination) {
@@ -51,5 +55,8 @@
     }
     .wrapper {
         margin-top: calc(100 * (1px + (100vw - 430px) / 430));
+    }
+    .mainWrapper > div > div:last-child > p:first-child{
+        margin-bottom: calc(28 * (1px + (100vw - 430px) / 430));
     }
 }

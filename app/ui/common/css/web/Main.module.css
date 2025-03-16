@@ -26,6 +26,7 @@
     border-radius: calc(26 * (1px + (100vw - 1530px) / 1530));
     height: 100%;
     width: 100%;
+    object-position: top;
 }
 .overlay {
     position: absolute;

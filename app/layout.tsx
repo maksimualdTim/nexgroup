@@ -1,9 +1,7 @@
-"use client";
-import { useEffect } from "react";
-import Lenis from 'lenis';
 import { Manrope } from 'next/font/google';
 import "./globals.css";
 import AOSProvider from './AOSProvider';
+// import { Metadata } from "next";
 
 const manrope = Manrope({
   subsets: ['latin', 'cyrillic'],
@@ -21,26 +19,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) 
-{
-  useEffect(() => {
-    const lenis = new Lenis({
-      // smooth: true, // Включает плавный скролл
-      lerp: 0.1, // Чем меньше, тем мягче (0.1–0.2 — оптимально)
-      wheelMultiplier: 1, // Чувствительность колесика мыши
-      infinite: false, // Если true — можно листать бесконечно
-    });
-
-    const raf = (time: number) => {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    };
-    requestAnimationFrame(raf);
-
-    return () => {
-      lenis.destroy();
-    };
-  }, []);
-  
+{ 
   return (
     <html lang="en">
       <body

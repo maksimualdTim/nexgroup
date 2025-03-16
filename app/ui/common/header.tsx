@@ -28,6 +28,11 @@ export default function Header({setModalOpen}: {setModalOpen: (open: boolean) =>
           onClick={() => setActive(false)}
         ></div>
       )}
+      {activeMobileBtn && (
+        <div
+          className={`${styles.overlay}`}
+        ></div>
+      )}
       <header
         className={`relative ${active ? styles.active : ""} ${
           activeMobileBtn ? styles.mobileActive : ""

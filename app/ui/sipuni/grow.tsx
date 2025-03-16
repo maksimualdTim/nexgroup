@@ -5,7 +5,7 @@ import styles from "../common/css/sipuni/Grow.module.css";
 
 export default function Grow() {
   return (
-    <div className={`${s.wrapper} px-fluid`}>
+    <div className={`${s.wrapper} px-fluid`} id="grow">
       <div
         className={`flex justify-between items-end mobile-container ${s.title}`}
       >

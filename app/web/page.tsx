@@ -1,3 +1,4 @@
+"use client"
 import ContactForm from "../ui/main/contact-form";
 import Faq from "../ui/main/faq";
 import Footer from "../ui/main/footer";
@@ -8,8 +9,11 @@ import Portfolio from "../ui/web/portfolio";
 import Services from "../ui/web/services";
 import styles from "@/app/ui/common/css/web/Main.module.css";
 import Steps from "../ui/web/steps";
+import { useState } from "react";
+import Modal from "../ui/common/modal";
 
 export default function Web() {
+  const [modalOpen, setModalOpen] = useState<boolean>(false)
   return (
     <div>
       <div className="relative min-h-screen">
@@ -18,7 +22,7 @@ export default function Web() {
           <source src="/web.mp4" type="video/mp4"></source>
           Ваш браузер не поддерживает видео.
         </video>
-        <Main></Main>
+        <Main setModalOpen={setModalOpen}></Main>
       </div>
       <div className="block md:hidden">
         {/* <video autoPlay muted style={{
@@ -30,8 +34,8 @@ export default function Web() {
           Ваш браузер не поддерживает видео.
         </video> */}
         </div>
-      <Info></Info>
-      <Steps></Steps>
+      <Info setModalOpen={setModalOpen}></Info>
+      <Steps setModalOpen={setModalOpen}></Steps>
       <Portfolio></Portfolio>
       <Services></Services>
       <Aspects></Aspects>
@@ -98,6 +102,8 @@ export default function Web() {
         <ContactForm></ContactForm>
       </div>
       <Footer></Footer>
+        <Modal isOpen={modalOpen} onClose={() => {setModalOpen(false)}}></Modal>
+      
     </div>
   );
 }

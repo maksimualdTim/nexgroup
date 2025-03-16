@@ -5,7 +5,7 @@ import TelegramButton from "../common/telegramButton";
 import Title from "../common/title";
 import Lavr from "../common/lavr";
 
-export default function Consultation({bg = "/3D-Black.png", mobileBg="/3D-Black-mobile.png"}: {bg?: string, mobileBg?: string}) {
+export default function Consultation({bg = "/3D-Black.png", mobileBg="/3D-Black-mobile.png", setModalOpen}: {bg?: string, mobileBg?: string, setModalOpen: (open: boolean) => void}) {
   return (
     <div className={styles.consultation} data-aos="fade-up">
       <div className="flex justify-between relative hidden md:flex">
@@ -26,9 +26,10 @@ export default function Consultation({bg = "/3D-Black.png", mobileBg="/3D-Black-
               style={{
                 marginRight: "calc(12 * (1px + (100vw - 1530px) / 1530))",
               }}
+              onClick={() => setModalOpen(true)}
             >
               <Button
-                link="https://t.me/nexgroup_support"
+                link=""
                 isFull={true}
                 withArrow={false}
                 text="Начать автоматизацию"
@@ -113,9 +114,9 @@ export default function Consultation({bg = "/3D-Black.png", mobileBg="/3D-Black-
             icon="/icons/circle-white.svg"
           />
         </div>
-        <div>
+        <div onClick={() => setModalOpen(true)}>
           <Button
-            link="https://t.me/nexgroup_support"
+            link=""
             isFull={true}
             withArrow={false}
             text="Начать автоматизацию"

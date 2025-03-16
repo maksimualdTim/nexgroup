@@ -4,7 +4,7 @@ import Button from "../common/button";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function CTA() {
+export default function CTA({setModalOpen}: {setModalOpen: (open: boolean) => void}) {
   return (
     <div className={`px-fluid ${s.wrapper}`}>
       <div className={`${s.inner} block md:flex justify-between`}>
@@ -18,12 +18,14 @@ export default function CTA() {
               isService={true}
             ></Title>
           </div>
-          <Button
-            text="Настроить чат-бота"
-            withArrow={true}
-            isFull={false}
-            link="https://t.me/nexgroup_support"
-          ></Button>
+          <div onClick={() => setModalOpen(true)}>
+            <Button
+              text="Настроить чат-бота"
+              withArrow={true}
+              isFull={false}
+              link=""
+            ></Button>
+          </div>
         </div>
         <div className="relative z-10 hidden md:block">
           <Link className={s.link} href={"https://t.me/nexgroup_support"}>

@@ -4,10 +4,10 @@ import Title from "../common/title";
 import Button from "../common/button";
 import Image from "next/image";
 
-export default function Main() {
+export default function Main({setModalOpen}: {setModalOpen: (open: boolean) => void}) {
   return (
     <div className={s.wrapper}>
-      <Header></Header>
+      <Header setModalOpen={setModalOpen}></Header>
       <div className={`px-fluid relative ${s.inner} mobile-container`}>
         <Title
           title="Внедрение amoCRM"
@@ -27,19 +27,21 @@ export default function Main() {
                 marginRight: "calc(11 * (1px + (100vw - 1530px) / 1530))",
               }}
             >
+              <div onClick={() => setModalOpen(true)}>
               <Button
                 text="Обсудить проект"
                 isFull={true}
                 withArrow={true}
-                link="https://t.me/nexgroup_support"
+                link=""
               />
+              </div>
             </div>
             <div>
               <Button
                 text="Подробнее"
                 isFull={false}
                 withArrow={false}
-                link="/"
+                link="#grow"
               />
             </div>
           </div>

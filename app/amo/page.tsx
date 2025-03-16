@@ -1,3 +1,4 @@
+"use client"
 import Advantages from "../ui/amo/advantages";
 import CTA from "../ui/amo/cta";
 import Grow from "../ui/amo/grow";
@@ -9,22 +10,25 @@ import ContactForm from "../ui/main/contact-form";
 import Faq from "../ui/main/faq";
 import Footer from "../ui/main/footer";
 import NumbersAmo from "../ui/amo/numbers";
+import { useState } from "react";
+import Modal from "../ui/common/modal";
 
 export default function Amo() {
+  const [modalOpen, setModalOpen] = useState<boolean>(false)
     return (
         <>
-       <Main></Main> 
+       <Main setModalOpen={setModalOpen}></Main> 
        <Grow></Grow>
        <NumbersAmo></NumbersAmo>
-       <Steps></Steps>
+       <Steps setModalOpen={setModalOpen}></Steps>
        <Info></Info>
-       <CTA></CTA>
+       <CTA setModalOpen={setModalOpen}></CTA>
        <Advantages></Advantages>
        <div
           className="px-fluid mobile-container-card"
           style={{ marginBottom: "calc(160 * (1px + (100vw - 1530px) / 1530))" }}
         >
-          <Consultation></Consultation>
+          <Consultation setModalOpen={setModalOpen}></Consultation>
         </div>
         <Faq faqData={[
             {
@@ -78,6 +82,7 @@ export default function Amo() {
           <ContactForm></ContactForm>
         </div>
         <Footer></Footer>
+      <Modal isOpen={modalOpen} onClose={() => {setModalOpen(false)}}></Modal>
     </>
     )
 }

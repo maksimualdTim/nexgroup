@@ -7,10 +7,10 @@ import Header from "../common/header";
 import styles from "../common/css/MainBlock.module.css";
 import Expirience from "../common/expirience";
 
-export default function Main() {
+export default function Main({setModalOpen} : {setModalOpen: (open: boolean) => void}) {
   return (
     <div className={`bg-cover bg-center bg-no-repeat ${styles.mainContainer}`}>
-      <Header></Header>
+      <Header setModalOpen={setModalOpen}></Header>
       <div className="px-fluid mobile-container">
         <div className={styles.mainBlock}>
           <div className="main-title">
@@ -26,12 +26,13 @@ export default function Main() {
                 style={{
                   marginRight: "calc(11 * (1px + (100vw - 1530px) / 1530))",
                 }}
+                onClick={() => setModalOpen(true)}
               >
                 <Button
                   text="Обсудить проект"
                   isFull={true}
                   withArrow={true}
-                  link="/"
+                  link=""
                 />
               </div>
               <div>

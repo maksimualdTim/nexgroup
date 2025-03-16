@@ -6,7 +6,7 @@ import Button from "../common/button";
 import Image from "next/image";
 import s from "../common/css/ServicesBlock.module.css";
 
-export default function Services() {
+export default function Services({setModalOpen} : {setModalOpen: (open: boolean) => void}) {
     return (
         <div className="py-block px-fluid mobile-container-card" id="services">
             <div className={`flex justify-between ${s.top}`} style={{marginBottom: "calc(80 * (1px + (100vw - 1530px) / 1530))"}} data-aos="fade-up">
@@ -83,11 +83,11 @@ export default function Services() {
                 </div>
             </div>
             <div className={`block md:flex justify-between items-center ${s.btnWrapper}`}>
-                <div data-aos="fade-up">
+                <div data-aos="fade-up" onClick={() => setModalOpen(true)}>
                     <Button 
                     text="Обсудить проект"
                     withArrow={true}
-                    link="/"
+                    link=""
                     isFull={true}
                     />
                 </div>

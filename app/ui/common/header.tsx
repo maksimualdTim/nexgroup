@@ -9,7 +9,7 @@ import ServiceHeaderCard from "./ServiceHeaderCard";
 import { useEffect, useState } from "react";
 import TelegramButton from "./telegramButton";
 
-export default function Header() {
+export default function Header({setModalOpen}: {setModalOpen: (open: boolean) => void}) {
   const [active, setActive] = useState(false);
   const [activeMobileBtn, setActiveMobileBtn] = useState(false);
   const [activeSubitem, setActiveSubitem] = useState(false);
@@ -157,9 +157,9 @@ export default function Header() {
                 >
                   +998 90 333-77-39
                 </Link>
-                <Link
-                  href={"tel:+998 90 333-77-39"}
-                  className={`opacity-50 underline ${styles.order}`}
+                <span
+                  onClick={() => setModalOpen(true)}
+                  className={`opacity-50 underline ${styles.order} cursor-pointer`}
                   style={{
                     lineHeight: "calc(16 * (1px + (100vw - 1530px) / 1530))",
                     fontSize: "calc(13 * (1px + (100vw - 1530px) / 1530))",
@@ -167,11 +167,11 @@ export default function Header() {
                   }}
                 >
                   Заказать звонок
-                </Link>
+                </span>
               </div>
-              <div className={`header-btn ${styles.headerBtn}`}>
+              <div className={`header-btn ${styles.headerBtn}`} onClick={() => setModalOpen(true)}>
                 <Button
-                  link="https://t.me/nexgroup_support"
+                  link=""
                   text="Оставить заявку"
                   isFull={true}
                   withArrow={false}

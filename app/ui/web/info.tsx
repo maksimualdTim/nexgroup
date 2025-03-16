@@ -3,9 +3,9 @@ import s from "../common/css/amo/Grow.module.css";
 import styles from "../common/css/web/Info.module.css";
 import Title from "../common/title";
 
-export default function Info() {
+export default function Info({setModalOpen}: {setModalOpen: (open: boolean) => void}) {
   return (
-    <div className={`${styles.wrapper}`}>
+    <div className={`${styles.wrapper}`} id="info">
       <div
         className={`px-fluid flex justify-between items-end mobile-container ${s.title}`}
       >
@@ -108,7 +108,7 @@ export default function Info() {
                 Определимся с техническим заданием, составим план действий и
                 подготовим коммерческое.
               </div>
-              <div className="relative">
+              <div className="relative" onClick={() => setModalOpen(true)}>
                 <div className={`bg-white rounded-full ${styles.btn}`}>
                   <div style={{height: "100%"}}>
                     <Image

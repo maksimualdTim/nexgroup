@@ -7,7 +7,7 @@ import styles from "../common/css/ProblemCard.module.css";
 import Button from "../common/button";
 import s from "../common/css/ProblemsBlock.module.css";
 
-export default function Problems() {
+export default function Problems({setModalOpen}: {setModalOpen: (open: boolean) => void}) {
   return (
     <div className={s.wrapper}>
       <Image
@@ -132,12 +132,13 @@ export default function Problems() {
           </div>
           <div  data-aos="fade-up"
             className={`relative z-10 ${s.btn}`}
+            onClick={() => {setModalOpen(true)}}
           >
             <Button
               isFull={true}
               text="Консультация"
               withArrow={true}
-              link="https://t.me/nexgroup_support"
+              link=""
             />
           </div>
         </div>

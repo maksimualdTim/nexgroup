@@ -1,3 +1,4 @@
+"use client"
 import Advantages from "./ui/main/advantages";
 import Services from "./ui/main/services";
 import Main from "./ui/main/main";
@@ -9,8 +10,13 @@ import Consultation from "./ui/main/consultation";
 import Faq from "./ui/main/faq";
 import InfiniteHorizontalScroll from "./ui/common/infinite";
 import styles from "@/app/ui/common/css/MainBlock.module.css";
+import Modal from "./ui/common/modal";
+import { useState } from "react";
 
 export default function Home() {
+
+  const [modalOpen, setModalOpen] = useState<boolean>(false)
+
   const logos = [
     {
       path: "/logos/amo-main.svg",
@@ -52,11 +58,11 @@ export default function Home() {
           <source src="/pc_1.mp4" type="video/mp4"></source>
           Ваш браузер не поддерживает видео.
         </video>
-        <Main></Main>
+        <Main setModalOpen={setModalOpen}></Main>
         <InfiniteHorizontalScroll logos={logos}></InfiniteHorizontalScroll>
       </div>
-        <Problems></Problems>
-      <Services></Services>
+        <Problems setModalOpen={setModalOpen}></Problems>
+      <Services setModalOpen={setModalOpen}></Services>
       <div className="relative">
         <div className="relative z-10">
           <Advantages></Advantages>
@@ -71,12 +77,12 @@ export default function Home() {
           }}
         ></div>
       </div>
-      <Numbers></Numbers>
+      <Numbers setModalOpen={setModalOpen}></Numbers>
       <div
         className="px-fluid mobile-container-card"
         style={{ marginBottom: "calc(160 * (1px + (100vw - 1530px) / 1530))" }}
       >
-        <Consultation></Consultation>
+        <Consultation setModalOpen={setModalOpen}></Consultation>
       </div>
       <Faq faqData={[
             {
@@ -145,6 +151,7 @@ export default function Home() {
         <ContactForm></ContactForm>
       </div>
       <Footer></Footer>
+      <Modal isOpen={modalOpen} onClose={() => {setModalOpen(false)}}></Modal>
     </>
   );
 }

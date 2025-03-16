@@ -5,10 +5,10 @@ import Button from "../common/button";
 import Expirience from "../common/expirience";
 import Image from "next/image";
 
-export default function Main() {
+export default function Main({setModalOpen}: {setModalOpen: (open: boolean) => void}) {
   return (
     <div className={`${s.main} relative overflow-hidden z-10`}>
-      <Header></Header>
+      <Header setModalOpen={setModalOpen}></Header>
       <div className={`${s.container} px-fluid relative z-10 mobile-container`}>
         <div>
           <div>
@@ -24,8 +24,8 @@ export default function Main() {
             Создаем решения, которые реально работают и приносят пользу,
             помогая вам достичь новых уровней эффективности и роста.
           </div>
-          <div className={s.btn}>
-            <Button link="https://t.me/nexgroup_support" isFull={true} text="Начать сотрудничать"></Button>
+          <div className={s.btn} onClick={() => {setModalOpen(true)}}>
+            <Button link="" isFull={true} text="Начать сотрудничать"></Button>
           </div>
           <div>
             <Expirience left={true}></Expirience>

@@ -4,7 +4,7 @@ import Button from "../common/button";
 import Image from "next/image";
 import styles from "../common/css/sipuni/Cta.module.css";
 
-export default function CTA() {
+export default function CTA({setModalOpen}: {setModalOpen: (open: boolean) => void}) {
   return (
     <div className={`px-fluid ${s.wrapper}`}>
       <div className={`${s.inner} relative`}>
@@ -18,12 +18,14 @@ export default function CTA() {
               isService={true}
             ></Title>
           </div>
+          <div onClick={() => setModalOpen(true)}>
           <Button
             text="Установить IP-телефонию"
             withArrow={true}
             isFull={false}
-            link="https://t.me/nexgroup_support"
+            link=""
           ></Button>
+          </div>
         </div>
         <div className="absolute z-10 right-0 top-0 hidden md:block" style={{
           right: "calc(54 * (1px + (100vw - 1530px) / 1530))"

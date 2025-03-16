@@ -8,12 +8,17 @@ import Modal from "../common/modal";
 
 export default function Services() {
   const [selectedCard, setSelectedCard] = useState<null | string>(null);
+  const [isOpen, setIsOpen] = useState<boolean>(false)
 
   const handleOpenModal = (title: string) => {
+    setIsOpen(true)
     setSelectedCard(title);
   };
   const handleCloseModal = () => {
-    setSelectedCard(null);
+    setIsOpen(false)
+    setTimeout(() => {
+      setSelectedCard(null);
+    }, 500)
   };
 
   return (
@@ -78,7 +83,7 @@ export default function Services() {
           onOpen={() => handleOpenModal("Веб-сервисы и платфомы")}
         ></Card>
       </div>
-      <Modal isOpen={!!selectedCard} onClose={handleCloseModal} subtitle={selectedCard || ""} />
+      <Modal isOpen={isOpen} onClose={handleCloseModal} subtitle={selectedCard || ""} />
     </div>
   );
 }

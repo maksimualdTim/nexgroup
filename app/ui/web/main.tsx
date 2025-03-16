@@ -5,10 +5,10 @@ import styles from "../common/css/web/Main.module.css";
 import Title from "../common/title";
 import Button from "../common/button";
 
-export default function Main() {
+export default function Main({setModalOpen}: {setModalOpen: (open: boolean) => void}) {
   return (
     <div className={`${styles.wrapper}`}>
-      <Header></Header>
+      <Header setModalOpen={setModalOpen}></Header>
       <div
         className={`px-fluid relative ${s.inner} ${styles.inner} mobile-container`}
       >
@@ -32,12 +32,13 @@ export default function Main() {
                 style={{
                   marginRight: "calc(11 * (1px + (100vw - 1530px) / 1530))",
                 }}
+                onClick={() => setModalOpen(true)}
               >
                 <Button
                   text="Заказать сайт"
                   isFull={true}
                   withArrow={true}
-                  link="https://t.me/nexgroup_support"
+                  link=""
                 />
               </div>
               <div>
@@ -45,7 +46,7 @@ export default function Main() {
                   text="Подробнее"
                   isFull={false}
                   withArrow={false}
-                  link="/"
+                  link="#info"
                 />
               </div>
             </div>

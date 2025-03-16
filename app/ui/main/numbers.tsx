@@ -3,12 +3,11 @@ import MainText from "../common/mainText";
 import Title from "../common/title";
 import styles from "../common/css/Numbers.module.css";
 import Image from "next/image";
-import Link from "next/link";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import s from "../common/css/Numbers.module.css";
 
-export default function Numbers() {
+export default function Numbers({setModalOpen}: {setModalOpen: (open: boolean) => void}) {
   const { ref, inView } = useInView({
     triggerOnce: true, // Анимация запускается один раз
     threshold: 0.65, // Процент видимой области
@@ -185,8 +184,8 @@ export default function Numbers() {
           </div>
         </div>
       </div>
-      <div className={`px-fluid ${s.servicesText} mobile-container relative z-10`}>
-        <Link className="text-accent" href={"https://t.me/nexgroup_support"}>
+      <div className={`px-fluid ${s.servicesText} mobile-container relative z-10 cursor-pointer`}>
+        <span className="text-accent" onClick={() => {setModalOpen(true)}}>
           Рассчитать стоимость услуг
           <Image
             className={`inline-block ${s.icon}`}
@@ -195,7 +194,7 @@ export default function Numbers() {
             width={10}
             height={10}
           ></Image>
-        </Link>
+        </span>
       </div>
     </div>
   );

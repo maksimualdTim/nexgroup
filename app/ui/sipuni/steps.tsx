@@ -11,7 +11,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-export default function Steps() {
+export default function Steps({setModalOpen}: {setModalOpen: (open: boolean) => void}) {
   return (
     <div className={`px-fluid ${s.wrapper} mobile-container`}>
       <div
@@ -248,11 +248,11 @@ export default function Steps() {
         className="hidden md:flex justify-between items-center"
         style={{ marginTop: "calc(64 * (1px + (100vw - 1530px) / 1530))" }}
       >
-        <div>
+        <div onClick={() => setModalOpen(true)}>
           <Button
             text="Консультация"
             withArrow={true}
-            link="https://t.me/nexgroup_support"
+            link=""
             isFull={true}
           />
         </div>

@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../common/css/Button.module.css";
@@ -13,11 +14,18 @@ export default function Button({
   text: string;
   withArrow?: boolean;
 }) {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (!link) {
+      e.preventDefault(); // Отменяет переход
+    }
+  };
+
   if (isFull) {
     return (
       <Link
         href={link}
         className={`bg-white inline-block text-[#0E0E0E] text-fluid font-semibold ${styles.button}`}
+        onClick={handleClick}
       >
         {text}
         {withArrow && (
@@ -37,6 +45,7 @@ export default function Button({
     <Link
       href={link}
       className={`border inline-block font-semibold text-fluid ${styles.button} ${styles.buttonTransaprent}`}
+      onClick={handleClick}
     >
       <span className={styles.span}>{text}</span>{" "}
       {withArrow && (

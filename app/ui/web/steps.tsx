@@ -1,10 +1,9 @@
-import Link from "next/link";
 import MainText from "../common/mainText";
 import Title from "../common/title";
 import Image from "next/image";
 import s from "../common/css/web/Steps.module.css";
 
-export default function Steps() {
+export default function Steps({setModalOpen}: {setModalOpen: (open: boolean) => void}) {
   return (
     <div className={s.wrapper}>
       <div className="px-fluid mobile-container">
@@ -31,7 +30,7 @@ export default function Steps() {
           </div>
         </div>
         <div className={`relative z-10 ${s.link}`}>
-          <Link className="text-accent" href={"/"}>
+          <span className="text-accent cursor-pointer" onClick={() => setModalOpen(true)}>
             Рассчитать стоимость сайта
             <Image
               className={`inline-block ${s.linkIcon}`}
@@ -40,7 +39,7 @@ export default function Steps() {
               width={0}
               height={0}
             ></Image>
-          </Link>
+          </span>
         </div>
       </div>
       <div className={s.content}>

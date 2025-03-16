@@ -20,6 +20,6 @@ export const metadata: Metadata = {
 export default function Web() {
 
   return (
-    Content
+    <Content />
   );
 }

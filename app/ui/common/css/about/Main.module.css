@@ -13,7 +13,7 @@
 }
 
 .container {
-    margin-top: calc(190 * (1px + (100vw - 1530px) / 1530));
+    margin-top: calc(240 * (1px + (100vw - 1530px) / 1530));
 }
 .text {
     color: white;
@@ -53,6 +53,11 @@
 }
 .robot {
     right: 0;
+}
+@media (max-width: 1650px) {
+    .container {
+        margin-top: calc(190 * (1px + (100vw - 1530px) / 1530));
+    }
 }
 
 @media (max-width: 767px) {

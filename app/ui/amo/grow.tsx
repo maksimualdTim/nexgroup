@@ -16,7 +16,7 @@ export default function Grow() {
             isService={true}
           ></Title>
         </div>
-        <div className="flex items-center hidden md:flex">
+        <div className="flex items-center hidden md:flex" data-aos="fade-up" data-aos-delay="200">
           <div className={s.text}>
             Вся ваша команда включится в работу CRM с первого дня 
           </div>
@@ -30,7 +30,7 @@ export default function Grow() {
         </div>
       </div>
       <div className={`flex flex-wrap hidden md:flex ${s.cards}`}>
-        <div className={`${s.card} ${s.cardLongTop} ${s.cardLong}`}>
+        <div data-aos="fade-up" className={`${s.card} ${s.cardLongTop} ${s.cardLong}`}>
           <div>
             <Image
               src={"/amo-long-top.png"}
@@ -50,7 +50,7 @@ export default function Grow() {
             </div>
           </div>
         </div>
-        <div className={`${s.card} ${s.cardShortTop} ${s.cardShort}`}>
+        <div data-aos="fade-up" data-aos-delay="200" className={`${s.card} ${s.cardShortTop} ${s.cardShort}`}>
           <div className={s.cardContent}>
             <div className={s.cardTitle}>Не теряйте клиентов</div>
             <div className={s.cardSubtitle}>Полный контроль</div>
@@ -72,7 +72,7 @@ export default function Grow() {
             ></Image>
           </div>
         </div>
-        <div className={`${s.card} ${s.cardShortBot} ${s.cardShort}`}>
+        <div data-aos="fade-up" className={`${s.card} ${s.cardShortBot} ${s.cardShort}`}>
           <div>
             <Image
               src={"/amo-imbox.png"}
@@ -92,7 +92,7 @@ export default function Grow() {
             </div>
           </div>
         </div>
-        <div className={`${s.card} ${s.cardLongBot} ${s.cardLong}`}>
+        <div data-aos="fade-up" data-aos-delay="200" className={`${s.card} ${s.cardLongBot} ${s.cardLong}`}>
           <div className={s.cardContent}>
             <div className={s.cardTitle}>Ставьте продажи на автопилот</div>
             <div className={s.cardSubtitle}>Digital-воронка</div>

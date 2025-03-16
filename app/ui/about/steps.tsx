@@ -29,8 +29,8 @@ export default function Steps() {
         <div className={s.row}>
           <div className={s.card} style={{ paddingLeft: "0" }}>
             <div className={s.cardTop}>
-              <div className={s.cardTitle}>Анализ</div>
-              <div className={s.order}>01</div>
+              <div data-aos="fade-up" className={s.cardTitle}>Анализ</div>
+              <div data-aos="fade-up" data-aos-delay="200" className={s.order}>01</div>
             </div>
             <div className={s.cardText}>
               <MainText
@@ -52,8 +52,8 @@ export default function Steps() {
             }}
           >
             <div className={s.cardTop}>
-              <div className={s.cardTitle}>Оптимизация</div>
-              <div className={s.order}>03</div>
+              <div data-aos="fade-up" className={s.cardTitle}>Оптимизация</div>
+              <div data-aos="fade-up" data-aos-delay="200" className={s.order}>03</div>
             </div>
             <div className={s.cardText}>
               <MainText
@@ -72,8 +72,8 @@ export default function Steps() {
           <div className={s.card} style={{ borderRight: "none" }}></div>
           <div className={s.card}>
             <div className={s.cardTop}>
-              <div className={s.cardTitle}>Внедрение</div>
-              <div className={s.order}>02</div>
+              <div data-aos="fade-up" className={s.cardTitle}>Внедрение</div>
+              <div data-aos="fade-up" data-aos-delay="200" className={s.order}>02</div>
             </div>
             <div className={s.cardText}>
               <MainText

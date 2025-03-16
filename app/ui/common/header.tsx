@@ -191,6 +191,7 @@ export default function Header({setModalOpen}: {setModalOpen: (open: boolean) =>
                 width={213}
                 height={651}
                 className={styles.cube}
+                unoptimized={true}
               ></Image>
             </div>
             <div

@@ -96,7 +96,7 @@ export default function Steps({setModalOpen}: {setModalOpen: (open: boolean) => 
             остаемся на связи для ответа на любые вопросы.
           </div>
         </div>
-        <div className={s.card}>
+        <div data-aos-delay="200" className={s.card}>
           <div className={s.cardTop}>
             <div className={s.order}>
               <span>05</span>
@@ -251,7 +251,7 @@ export default function Steps({setModalOpen}: {setModalOpen: (open: boolean) => 
         className="hidden md:flex justify-between items-center"
         style={{ marginTop: "calc(64 * (1px + (100vw - 1530px) / 1530))" }}
       >
-        <div onClick={() => setModalOpen(true)}>
+        <div onClick={() => setModalOpen(true)} data-aos="fade-up">
           <Button text="Консультация" withArrow={true} link="" isFull={true} />
         </div>
         <div className={s.logoWrapper}>

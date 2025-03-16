@@ -7,7 +7,7 @@ import Lavr from "../common/lavr";
 
 export default function Consultation({bg = "/3D-Black.png", mobileBg="/3D-Black-mobile.png", setModalOpen}: {bg?: string, mobileBg?: string, setModalOpen: (open: boolean) => void}) {
   return (
-    <div className={styles.consultation} data-aos="fade-up">
+    <div className={styles.consultation}>
       <div className="flex justify-between relative hidden md:flex">
         <div>
           <div className={styles.title}>

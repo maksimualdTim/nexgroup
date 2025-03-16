@@ -17,7 +17,7 @@ export default function Info({setModalOpen}: {setModalOpen: (open: boolean) => v
             isService={true}
           ></Title>
         </div>
-        <div className="flex items-center hidden md:flex">
+        <div data-aos="fade-up" data-aos-delay="200" className="flex items-center hidden md:flex">
           <div className={`${s.text} ${styles.text}`}>
             Формируем доверие и открываем новые возможности для вашего роста
           </div>
@@ -31,7 +31,7 @@ export default function Info({setModalOpen}: {setModalOpen: (open: boolean) => v
         </div>
       </div>
       <div className={`${styles.cards} px-fluid`}>
-        <div className={styles.cardLong}>
+        <div data-aos="fade-up" className={styles.cardLong}>
           <div className={styles.cardLongImg}>
             <Image
               src={"/robot-laptop.png"}
@@ -51,7 +51,7 @@ export default function Info({setModalOpen}: {setModalOpen: (open: boolean) => v
           </div>
         </div>
         <div className={styles.miniCards}>
-          <div className={`${styles.card} ${styles.cardTop}`}>
+          <div data-aos="fade-up" data-aos-delay="200" className={`${styles.card} ${styles.cardTop}`}>
             <Image
               src={"/web-spirale.png"}
               width={408}
@@ -66,7 +66,7 @@ export default function Info({setModalOpen}: {setModalOpen: (open: boolean) => v
               <div className={styles.title}>Дизайн и разработка сайта</div>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up" data-aos-delay="400"
             className={`${styles.card} ${styles.cardTop} ${styles.cardTopBackground}`}
           >
             <div className={styles.period}>
@@ -77,7 +77,7 @@ export default function Info({setModalOpen}: {setModalOpen: (open: boolean) => v
               <div className={styles.title}>Публикация вашего сайта в сети</div>
             </div>
           </div>
-          <div
+          <div data-aos="fade-up"
             className={`${styles.card} ${styles.cardTop} ${styles.cardBottom}`}
           >
             <div className={styles.content}>
@@ -85,7 +85,7 @@ export default function Info({setModalOpen}: {setModalOpen: (open: boolean) => v
               <div className={styles.title}>От идеи до реализации проекта</div>
             </div>
           </div>
-          <div className={`${styles.card} ${styles.cardOrder}`}>
+          <div data-aos="fade-up" data-aos-delay="200" className={`${styles.card} ${styles.cardOrder}`}>
             <div className={styles.cardOrderTop}>
               <div>
                 <div className={styles.cardOrderSubtitle}>

@@ -14,21 +14,21 @@ export default function Partner() {
           ></Title>
         </div>
         <div className={s.columns}>
-          <div className={s.column}>
+          <div data-aos="fade-up" className={s.column}>
             <div className={s.columnTitle}>Создаём возможности</div>
             <div className={s.columnText}>
               Каждое наше решение — это инструмент, который помогает вашему
               бизнесу расти, а процессам становиться проще и быстрее.
             </div>
           </div>
-          <div className={s.column}>
+          <div data-aos="fade-up" data-aos-delay="200" className={s.column}>
             <div className={s.columnTitle}>Говорим на языке клиентов</div>
             <div className={s.columnText}>
               Мы строим долгосрочные партнёрства, которые помогают вам достигать
               большего и открывать новые горизонты.
             </div>
           </div>
-          <div className={s.column}>
+          <div data-aos="fade-up" data-aos-delay="400" className={s.column}>
             <div className={s.columnTitle}>Достигаем результата</div>
             <div className={s.columnText}>
               Добиваемся поставленных целей, создавая решения, которые приносят
@@ -56,9 +56,9 @@ export default function Partner() {
             icon="/icons/radiohead.svg"
           ></Card>
         </div>
-        <div className={`absolute ${s.graphicText}`}>Анализируем</div>
-        <div className={`absolute ${s.graphicText}`}>Внедряем системы</div>
-        <div className={`absolute ${s.graphicText}`}>Масштабируем бизнес</div>
+        <div data-aos="fade-right" className={`absolute ${s.graphicText}`}>Анализируем</div>
+        <div data-aos="fade-right" className={`absolute ${s.graphicText}`}>Внедряем системы</div>
+        <div data-aos="fade-right" className={`absolute ${s.graphicText}`}>Масштабируем бизнес</div>
       </div>
     </div>
   );

@@ -23,6 +23,12 @@
     animation: online 1.5s infinite;
 }
 
+.title h2, .subtitle {
+    transform: none !important;
+    transition: 0 !important;
+    opacity: 1 !important;
+}
+
 @keyframes online {
     0% {
         opacity: 1;

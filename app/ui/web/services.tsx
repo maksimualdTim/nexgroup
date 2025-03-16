@@ -17,7 +17,7 @@ export default function Services() {
   const handleCloseModal = () => {
     setIsOpen(false)
     setTimeout(() => {
-      setSelectedCard(null);
+    setSelectedCard(null);
     }, 500)
   };
 
@@ -54,6 +54,8 @@ export default function Services() {
           text="Сайт-визитка для презентации товаров, услуг, информации о компании или для рекламного мероприятия."
           img="/landing.svg"
           onOpen={() => handleOpenModal("Одностраничный сайт")}
+          dataAos="fade-up"
+          dataAosDelay="0"
         ></Card>
         <Card
           price="8 000 000"
@@ -63,6 +65,8 @@ export default function Services() {
           text="Многостраничный сайт для детального представления компании, ее услуг, товаров и преимуществ."
           img="/multipage.svg"
           onOpen={() => handleOpenModal("Многостраничный сайт")}
+          dataAos="fade-up"
+          dataAosDelay="200"
         ></Card>
         <Card
           price="12 000 000"
@@ -72,6 +76,8 @@ export default function Services() {
           text="Онлайн-магазин для продажи товаров с удобным каталогом, системой оплаты и управления заказами."
           img="/ecommerce.svg"
           onOpen={() => handleOpenModal("Интернет-магазин")}
+          dataAos="fade-up"
+          dataAosDelay="0"
         ></Card>
         <Card
           price="20 000 000"
@@ -81,6 +87,8 @@ export default function Services() {
           text="Сервисы и платформы для цифровых решений, интерактивных сервисов и эффективного онлайн-бизнеса"
           img="/platforms.svg"
           onOpen={() => handleOpenModal("Веб-сервисы и платфомы")}
+          dataAos="fade-up"
+          dataAosDelay="200"
         ></Card>
       </div>
       <Modal isOpen={isOpen} onClose={handleCloseModal} subtitle={selectedCard || ""} />

@@ -17,7 +17,7 @@ export default function Grow() {
             isService={true}
           ></Title>
         </div>
-        <div className="flex items-center hidden md:flex">
+        <div data-aos="fade-up" data-aos-delay="200" className="flex items-center hidden md:flex">
           <div className={s.text}>
             Идеальное решение для бизнеса любого масштаба
           </div>
@@ -31,7 +31,7 @@ export default function Grow() {
         </div>
       </div>
       <div className={`flex flex-wrap hidden md:flex ${s.cards}`}>
-        <div className={`${s.card} ${s.cardLongTop} ${s.cardLong}`}>
+        <div data-aos="fade-up" className={`${s.card} ${s.cardLongTop} ${s.cardLong}`}>
           <div>
             <Image
               src={"/sipuni-analytics.png"}
@@ -51,7 +51,7 @@ export default function Grow() {
             </div>
           </div>
         </div>
-        <div className={`${s.card} ${s.cardShortTop} ${s.cardShort}`}>
+        <div data-aos="fade-up" data-aos-delay="200" className={`${s.card} ${s.cardShortTop} ${s.cardShort}`}>
           <div className={s.cardContent}>
             <div className={s.cardTitle}>Журналы звонков</div>
             <div className={s.cardSubtitle}>Контроль пропущенных</div>
@@ -75,7 +75,7 @@ export default function Grow() {
             ></Image>
           </div>
         </div>
-        <div className={`${s.card} ${s.cardShortBot} ${s.cardShort}`}>
+        <div data-aos="fade-up" className={`${s.card} ${s.cardShortBot} ${s.cardShort}`}>
           <div>
             <Image
               src={"/sipuni-records.png"}
@@ -96,7 +96,7 @@ export default function Grow() {
             </div>
           </div>
         </div>
-        <div className={`${s.card} ${s.cardLongBot} ${s.cardLong}`}>
+        <div data-aos="fade-up" data-aos-delay="200" className={`${s.card} ${s.cardLongBot} ${s.cardLong}`}>
           <div className={s.cardContent}>
             <div className={s.cardTitle}>Интеграция с CRM-системами</div>
             <div className={s.cardSubtitle}>Настройка интеграций</div>

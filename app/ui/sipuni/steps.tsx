@@ -17,7 +17,7 @@ export default function Steps({setModalOpen}: {setModalOpen: (open: boolean) => 
       <div
         className={`flex justify-between flex-col-reverse md:flex-row ${s.top}`}
       >
-        <div className={`${s.topContainer} ${styles.topContainer}`}>
+        <div data-aos="fade-up" data-aos-delay="200" className={`${s.topContainer} ${styles.topContainer}`}>
           <MainText
             text={[
               <p key={1}>
@@ -248,7 +248,7 @@ export default function Steps({setModalOpen}: {setModalOpen: (open: boolean) => 
         className="hidden md:flex justify-between items-center"
         style={{ marginTop: "calc(64 * (1px + (100vw - 1530px) / 1530))" }}
       >
-        <div onClick={() => setModalOpen(true)}>
+        <div onClick={() => setModalOpen(true)} data-aos="fade-up">
           <Button
             text="Консультация"
             withArrow={true}

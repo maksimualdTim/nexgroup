@@ -16,7 +16,7 @@ export default function Steps({setModalOpen}: {setModalOpen: (open: boolean) => 
               isService={true}
             />
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-delay="200">
             <MainText
               order={2}
               text={[
@@ -44,9 +44,9 @@ export default function Steps({setModalOpen}: {setModalOpen: (open: boolean) => 
       </div>
       <div className={s.content}>
         <div className={`${s.info} px-fluid`}>
-          <div className={s.number}>01</div>
-          <div className={s.number}>02</div>
-          <div className={s.number}>03</div>
+          <div data-aos="fade-up" className={s.number}>01</div>
+          <div data-aos="fade-up" data-aos-delay="200" className={s.number}>02</div>
+          <div data-aos="fade-up" data-aos-delay="400" className={s.number}>03</div>
           <div className={s.steps}>
             <div className={s.step}>
               <span>Проработка дизайна</span>
@@ -61,9 +61,9 @@ export default function Steps({setModalOpen}: {setModalOpen: (open: boolean) => 
         </div>
         <div className={s.sphere}>
           <div className={s.elipse}></div>
+          <Image data-aos="zoom-in" src={"/icons/web-circle.svg"} alt="circle" width={40} height={40} className={s.circleWrapper}></Image>
           <Image src={"/icons/web-circle.svg"} alt="circle" width={40} height={40} className={s.circleWrapper}></Image>
-          <Image src={"/icons/web-circle.svg"} alt="circle" width={40} height={40} className={s.circleWrapper}></Image>
-          <Image src={"/icons/web-circle.svg"} alt="circle" width={40} height={40} className={s.circleWrapper}></Image>
+          <Image data-aos="zoom-in" src={"/icons/web-circle.svg"} alt="circle" width={40} height={40} className={s.circleWrapper}></Image>
           <Image
             src={"/icons/dotted-middle.svg"}
             height={2}
@@ -86,7 +86,7 @@ export default function Steps({setModalOpen}: {setModalOpen: (open: boolean) => 
             alt="line"
           ></Image>
 
-          <video autoPlay muted loop className={s.video}>
+          <video data-aos="fade-up" autoPlay muted loop className={s.video}>
             <source src="/hero_1_compressed.webm" type="video/webm"></source>
             <source src="/hero_1.mp4" type="video/mp4"></source>
             Ваш браузер не поддерживает видео.

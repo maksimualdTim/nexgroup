@@ -37,7 +37,7 @@ export default function Advantages() {
                 <p
                   key={1}
                   style={{
-                    marginBottom: "calc(32 * (1px + (100vw - 1530px) / 1530))",
+                    marginBottom: "calc(100 * (1px + (100vw - 1530px) / 1530))",
                   }}
                 >
                   Мы в NEX знаем, что эффективное управление и прозрачные

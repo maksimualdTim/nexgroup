@@ -12,8 +12,8 @@ const AOSProvider: React.FC<AOSProviderProps> = ({ children }) => {
    useEffect(() => {
     AOS.init({
         disable: () => window.innerWidth < 768,
-        offset: 10, // Начинает анимацию за 20px до появления
-        duration: 700 // Длительность анимации в миллисекундах
+        offset: 0, // Начинает анимацию за 20px до появления
+        duration: 700, // Длительность анимации в миллисекундах
     });
    }, []);
 

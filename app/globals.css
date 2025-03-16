@@ -45,8 +45,6 @@ header {
   background: #666; /* Чуть светлее при наведении */
 }
 
-
-
 @media (max-width: 767px) {
   header {
     padding-top: calc(28 * (1px + (100vw - 430px) / 430));
@@ -91,8 +89,8 @@ header {
       padding-top: calc(20 * (1px + (100vw - 430px) / 430));;
   }
   .swiper-horizontal {
-    margin: 0 -6% !important;
-    padding: 0 6% !important;
+    margin: 0 -3% !important;
+    padding: 0 3% !important;
   }
 
   [data-aos] {

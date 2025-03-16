@@ -71,7 +71,7 @@ export default function Portfolio() {
         ></Card>
       </div>
       <div className={`${s.bottom} px-fluid`}>
-        <div>
+        <div data-aos="fade-up">
           <Button
             text="Все проекты"
             isFull={true}

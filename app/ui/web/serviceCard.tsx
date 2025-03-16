@@ -10,6 +10,8 @@ export default function Card({
   text,
   period,
   img,
+  dataAos,
+  dataAosDelay,
   onOpen
 }: {
   price: string;
@@ -18,11 +20,13 @@ export default function Card({
   text: string;
   period: string;
   img: string;
+  dataAos: string;
+  dataAosDelay: string;
   onOpen: () => void;
 }) {
 
   return (
-    <div className={s.card}>
+    <div className={s.card} data-aos={dataAos} data-aos-delay={dataAosDelay}>
       <div className={s.info}>
         <div className={`${s.period} hidden md:inline-block`}>{period}</div>
         <div className={s.title}>{title}</div>

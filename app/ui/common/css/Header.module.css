@@ -292,6 +292,7 @@
         transform: translateY(0%);
         padding-bottom: calc(70 * (1px + (100vw - 430px) / 430));
         overflow-x: hidden;
+        height: 100%;
     }
     .mobileMenu ul {
         margin-top: calc(50 * (1px + (100vw - 430px) / 430));
@@ -344,8 +345,8 @@
        width: calc(11 * (1px + (100vw - 430px) / 430));
        height: calc(9 * (1px + (100vw - 430px) / 430));
        position: absolute;
-       left: calc(130 * (1px + (100vw - 430px) / 430));
-       top: -4px;
+       left: calc(132 * (1px + (100vw - 430px) / 430));
+       top: -3px;
     }
     .mobileMenuItemSubitems.activeSubitem::after {
         rotate: 180deg;

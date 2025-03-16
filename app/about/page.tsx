@@ -13,21 +13,20 @@ import s from "../ui/common/css/about/Page.module.css";
 
 export default function About() {
   const [modalOpen, setModalOpen] = useState<boolean>(false)
-  return (
-    <>
+    return (
+        <>
       <Main setModalOpen={setModalOpen}></Main>
-      <Partner></Partner>
-      <Steps></Steps>
-      <div
-        className="px-fluid mobile-container-card"
-        style={{ marginBottom: "calc(160 * (1px + (100vw - 1530px) / 1530))" }}
-      >
+        <Partner></Partner>
+        <Steps></Steps>
+        <div
+          className="px-fluid mobile-container-card"
+          style={{ marginBottom: "calc(160 * (1px + (100vw - 1530px) / 1530))" }}
+        >
         <Consultation bg="/consultation.png" mobileBg="/consultation-mobile.png" setModalOpen={setModalOpen}></Consultation>
-      </div>
+        </div>
       <Numbers setModalOpen={setModalOpen}></Numbers>
-      <div>
         <div className={s.faq}>
-          <Faq faqData={[
+        <Faq faqData={[
             {
               question: "1. Какие услуги мы предоставляем?",
               answer: "Мы занимаемся внедрением CRM-систем (amoCRM, Bitrix24), настройкой IP-телефонии и разработкой веб-сайтов. Наши решения помогают бизнесу автоматизировать продажи, улучшить клиентский сервис и эффективно управлять коммуникациями.",
@@ -91,13 +90,12 @@ export default function About() {
             },
           ]}></Faq>
         </div>
-      </div>
-      <div style={{ marginTop: "calc(135 * (1px + (100vw - 1530px) / 1530))" }}>
-        <ContactForm></ContactForm>
-      </div>
-      <Footer></Footer>
+        <div style={{ marginTop: "calc(135 * (1px + (100vw - 1530px) / 1530))" }}>
+          <ContactForm></ContactForm>
+        </div>
+        <Footer></Footer>
       <Modal isOpen={modalOpen} onClose={() => { setModalOpen(false) }}></Modal>
 
-    </>
-  )
+        </>
+    )
 }

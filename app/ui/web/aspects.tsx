@@ -23,7 +23,7 @@ export default function Aspects() {
             isService={true}
           ></Title>
         </div>
-        <div className="flex items-center hidden md:flex">
+        <div  data-aos="fade-up" data-aos-delay="200" className="flex items-center hidden md:flex">
           <div className={s.text}>
             Создаем функциональные, удобные и стильные проекты под ваши задачи
           </div>
@@ -39,7 +39,7 @@ export default function Aspects() {
         </div>
       </div>
       <div className={`${s.cards} hidden md:flex`}>
-        <div className={s.card}>
+        <div  data-aos="fade-up" className={s.card}>
           <div className={s.img}>
             <Image
               src={"/functionality.png"}
@@ -57,7 +57,7 @@ export default function Aspects() {
             </div>
           </div>
         </div>
-        <div className={s.card}>
+        <div  data-aos="fade-up" data-aos-delay="200" className={s.card}>
           <div className={s.img}>
             <Image
               src={"/accent.png"}
@@ -75,7 +75,7 @@ export default function Aspects() {
             </div>
           </div>
         </div>
-        <div className={s.card}>
+        <div  data-aos="fade-up" data-aos-delay="400" className={s.card}>
           <div className={s.cardLeft}>
             <div className={s.img}>
               <Image

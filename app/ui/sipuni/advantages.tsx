@@ -21,7 +21,7 @@ export default function Advantages() {
             isService={true}
           ></Title>
         </div>
-        <div className="hidden md:block">
+        <div className="hidden md:block" data-aos="fade-up" data-aos-delay="200">
           <MainText
             order={4}
             text={[
@@ -37,7 +37,7 @@ export default function Advantages() {
         <div className={`absolute ${s.cross}`}></div>
         <div className={`absolute ${s.cross}`}></div>
         <div className={`${s.cards} flex flex-wrap`}>
-          <div className={s.card}>
+          <div data-aos="fade-up" className={s.card}>
             <div className={`${s.cardTop} flex justify-between items-center`}>
               <div className={s.cardTitle}>Экспертность</div>
               <div className={s.order}>
@@ -49,7 +49,7 @@ export default function Advantages() {
               учитывая специфику бизнеса и предлагая эффективные решения.
             </div>
           </div>
-          <div className={s.card}>
+          <div data-aos="fade-up" data-aos-delay="200" className={s.card}>
             <div className={`${s.cardTop} flex justify-between items-center`}>
               <div className={s.cardTitle}>Прозрачность</div>
               <div className={s.order}>
@@ -61,7 +61,7 @@ export default function Advantages() {
               знаете, за что платите, и видите результаты нашей работы.
             </div>
           </div>
-          <div className={s.card}>
+          <div data-aos="fade-up" data-aos-delay="400" className={s.card}>
             <div className={`${s.cardTop} flex justify-between items-center`}>
               <div className={s.cardTitle}>Огромный опыт</div>
               <div className={s.order}>
@@ -73,7 +73,7 @@ export default function Advantages() {
               Наш опыт — это реальные кейсы, которыми мы гордимся.
             </div>
           </div>
-          <div className={s.card}>
+          <div data-aos="fade-up" className={s.card}>
             <div className={`${s.cardTop} flex justify-between items-center`}>
               <div className={s.cardTitle}>Гарантия результата</div>
               <div className={s.order}>
@@ -85,7 +85,7 @@ export default function Advantages() {
               прозрачность, контроль и достижение целей.
             </div>
           </div>
-          <div className={s.card}>
+          <div data-aos="fade-up" data-aos-delay="200" className={s.card}>
             <div className={`${s.cardTop} flex justify-between items-center`}>
               <div className={s.cardTitle}>Опережение рынка</div>
               <div className={s.order}>
@@ -97,7 +97,7 @@ export default function Advantages() {
               адаптироваться, а задавать стандарты в отрасли.
             </div>
           </div>
-          <div className={s.card}>
+          <div data-aos="fade-up" data-aos-delay="400" className={s.card}>
             <div className={`${s.cardTop} flex justify-between items-center`}>
               <div className={s.cardTitle}>Тех. поддержка</div>
               <div className={s.order}>

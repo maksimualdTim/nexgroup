@@ -122,3 +122,9 @@
         margin-top: 33vh;
     }
 }
+
+@media(max-width: 1650px) {
+    .rightVideoBlock {
+        height: calc(310 * (1px + (100vw - 1530px) / 1530));
+    }
+}

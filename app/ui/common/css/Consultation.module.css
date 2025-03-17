@@ -7,6 +7,7 @@
     border-radius: calc(20 * (1px + (100vw - 1530px) / 1530));
     margin-top: calc(134 * (1px + (100vw - 1530px) / 1530));
     overflow: hidden;
+    z-index: 1;
 }
 .btns > div:first-child > a {
     border: 1px solid #ffffff7a;

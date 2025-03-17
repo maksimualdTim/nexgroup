@@ -141,7 +141,7 @@ export default function Numbers({setModalOpen}: {setModalOpen: (open: boolean) =
           </div>
           <MainText text={[<p key={1}></p>]} order={4} />
         </div>
-        <div className="relative">
+        <div className="relative z-[1]">
           <div className="relative z-10">
             <div className={`${styles.mobileTop} mobile-container`}>
               <div className={styles.projectsNumber}>
@@ -184,7 +184,7 @@ export default function Numbers({setModalOpen}: {setModalOpen: (open: boolean) =
           </div>
         </div>
       </div>
-      <div className={`px-fluid ${s.servicesText} mobile-container relative z-10 cursor-pointer`}>
+      <div className={`px-fluid ${s.servicesText} mobile-container relative z-[1] cursor-pointer`}>
         <span className="text-accent" onClick={() => {setModalOpen(true)}}>
           Рассчитать стоимость услуг
           <Image

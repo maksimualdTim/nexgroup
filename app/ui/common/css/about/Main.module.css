@@ -89,7 +89,7 @@
         scale: 1.5;
     }
     .container {
-        margin-top: calc(190 * (1px + (100vw - 430px) / 430));
+        margin-top: calc(150 * (1px + (100vw - 430px) / 430));
         display: flex;
         flex-direction: column;
         justify-content: space-between;

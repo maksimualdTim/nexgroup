@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Внедрение и настройка amoCRM в Узбекистане — Автоматизация продаж",
     description: "Внедрим amoCRM для вашего бизнеса: автоматизация продаж, интеграция с IP-телефонией, чат-боты, воронки продаж.",
     images: {
-      url: "/og_image.png",
+      url: "https://nexgroup.uz/og_image.png",
       width: 1200,
       height: 630
     },

@@ -55,7 +55,7 @@ export default function Main({setModalOpen}: {setModalOpen: (open: boolean) => v
       </div>
       <div className={styles.rightBlock}>
         <div className={styles.rightVideoBlock}>
-          <video autoPlay muted className={styles.rightVideo} poster="/poster.jpg">
+          <video autoPlay muted className={styles.rightVideo} playsInline poster="/poster.jpg">
             {/* <source src="/laptop_compressed.webm" type="video/webm"></source> */}
             {/* <source src="/laptop.mp4" type="video/mp4"></source> */}
             <source src="/test.mp4" type="video/mp4"></source>

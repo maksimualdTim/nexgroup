@@ -100,3 +100,9 @@ header {
     opacity: 1 !important;
   }
 }
+video {
+  pointer-events: none;
+}
+video::-webkit-media-controls {
+  display: none !important;
+}

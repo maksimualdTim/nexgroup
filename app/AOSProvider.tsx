@@ -29,6 +29,11 @@ const AOSProvider: React.FC<AOSProviderProps> = ({ children }) => {
     };
     requestAnimationFrame(raf);
 
+
+    if (navigator.userAgent.includes("Safari") && !navigator.userAgent.includes("Chrome")) {
+      document.documentElement.classList.add("safari");
+    }
+
     return () => {
       lenis.destroy();
     };

@@ -28,6 +28,7 @@
     width: 100%;
     object-position: top;
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -39,6 +40,12 @@
     pointer-events: none;
     border-radius: calc(26 * (1px + (100vw - 1530px) / 1530));
 }
+
+:global(.safari) .overlay {
+    background-color: transparent;
+    mix-blend-mode: normal;
+}
+
 .overlay:last-child {
     background: linear-gradient(180deg, #035860cf 0%, rgba(0, 0, 0, 0) 100%);
     mix-blend-mode: normal;

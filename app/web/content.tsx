@@ -17,7 +17,7 @@ export default function Content() {
     return (
         <div>
             <div className="relative min-h-screen">
-                <video autoPlay muted loop id="bg-video" className={styles.video}>
+                <video autoPlay muted loop id="bg-video" playsInline className={styles.video}>
                     <source src="/web_compressed.webm" type="video/webm"></source>
                     <source src="/web.mp4" type="video/mp4"></source>
                     Ваш браузер не поддерживает видео.

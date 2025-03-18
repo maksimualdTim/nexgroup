@@ -437,7 +437,7 @@ export default function Header({setModalOpen}: {setModalOpen: (open: boolean) =>
               title="Внедрение IP-телефонии"
               iconHeight={18}
               iconWidth={60}
-              logo="/logos/utel-main.svg"
+              logo="/logos/sipuni-main.svg"
             ></ServiceHeaderCard>
             <ServiceHeaderCard
               link="/web"

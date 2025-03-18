@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "IT-решения для бизнеса в Узбекистане: CRM-системы, IP-телефония, Веб-сайты.",
     description: "Профессиональное внедрение и разработка передовых IT-решений для бизнеса любого масштаба.",
     images: {
-      url: "/og_image.png",
+      url: "https://nexgroup.uz/og_image.png",
       width: 1200,
       height: 630
     },

@@ -52,8 +52,8 @@ export default function Content() {
                 }}
             >
                 <video autoPlay muted loop id="bg-video" className={styles.video} playsInline>
-                    <source src="/pc_1_compressed.webm" type="video/webm"></source>
-                    <source src="/pc_1.mp4" type="video/mp4"></source>
+                    <source src="/main_bg.webm" type="video/webm"></source>
+                    <source src="/main_bg.mp4" type="video/mp4"></source>
                     Ваш браузер не поддерживает видео.
                 </video>
                 <Main setModalOpen={setModalOpen}></Main>

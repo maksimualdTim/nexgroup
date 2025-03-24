@@ -12,6 +12,7 @@ import Footer from "../ui/main/footer";
 import NumbersAmo from "../ui/amo/numbers";
 import { useState } from "react";
 import Modal from "../ui/common/modal";
+import CTA2 from "../ui/amo/cta2";
 
 export default function Content() {
     const [modalOpen, setModalOpen] = useState<boolean>(false)
@@ -21,6 +22,7 @@ export default function Content() {
             <Main setModalOpen={setModalOpen}></Main>
             <Grow></Grow>
             <NumbersAmo></NumbersAmo>
+            <CTA2 setModalOpen={setModalOpen}></CTA2>
             <Steps setModalOpen={setModalOpen}></Steps>
             <Info></Info>
             <CTA setModalOpen={setModalOpen}></CTA>

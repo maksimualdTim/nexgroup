@@ -59,6 +59,11 @@
     height: calc(338 * (1px + (100vw - 1530px) / 1530));
 }
 
+.sipuniTitle > div > div > span{
+    color: #00EAFF;
+    opacity: 1;
+}
+
 @media (max-width: 767px) {
     .title > div > div > img {
         height: calc(19 * (1px + (100vw - 430px) / 430));

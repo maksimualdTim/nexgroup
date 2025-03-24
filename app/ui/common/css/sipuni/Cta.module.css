@@ -3,9 +3,37 @@
     height: calc(384 * (1px + (100vw - 1530px) / 1530));
 }
 
+.bg {
+    background-image: url("/sipuni_cta_bg.png") !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.sipuniTitle > div > div > span{
+    color: #00EAFF;
+    opacity: 1;
+}
+.wrapper {
+    margin-bottom: calc(191 * (1px + (100vw - 1530px) / 1530));
+}
+
+.bg_amo {
+    background-image: url("/cta_amo_bg.png") !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
 @media (max-width: 767px) {
     .img {
         width: calc(396 * (1px + (100vw - 430px) / 430));
         height: calc(230 * (1px + (100vw - 430px) / 430));
+    }
+    .bg {
+        background-image: url("/sipuni_cta_bg_mobile.png") !important;
+        min-height: calc(678 * (1px + (100vw - 430px) / 430));
+    }
+    .bg_amo {
+        background-image: url("/cta_amo_bg_mobile.png") !important;
+        min-height: calc(678 * (1px + (100vw - 430px) / 430));
     }
 }

@@ -15,10 +15,11 @@ import Image from "next/image";
 interface ModalProps {
   isOpen: boolean;
   subtitle?: string,
+  product?: string,
   onClose: () => void;
 }
 
-export default function Modal({ isOpen, onClose, subtitle = "Бесплатный аудит" }: ModalProps) {
+export default function Modal({ isOpen, onClose, subtitle = "Бесплатный аудит", product = "" }: ModalProps) {
   const [mounted, setMounted] = useState(false);
   const [phone, setPhone] = useState<string>("");
   const [name, setName] = useState<string>("");
@@ -59,6 +60,8 @@ export default function Modal({ isOpen, onClose, subtitle = "Бесплатны�
     
     const formData = new FormData(event.currentTarget);
     formData.set("phone", phone)
+    formData.set("form_page", window.location.href)
+    formData.set("referer", window.location.href)
     setStatus(STATUS_SENDING);
     event.currentTarget.reset()
     const result = await sendMessage(formData);
@@ -110,6 +113,7 @@ export default function Modal({ isOpen, onClose, subtitle = "Бесплатны�
                 required={true}
                 className={`text-fluid ${formStyles.input}`}
               />
+              <input type="hidden" name="product" id="modalProduct" value={product}/>
             </div>
             <div
               className={`${formStyles["input-container"]} ${

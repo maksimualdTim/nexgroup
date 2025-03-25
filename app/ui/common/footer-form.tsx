@@ -28,6 +28,8 @@ export default function FooterForm({ text = "Отправить" }: { text?: str
     event.preventDefault();    
     const formData = new FormData(event.currentTarget);
     formData.set("phone", phone)
+    formData.set("form_page", window.location.href)
+    formData.set("referer", window.location.href)
     event.currentTarget.reset()
     setStatus(STATUS_SENDING);
     const result = await sendMessage(formData);

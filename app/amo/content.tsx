@@ -85,7 +85,7 @@ export default function Content() {
                 <ContactForm></ContactForm>
             </div>
             <Footer></Footer>
-            <Modal isOpen={modalOpen} onClose={() => { setModalOpen(false) }}></Modal>
+            <Modal isOpen={modalOpen} onClose={() => { setModalOpen(false) }} product="amoCRM"></Modal>
         </>
     )
 }

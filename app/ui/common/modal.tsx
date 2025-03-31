@@ -6,6 +6,7 @@ import s from "../common/css/Modal.module.css";
 import { createPortal } from "react-dom";
 import formStyles from "../common/css/Input.module.css";
 import { sendMessage } from "@/app/lib/actions";
+import { useRouter } from "next/navigation";
 
 const IntlTelInput = dynamic(() => import("intl-tel-input/reactWithUtils"), {
   ssr: false,
@@ -24,6 +25,7 @@ export default function Modal({ isOpen, onClose, subtitle = "Бесплатны�
   const [phone, setPhone] = useState<string>("");
   const [name, setName] = useState<string>("");
   const [status, setStatus] = useState<number>(0);
+  const router = useRouter();
 
   // const STATUS_DEFAULT = 0;
   const STATUS_SENDING = 1;
@@ -72,6 +74,7 @@ export default function Modal({ isOpen, onClose, subtitle = "Бесплатны�
       }
     setPhone("");
     setName("");
+    router.push("/success")
   };
 
   if (!mounted) return null;

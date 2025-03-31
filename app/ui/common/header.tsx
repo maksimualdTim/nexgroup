@@ -154,13 +154,13 @@ export default function Header({setModalOpen}: {setModalOpen: (open: boolean) =>
                 }}
               >
                 <Link
-                  href={"tel:+998 90 333-77-39"}
+                  href={"tel:+998 50 850 22 65"}
                   className="text-fluid font-semibold"
                   style={{
                     lineHeight: "calc(16 * (1px + (100vw - 1530px) / 1530))",
                   }}
                 >
-                  +998 90 333-77-39
+                  +998 50 850 22 65
                 </Link>
                 <span
                   onClick={() => setModalOpen(true)}

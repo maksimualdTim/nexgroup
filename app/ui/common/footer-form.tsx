@@ -7,6 +7,7 @@ import formStyles from "../common/css/Input.module.css";
 import Link from "next/link";
 import { useState } from "react";
 import { sendMessage } from "@/app/lib/actions";
+import { useRouter } from "next/navigation";
 
 const IntlTelInput = dynamic(() => import("intl-tel-input/reactWithUtils"), {
   ssr: false,
@@ -18,6 +19,7 @@ export default function FooterForm({ text = "Отправить" }: { text?: str
   const [name, setName] = useState<string>("");
   const [comment, setComment] = useState<string>("");
   const [status, setStatus] = useState<number>(0);
+  const router = useRouter();
 
   // const STATUS_DEFAULT = 0;
   const STATUS_SENDING = 1;
@@ -41,6 +43,7 @@ export default function FooterForm({ text = "Отправить" }: { text?: str
     setPhone("");
     setName("");
     setComment("");
+    router.push("/success");
   };
 
   return (

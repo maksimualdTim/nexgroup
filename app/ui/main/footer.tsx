@@ -110,9 +110,9 @@ export default function Footer() {
                 </div>
                 <Link
                   className={styles.infoBig}
-                  href={"tel:+998 (90) 333-77-39"}
+                  href={"tel:+998508502265"}
                 >
-                  +998 (90) 333-77-39
+                  +998 (50) 850-22-65
                 </Link>
               </li>
               <li className={styles.socialLi}>

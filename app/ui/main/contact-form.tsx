@@ -36,10 +36,10 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <Link
-                    href={"tel:+998 (90) 333-77-39"}
+                    href={"tel:+998508502265"}
                     className={`text-[#D9D9D9] ${s.info}`}
                   >
-                    +998 (90) 333-77-39
+                    +998 (50) 850-22-65
                   </Link>
                 </div>
               </div>
